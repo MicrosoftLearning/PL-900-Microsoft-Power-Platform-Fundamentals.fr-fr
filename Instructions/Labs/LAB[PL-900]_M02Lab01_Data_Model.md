@@ -1,12 +1,17 @@
 ---
 lab:
-    title: 'Labo 1 : Modélisation de données'
-    module: 'Module 2 : Présentation de Microsoft Dataverse'
+  title: 'Labo 1 : Modélisation de données'
+  module: 'Module 2: Introduction to Microsoft Dataverse'
+ms.openlocfilehash: 05d0f0656ae0d93f5666f7c14602c3976a9a9ac9
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898822"
 ---
+# <a name="module-2-introduction-to-microsoft-dataverse"></a>Module 2 : introduction à Microsoft Dataverse
 
-# Module 2 : Présentation de Microsoft Dataverse
-
-# Scénario
+# <a name="scenario"></a>Scénario
 
 Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visites sur le campus sont actuellement enregistrées dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus. 
 
@@ -22,7 +27,7 @@ Dans ce labo, vous accéderez à votre environnement et créerez une base de don
 
 Enfin, vous importerez des échantillons de données dans Microsoft Dataverse.
 
-# Étapes de labo de haut niveau
+# <a name="high-level-lab-steps"></a>Étapes de labo de haut niveau
 
 Pour préparer vos environnements d’apprentissage, vous devez :
 
@@ -32,24 +37,24 @@ Pour préparer vos environnements d’apprentissage, vous devez :
 Votre solution contiendra plusieurs tables une fois toutes les personnalisations effectuées :
 
 -   Contact
--   Bâtiment
--   Visite
+-   Génération
+-   Accédez à
 
-## Prérequis :
+## <a name="prerequisites"></a>Prérequis :
 
-* Achèvement du **Module 0 - Labo 0 : Valider l’environnement de labo**
+* Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
 
-## Éléments à considérer avant de commencer :
+## <a name="things-to-consider-before-you-begin"></a>Éléments à considérer avant de commencer :
 
-* Convention d’affectation de noms
+* Conventions d’affectation de noms
 
 * Types de données, restrictions (par exemple, longueur maximale d’un nom)
 
 * Formatage DateHeure pour prendre en charge une localisation facile
 
-# Exercice \#1 : Créer une solution
+# <a name="exercise-1-create-solution"></a>Exercice \#1 : Créer une solution
 
-## Tâche \#1 : Créer une solution et un éditeur
+## <a name="task-1-create-solution-and-publisher"></a>Tâche \#1 : Créer une solution et un éditeur
 
 1.  Créer une solution
 
@@ -63,32 +68,31 @@ Votre solution contiendra plusieurs tables une fois toutes les personnalisations
 
 2.  Créer un éditeur
 
-    -   Dans la section **Publication**, sélectionnez **+ Publisher**
+    -   Dans la section **Éditeur** , sélectionnez **+ Éditeur**
 
-    -   Dans la fenêtre qui apparaît, saisissez **Bellows College** dans la zone **Nom d’affichage**. 
+    -   Dans la fenêtre contextuelle qui apparaît, entrez **Bellows College** dans le champ **Nom complet**. 
 
-    -   Entrez **BellowsCollege** dans le champ **Nom**.
+    -   Entrez **AzureStorageLinkedService** dans le champ **Nom**.
     
-    -   Entrez **bc** dans la zone **Préfixe**.
+    -   Entrez **bc** dans le champ **Préfixe**.
 
-    -   Cliquez sur **Enregistrer**
+    -   Cliquez sur **Enregistrer**.
     
     -   Cliquez sur **Terminé** dans la fenêtre contextuelle.
 
 3.  Terminez la création de la solution.
 
-    -   Maintenant, cliquez sur la liste déroulante **Éditeur**, puis sélectionnez l’éditeur **Bellows College**
-        que vous venez de créer.
+    -   Maintenant, cliquez sur la liste déroulante **Éditeur**, puis sélectionnez l’éditeur **Bellows College** que vous venez de créer.
 
     -   Validez que cette **Version** est définie sur **1.0.0.0**. 
     
     -   Cliquez sur **Créer**.
 
-# Exercice \#2 : Ajouter ou créer de nouvelles tables
+# <a name="exercise-2-add-existing-and-create-new-tables"></a>Exercice \#2 : Ajouter des tables existantes et en créer de nouvelles
 
-**Objectif :** Au cours de cet exercice, vous apprendrez à ajouter une table Contact standard et à créer de nouvelles tables Bâtiment et Visite personnalisées au sein de la solution. 
+**Objectif** : Au cours de cet exercice, vous apprendrez à ajouter une table Contact standard et à créer de nouvelles tables Bâtiment et Visite personnalisées au sein de la solution. 
 
-## Tâche \#1 : Ajouter une table existante
+## <a name="task-1-add-existing-table"></a>Tâche \#1 : Ajouter une table existante
 
 1.  Cliquez pour ouvrir la solution **Gestion du campus** que vous venez de créer.
 
@@ -100,29 +104,27 @@ Votre solution contiendra plusieurs tables une fois toutes les personnalisations
 
 5.  Cliquez sur **Sélectionnez les composants** sous Contact.
 
-6.  Sélectionnez l’onglet **Vues**, puis sélectionnez la vue **Contacts actifs**. Cliquez sur
-    **Ajouter**.
+6.  Sélectionnez l’onglet **Vues**, puis sélectionnez la vue **Contacts actifs**. Cliquez sur **Add**.
     
 7.  Cliquez à nouveau sur **Sélectionner des composants**.
 
 8.  Cliquez sur l’onglet **Formulaires**, puis sélectionnez le formulaire **Contact**.
     
-9.  Cliquez sur **Ajouter**.
+9.  Cliquez sur **Add**.
 
     > Vous devez sélectionner les options **1 Vue** et **1 Formulaire**. 
     
-10.  Cliquez à nouveau sur **Ajouter**. Cela ajoutera la table Contact, l’affichage et le formulaire sélectionnés à la solution nouvellement créée.
+10.  Cliquez de nouveau sur **Ajouter**. Cela ajoutera la table Contact, l’affichage et le formulaire sélectionnés à la solution nouvellement créée.
 
 > Votre solution doit désormais avoir une seule table : Contact.
     
-## Tâche n° 2 : Créer une table Bâtiment
+## <a name="task-2-create-building-table"></a>Tâche n° 2 : Créer une table Bâtiment
 
 1.  Gardez toujours votre navigateur ouvert sur votre solution Gestion du campus. Dans le cas contraire, ouvrez la solution Gestion du campus en procédant comme suit :
 
-    * Connectez-vous à <https://make.powerapps.com> (si vous n’êtes pas déjà connecté).
+    * Connectez-vous à <https://make.powerapps.com> si vous n’êtes pas encore connecté.
     
-    * Sélectionnez **Solutions**, puis cliquez pour ouvrir la solution **[Votre nom de famille] Campus Management**
-          que vous venez de créer.
+    * Sélectionnez **Solutions**, puis cliquez pour ouvrir la solution **[Votre nom de famille] Campus Management** que vous venez de créer.
           
 2.  Créer une table Bâtiment
 
@@ -132,7 +134,7 @@ Votre solution contiendra plusieurs tables une fois toutes les personnalisations
     
     -   Cliquez sur **Enregistrer**. Cette action commence l’approvisionnement de la table en arrière-plan, tandis que vous pouvez commencer à ajouter d’autres tables et d’autres colonnes.
 
-## Tâche n° 3 : Créer la tables Visite et des colonnes
+## <a name="task-3-create-visit-table-and-columns"></a>Tâche n°3 : Créer des tables et des colonnes Visite
 
 La table **Visite** contient des informations sur les visites du campus, y compris le bâtiment, le visiteur, l’heure prévue et l’heure réelle de chaque visite. 
 
@@ -142,10 +144,9 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 1.  Gardez toujours votre navigateur ouvert sur votre solution Gestion du campus. Dans le cas contraire, ouvrez la solution Gestion du campus en procédant comme suit :
 
-    * Connectez-vous à <https://make.powerapps.com> (si vous n’êtes pas déjà connecté).
+    * Connectez-vous à <https://make.powerapps.com> si vous n’êtes pas encore connecté.
     
-    * Sélectionnez **Solutions**, puis cliquez pour ouvrir la solution **[Votre nom de famille] Campus Management**
-          que vous venez de créer.
+    * Sélectionnez **Solutions**, puis cliquez pour ouvrir la solution **[Votre nom de famille] Campus Management** que vous venez de créer.
 
 2. Créer une table Visite
 
@@ -171,7 +172,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
    
    * Dans le champ **Comportement**, sélectionnez **Indépendant du fuseau horaire**.
    
-   * Cliquez sur **Terminé**.
+   * Cliquez sur **Done**.
 
 4.  Créer une colonne Fin prévue
 
@@ -187,7 +188,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
     
     * Dans le champ **Comportement**, sélectionnez **Indépendant du fuseau horaire**.
     
-    * Cliquez sur **Terminé**.
+    * Cliquez sur **Done**.
     
 5.  Créer une colonne Début réel
 
@@ -203,7 +204,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
     
     * Dans le champ **Comportement**, sélectionnez **Indépendant du fuseau horaire**.
     
-    * Cliquez sur **Terminé**.
+    * Cliquez sur **Done**.
     
 6.  Créer une colonne Fin réelle
 
@@ -219,7 +220,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
     
     * Dans le champ **Comportement**, sélectionnez **Indépendant du fuseau horaire**.
     
-    * Cliquez sur **Terminé**.
+    * Cliquez sur **Done**.
     
 7.  Créer une colonne Code
 
@@ -231,15 +232,15 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
     
     * Sélectionnez **Nombre préfixé de date** pour **Type de numérotation automatique**.
     
-    * Cliquez sur **Terminé**.
+    * Cliquez sur **Done**.
     
 8.  Cliquez sur **Enregistrer la table**.
 
-# Exercice \#3 : Créer des relations
+# <a name="exercise-3-create-relationships"></a>Exercice \#3 : Créer des relations
 
-**Objectif :** Au cours de cet exercice, vous apprendrez à ajouter des relations entre les tables.
+**Objectif** : Au cours de cet exercice, vous apprendrez à ajouter des relations entre les tables.
 
-## Tâche n° 1 : Créer des relations
+## <a name="task-1-create-relationships"></a>Tâche n°1 : Créer des relations
 
 1.  Assurez-vous que vous affichez toujours la table **Visite** de votre solution **Gestion du campus**. Si ce n’est pas le cas, accédez à cette table.
 
@@ -249,19 +250,19 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
     
     * Cliquez sur **Ajouter une relation**, puis sélectionnez **Plusieurs-à-un**.
     
-    * Sélectionnez **Contact** pour **Connexes (Un)**. 
+    * Sélectionnez **Contact** pour **Connexes (Un)** . 
     
     * Saisissez **Visiteur** dans la zone **Nom complet de la colonne de recherche**. 
     
-    * Cliquez sur **Terminé**.
+    * Cliquez sur **Done**.
     
 3.  Créer une relation Visite-Bâtiment
 
     * Cliquez sur **Ajouter une relation**, puis sélectionnez **Plusieurs-à-un**.
     
-    * Sélectionnez **Bâtiment** pour **Connexes (Un)**. 
+    * Sélectionnez **Bâtiment** pour **Connexes (Un)** . 
     
-    * Cliquez sur **Terminé**.
+    * Cliquez sur **Done**.
     
 4.  Cliquez sur **Enregistrer la table**.
 
@@ -269,11 +270,11 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 6.  Sélectionnez **Publier toutes les personnalisations**.
 
-# Exercice \#4 : Importer des données
+# <a name="exercise-4-import-data"></a>Exercice \#4 : Importer des données
 
-**Objectif :** Au cours de cet exercice, vous apprendrez à importer des échantillons de données dans la base de données Dataverse.
+**Objectif** : Au cours de cet exercice, vous apprendrez à importer des échantillons de données dans la base de données Dataverse.
 
-## Tâche n° 1 : Importer une solution
+## <a name="task-1-import-solution"></a>Tâche n°1 : Importer une solution
 
 Dans cette tâche, vous importerez une solution contenant le flux Power Automate requis pour terminer l’importation des données.
 
@@ -291,9 +292,7 @@ Dans cette tâche, vous importerez une solution contenant le flux Power Automate
 >
 >   Il manque des dépendances. Installez les solutions suivantes avant d’installer celle-ci.
 >
->   Ce message indique que, soit le modèle de données n’est pas complet,
->   soit le préfixe de l’éditeur n’est pas **bc**, soit le nom des tables **Building** et **Visits**
->   diffère des noms répertoriés dans les étapes ci-dessus.
+>   Ce message indique que le modèle de données n’est pas complet, que le préfixe de l’éditeur n’est pas **bc**, ou que les noms des tables de **Construction** et de **Visite** diffèrent des noms indiqués dans les étapes ci-dessus.
 
 6. Appuyez sur **Suivant**. Vous êtes ensuite invité à rétablir les connexions. 
 
@@ -309,7 +308,7 @@ Dans cette tâche, vous importerez une solution contenant le flux Power Automate
 
 12. Attendez que l’importation soit terminée.
 
-## Tâche n° 2 : Importer des données  
+## <a name="task-2-import-data"></a>Tâche n° 2 : Importer des données  
 
 1. Ouvrez la solution **Importation de données**.
 
@@ -325,13 +324,13 @@ Dans cette tâche, vous importerez une solution contenant le flux Power Automate
 
 6. Cliquez sur **Exécuter** puis cliquez **Exécuter le flux** lorsque vous y êtes invité.
 
-7. Cliquez sur **Terminé**.
+7. Cliquez sur **Done**.
 
 8. Attendez que l’instance de flux termine son exécution. Vous pouvez actualiser la table de l’**historique des exécutions de 28 jours** pour voir quand le flux s’est exécuté. 
 
     > Le but de ce flux était de générer des exemples de données pour les labos à venir. Dans la tâche suivante, vous vérifierez que l’importation des données a réussi. 
 
-## Tâche n° 3 : Vérifier une importation de données
+## <a name="task-3-verify-data-import"></a>Tâche n°3 : Vérifier une importation de données
 
 1. Revenez à l’onglet Power Apps précédent. Cliquez sur **Terminé** sur la fenêtre contextuelle. 
 
@@ -353,7 +352,7 @@ Dans cette tâche, vous importerez une solution contenant le flux Power Automate
 
 7. Fermez la fenêtre récemment ouverte.
 
-# Défis
+# <a name="challenges"></a>Défis
 
 * Envisageriez-vous d’utiliser l’activité de *rendez-vous* dans le cadre de la solution ? Qu’est-ce que cela changerait ?
 * Comment faire en sorte que la fin planifiée soit ultérieure au début planifié ? 

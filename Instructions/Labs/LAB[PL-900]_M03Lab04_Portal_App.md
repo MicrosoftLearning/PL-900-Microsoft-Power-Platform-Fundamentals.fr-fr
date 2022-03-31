@@ -1,14 +1,19 @@
 ---
 lab:
-    title: 'Labo 5 : Comment développer un portail Power Apps'
-    module: 'Module 3 : Premiers pas avec Power Apps'
+  title: 'Labo 5 : Comment développer un portail Power Apps'
+  module: 'Module 3: Get started with Power Apps'
+ms.openlocfilehash: 3bbeaad63ccd84285b5471894b8377918433f383
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898926"
 ---
+# <a name="module-3-get-started-with-power-apps"></a>Module 3 : Bien démarrer avec Power Apps
 
-# Module 3 : Premiers pas avec Power Apps
+## <a name="lab-4-how-to-build-a-power-apps-portal"></a>Labo 4 : Comment développer un portail Power Apps
 
-## Labo 4 : Comment développer un portail Power Apps
-
-# Scénario
+# <a name="scenario"></a>Scénario
 
 Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visites sur le campus sont actuellement enregistrées dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
 
@@ -16,7 +21,7 @@ L’administration du campus souhaite fournir aux visiteurs des informations sur
 
 Dans ce labo, vous allez configurer un portail Power Apps et créer une page web de portails qui affichera une liste des bâtiments du campus.
 
-# Étapes de labo de haut niveau
+# <a name="high-level-lab-steps"></a>Étapes de labo de haut niveau
 
 Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
 
@@ -24,20 +29,20 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
 * Créer et configurer une page web pour afficher une liste des bâtiments
 * Créer un nouveau thème et l’appliquer au portail
 
-## Prérequis
+## <a name="prerequisites"></a>Prérequis
 
-* Achèvement du **Module 0 - Labo 0 : Valider l’environnement de labo**
-* Achèvement du **Module 2 - Labo 1 : Présentation de Microsoft Dataverse**
+* Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
+* Participation au **Module 2 - Labo 1 : Présentation de Microsoft Dataverse**
 
-## Éléments à considérer avant de commencer
+## <a name="things-to-consider-before-you-begin"></a>Éléments à considérer avant de commencer
 
 * Les applications Portails Power Apps sont toujours lancées à partir d’un modèle et non d’une application vide. Votre portail doit avoir été créé dans le labo 0 du module 0. Une fois que vous avez configuré un portail, il est déjà doté de pages, de menus et d’un thème par défaut. 
 
-# Exercice \#1 : Créez une page web de portail
+# <a name="exercise-1-create-a-portal-webpage"></a>Exercice \#1 : Créez une page web de portail
 
-**Objectif :** Au cours de cet exercice, vous apprendrez à créer une nouvelle page web qui affichera du contenu statique, ainsi qu’une liste des bâtiments de Dataverse.
+**Objectif** : Au cours de cet exercice, vous apprendrez à créer une nouvelle page web qui affichera du contenu statique, ainsi qu’une liste des bâtiments de Dataverse.
 
-## Tâche \#1 : Accéder au portail
+## <a name="task-1-navigate-to-portal"></a>Tâche \#1 : Accéder au portail
 
 1.  Accédez à <https://make.powerapps.com>.
 
@@ -51,17 +56,17 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
 
     > Vous serez ensuite redirigé sur la page d’arrivée du site web de votre portail, avec un message de bienvenue. Parcourez votre portail afin d’identifier les éléments créés par défaut lorsque vous l’avez configuré. 
 
-## Tâche \#2 : Créer une page web
+## <a name="task-2-create-a-webpage"></a>Tâche \#2 : Créer une page web
 
 1.  Ouvrez Portails Power Apps Studio.
 
-    -   Connectez-vous à <https://make.powerapps.com> (peut rester constamment ouvert dans vos onglets).
+    -   Connectez-vous à <https://make.powerapps.com> (la page est peut-être encore ouverte dans vos onglets)
 
-    -   Sélectionnez **Applications**.
+    -   Sélectionner **Applications**
     
     -   Localisez l’application qui possède le **Type** **Portail**.
 
-    -   Cliquez sur les points de suspension (**...**) à droite du nom de l’application des portails et choisissez **Modifier**.
+    -   Cliquez sur les points de suspension ( **...** ) à droite du nom de l’application des portails et choisissez **Modifier**
 
     > Vous êtes maintenant dans le studio Portails Power Apps. C’est ici que vous pouvez modifier et créer le contenu du portail.
 
@@ -69,19 +74,19 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
 
     -   Dans la barre de commandes, sélectionnez **Nouvelle page**.
 
-    - Sélectionnez **Page d’arrivée**
+    - Sélectionnez **Page de destination**
 
-3.  Dans le panneau Propriétés, sous **Afficher**, remplacez le **Nom** **Nouvelle page (1)** par `Building Directory`.
+3.  Dans le panneau Propriétés, sous **Afficher**, remplacez le **Nom** de **Nouvelle page (1)** par `Building Directory`
 
-4.  Dans l’**URL partielle**, remplacez la valeur existante par `building-directory`, appuyez sur la touche Tab (pour lancer l’enregistrement automatique).
+4.  Dans l’**URL partielle**, remplacez la valeur existante par « `building-directory` », appuyez sur la touche Tab (pour lancer l’enregistrement automatique)
 
     > Le titre de la page doit maintenant indiquer **Répertoire du bâtiment**.
     
-## Tâche \#3 : Ajouter du contenu statique
+## <a name="task-3-add-static-content"></a>Tâche \#3 : Ajouter du contenu statique
 
 1.  Ajouter une section à la page web
 
-    - Sur le canevas (zone affichant la page web), sélectionnez une section de la page autre qu’une colonne.
+    - Dans le canevas (zone présentant des pages web), sélectionnez une section de la page qui n’est pas une colonne.
 
     -   Sur la ceinture porte-outils (côté gauche), sélectionnez l’icône **Composants**.
 
@@ -109,47 +114,47 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
 
     -   Choisissez **Image** dans la zone **Composants du portail**.
 
-    - Dans le volet des propriétés, cliquez sur **Sélectionnez une image**. Localisez et sélectionnez **Pages.png**
+    - Dans le volet des propriétés, cliquez sur **Sélectionnez une image**. Recherchez et sélectionnez le **Pages.png**
     
     -   Dans le volet des propriétés, cliquez sur la liste déroulante de la section **Mise en forme** et remplacez la valeur de la zone **Largeur** par 70 % (assurez-vous de saisir le %). Vous pouvez jouer avec la taille de l’image jusqu’à ce qu’elle soit comme vous le souhaitez.
 
-4.  Configurez les droits d’affichage de la liste des bâtiments 
+4.  Configurer des droits pour afficher la liste des bâtiments 
 
-    -   Dans le menu de gauche, cliquez sur Paramètres (Icône représentant un engrenage) et choisissez **Afficher plus de paramètres**. Un nouvel onglet s’ouvre, présentant des paramètres supplémentaires.
+    -   Dans le menu de gauche, cliquez sur Paramètres (symbole d’engrenage) et choisissez **Afficher plus de paramètres**. Des paramètres supplémentaires s’ouvrent dans un nouvel onglet.
 
-    -   Faites défiler le menu de gauche jusque **Sécurité** et sélectionnez **Autorisations de table**.
+    -   Dans le menu de gauche, faites défiler la liste jusqu’à **Sécurité**, puis sélectionnez **Autorisations de table**.
 
     -   Cliquez sur **Nouveau** et ajoutez les valeurs suivantes :
 
-        -   **Nom** : Affiche la liste des bâtiments.
-        -   **Nom de la table** : Dans la liste déroulante du volet droit, sélectionnez Building (bc_building)
-        -   **Site web** : Cliquez sur la loupe et sélectionnez votre site web (visiteurs de Bellows College – [your naming])
-        -   **Type d’accès** : Mondial
-        -   **Privilèges** : Lecture
+        -   **Nom** : Afficher la liste des bâtiments
+        -   **Nom de la table** : Dans la liste déroulante de droite, sélectionnez Bâtiment (bc_building)
+        -   **Site web** : Cliquez sur la loupe et sélectionnez votre site web (Bellows College Visitors - [votre nom])
+        -   **Type d’accès** : International
+        -   **Privilèges** : Lecture
     
-    -   Dans le menu supérieur, sélectionnez **Enregistrer**.
+    -   Dans le menu en haut, sélectionnez **Enregistrer**.
     
-    -   Descendez jusqu’à la section **Rôles web** et sélectionnez **Ajouter un rôle web existant**.
+    -   Faites défiler jusqu’à la section **Rôles web** et **Ajouter un rôle web existant**.
     
     -   Cliquez sur la loupe, sélectionnez **Utilisateurs anonymes**, puis cliquez sur **Ajouter**.
     
-    -   Dans le menu supérieur, sélectionnez **Enregistrer & Fermer**.
+    -   Dans le menu supérieur, sélectionnez **Enregistrer et fermer**.
     
-    -   Revenez au niveau de l’onglet précédent.
+    -   Revenez à l’onglet précédent.
 
 5.  Cliquez sur **Parcourir le site web** pour afficher la page jusqu’à présent.  Notez la présence de l’option **Répertoire des bâtiments** dans le menu principal.
 
     > Vous devrez peut-être configurer votre navigateur pour autoriser les fenêtres contextuelles.
 
-## Tâche \#4 : Ajouter un composant de liste
+## <a name="task-4-add-a-list-component"></a>Tâche \#4 : Ajouter un composant de liste
 
 1.  Accédez à l’onglet précédent et passez à l’étape n° 2. S’il n’est pas disponible, procédez comme suit pour revenir à cet emplacement.
 
-    -   Connectez-vous à <https://make.powerapps.com> (peut rester constamment ouvert dans vos onglets)
+    -   Connectez-vous à <https://make.powerapps.com> (la page est peut-être encore ouverte dans vos onglets)
 
     -   Localisez l’application qui possède le **Type** **Portail**.
 
-    -   Cliquez sur les points de suspension (**...**) et choisissez **Éditer**.
+    -   Cliquez sur les points de suspension ( **...** ) et choisissez **Éditer**
     
     -   Dans la ceinture porte-outils (côté gauche), choisissez l’option **Pages**. 
 
@@ -173,7 +178,7 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
 
     -   Sélectionnez le composant de liste sur le canevas.
 
-    -   Dans le volet droit du panneau Propriétés, saisissez `Buildings List` dans le champ **Nom**.
+    -   Dans le volet droit du panneau Propriétés, saisissez « `Buildings List` » dans le champ **Nom**
 
     -   Dans le champ **Table**, sélectionnez **Bâtiment (bc_building)** dans la liste déroulante.
 
@@ -185,27 +190,27 @@ Vous suivrez le plan ci-dessous pour concevoir le portail Power Apps :
 
     > Vous devez voir la liste des Bâtiments de votre base de données Dataverse apparaître sur la page web.
 
-# Exercice \#2 : Modifier le thème du portail
+# <a name="exercise-2-change-the-portal-theme"></a>Exercice \#2 : Modifier le thème du portail
 
-**Objectif :** Dans cet exercice, vous allez créer un nouveau thème qui modifiera le modèle de couleurs de votre portail. 
+**Objectif** : Dans cet exercice, vous allez créer un nouveau thème qui modifiera le modèle de couleurs de votre portail. 
 
-## Tâche n° 1 : Appliquer et modifier un thème
+## <a name="task-1-apply-and-edit-a-theme"></a>Tâche n°1 : Appliquer et modifier un thème
 
 1.  Accédez à l’onglet précédent et passez à l’étape n° 2. S’il n’est pas disponible, procédez comme suit pour revenir à cet emplacement.
 
-    -   Connectez-vous à <https://make.powerapps.com> (peut rester constamment ouvert dans vos onglets).
+    -   Connectez-vous à <https://make.powerapps.com> (la page est peut-être encore ouverte dans vos onglets)
 
     -   Localisez l’application qui possède le **Type** **Portail**.
 
-    -   Cliquez sur les points de suspension (**...**) et choisissez **Éditer**.
+    -   Cliquez sur les points de suspension ( **...** ) et choisissez **Éditer**
     
 2.  Appliquer et personnaliser un thème de base
 
     -   Sur la ceinture porte-outils (volet gauche), sélectionnez l’icône **Thèmes**.
     
-    - Faites basculer **Activer le thème de base** sur Activé.
+    - Assurez-vous que le bouton bascule pour **Activer le thème de base** est activé.
     
-    -   Sur l’un des préréglages, cliquez sur les points de suspension (**...**) et choisissez **Personnaliser**.
+    -   Sur l’un des préréglages, cliquez sur les points de suspension ( **...** ) et choisissez **Personnaliser**
     
     -   Une copie du thème de base a été créée. 
     
@@ -219,7 +224,7 @@ La disposition de votre application doit ressembler à la structure suivante :
 
 ![Exemple de portail](media/9-portallabresult.jpg)
 
-# Défis
+# <a name="challenges"></a>Défis
 
 * Créez une vue Bâtiments différente, qui affiche uniquement le nom du bâtiment. Sélectionnez **Parcourir le site web** dans le studio Portal pour voir les modifications.
 * Sur la ceinture porte-outils, cliquez sur l’icône **Thèmes** et modifiez le CSS de votre thème personnalisé.

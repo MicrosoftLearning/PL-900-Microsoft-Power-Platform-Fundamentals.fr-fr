@@ -1,18 +1,18 @@
 ---
 lab:
-    title: 'Labo 4 : Comment créer une application pilotée par modèle'
-    module: 'Module 3 : Premiers pas avec Power Apps'
+  title: 'Labo 4 : Comment créer une application pilotée par modèle'
+  module: 'Module 3: Get started with Power Apps'
+ms.openlocfilehash: e0fcc3a12bb54b7fca08e41599d999b3e38eee23
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898981"
 ---
+# <a name="module-3-get-started-with-power-apps"></a>Module 3 : Bien démarrer avec Power Apps
+## <a name="lab-3-how-to-build-a-model-driven-app"></a>Labo 3 : Comment créer une application pilotée par modèle
 
-# Module 3 : Premiers pas avec Power Apps
-## Labo 3 : Comment créer une application pilotée par modèle
-
-### Avis important (en vigueur depuis novembre 2020) :
-Common Data Service a été renommé en Microsoft Dataverse. Une partie de la terminologie de Microsoft Dataverse a été mise à jour. Par exemple, l’entité (désormais **table**), le champ (désormais **colonne**) et l’enregistrement (désormais **ligne**) sont susceptibles d’être obsolètes. Veuillez garder ce changement à l’esprit lorsque vous effectuez les labos. Nous prévoyons que notre contenu soit très prochainement à jour dans son intégralité.
-
-Pour plus d’informations et pour une liste complète des termes concernés, veuillez consulter [Présentation de Microsoft Dataverse](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates).
-
-# Scénario
+# <a name="scenario"></a>Scénario
 
 Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus. 
 
@@ -22,7 +22,7 @@ Tout au long de ce cours, vous créerez des applications et effectuerez une auto
 
 Dans ce labo, vous allez créer une application Power Apps pilotée par modèle pour permettre au personnel de bureau du campus de gérer les enregistrements de visites sur l’ensemble du campus.
 
-# Étapes de labo de haut niveau
+# <a name="high-level-lab-steps"></a>Étapes de labo de haut niveau
 
 Dans le cadre de la création de l’application basée sur un modèle, vous effectuerez les opérations suivantes :
 
@@ -40,12 +40,12 @@ Nous travaillerons avec les composants suivants :
 
 Les deux seront intégrés à l’application basée sur un modèle, pour une meilleure expérience utilisateur.
 
-## Prérequis
+## <a name="prerequisites"></a>Prérequis
 
-* Achèvement du **Module 0 - Labo 0 : Valider l’environnement de labo**
-* Achèvement du **Module 2 - Labo 1 : Présentation de Microsoft Dataverse**
+* Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
+* Participation au **Module 2 - Labo 1 : Présentation de Microsoft Dataverse**
 
-## Éléments à considérer avant de commencer
+## <a name="things-to-consider-before-you-begin"></a>Éléments à considérer avant de commencer
 
 -   Quels changements devons-nous apporter pour améliorer l’expérience utilisateur ?
 
@@ -54,13 +54,13 @@ Les deux seront intégrés à l’application basée sur un modèle, pour une me
 -   Quelles personnalisations peuvent être effectuées sur le plan du site d’une application pilotée par modèle ?
 
 
-# Exercice \#1 : Personnaliser les vues et les formulaires
+# <a name="exercise-1-customize-views-and-forms"></a>Exercice \#1 : Personnaliser les vues et les formulaires
 
-**Objectif :** Au cours de cet exercice, vous apprendrez à personnaliser les vues et les formulaires des tables personnalisées qui seront utilisées dans l’application pilotée par modèle.
+**Objectif** : Au cours de cet exercice, vous apprendrez à personnaliser les vues et les formulaires des tables personnalisées qui seront utilisées dans l’application pilotée par modèle.
 
-## Tâche \#1 : Modifier le formulaire de visite
+## <a name="task-1-edit-visit-form"></a>Tâche \#1 : Modifier le formulaire de visite
 
-1.  Connectez-vous à <https://make.powerapps.com> si ce n’est pas encore fait.
+1.  Connectez-vous à <https://make.powerapps.com> si vous n’êtes pas encore connecté.
 
 2.  Sélectionnez votre **environnement**.
 
@@ -70,13 +70,13 @@ Les deux seront intégrés à l’application basée sur un modèle, pour une me
 
 5.  Cliquez pour ouvrir l’entité **Visite**.
 
-6.  Cliquez sur l’onglet **Formulaires** et sélectionnez le type de formulaire **Principal**. 
+6.  Sélectionnez l’onglet **Formulaires** et sélectionnez le type de formulaire **Principal**, puis cliquez sur **Modifier le formulaire**.
 
     > Par défaut, le formulaire comporte deux champs : Nom (champ principal) et Propriétaire.
     
 7.  Sélectionnez **+ Champ de formulaire** et ajoutez les champs suivants sous le champ **Propriétaire** en faisant glisser les colonnes dans le formulaire ou simplement en cliquant sur les noms des colonnes appropriées :
 
-    * **Bâtiment**
+    * **Immeuble**
     * **Visiteur**
     * **Début prévu**
     * **Fin prévue**
@@ -95,10 +95,9 @@ Les deux seront intégrés à l’application basée sur un modèle, pour une me
 
 12.  Cliquez sur **Publier** en haut à droite et attendez la fin de la publication.
 
-13.  Cliquez sur **Retour** en haut à gauche de l’écran. Vous devriez maintenant revenir au niveau
-     de l’onglet Formulaires de l’entité Visite.
+13.  Si la vue d’édition s’est ouverte dans un nouvel onglet, fermez cet onglet. Sinon, cliquez sur **Retour** en haut à gauche de l’écran. Vous devez maintenant revenir à l’onglet formulaires d’entité de visite.
 
-## Tâche \#2 : Modifier les vues de visite
+## <a name="task-2-edit-visit-views"></a>Tâche \#2 : Modifier les vues de visite
 
 Dans cette tâche, nous allons modifier la vue des visites actives par défaut et créer une nouvelle vue pour les visites du jour.
 
@@ -108,7 +107,7 @@ Dans cette tâche, nous allons modifier la vue des visites actives par défaut e
 
     *  **Code**
     *  **Visiteur**
-    *  **Bâtiment**
+    *  **Immeuble**
     *  **Début prévu** 
     *  **Fin prévue**
     
@@ -138,7 +137,7 @@ Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les vi
 
 14.  Ajoutez les champs **Début réel** et **Fin réelle** à la vue. 
 
-> **Remarque :** Étant donné que nous ne filtrons plus l’état de la vue, nous verrons toutes les visites d’aujourd’hui, y compris les visites terminées. Ces champs permettront de différencier les visites terminées et les visites en cours.
+    > **Remarque :** Étant donné que nous ne filtrons plus l’état de la vue, nous verrons toutes les visites d’aujourd’hui, y compris les visites terminées. Ces champs permettront de différencier les visites terminées et les visites en cours.
 
 15.  Cliquez sur la **flèche déroulante** affichée en regard du bouton Enregistrer (attention à ne pas appuyer sur le bouton lui-même) et sélectionnez **Enregistrer sous**.
 
@@ -146,13 +145,13 @@ Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les vi
 
 17.  Cliquez sur **Publier** et attendez la fin de la publication.
 
-# Exercice \#2 : Créer une application pilotée par modèle
+# <a name="exercise-2-create-model-driven-application"></a>Exercice \#2 : Créer une application pilotée par modèle
 
-**Objectif :** Au cours de cet exercice, vous allez créer l’application pilotée par modèle, personnaliser le plan du site et tester l’application.
+**Objectif** : Au cours de cet exercice, vous allez créer l’application pilotée par modèle, personnaliser le plan du site et tester l’application.
 
 > Vous verrez plusieurs champs non traités lors de la création de votre application, en particulier sur les étapes du plan du site. Nous avons pris quelques raccourcis dans le cadre de la réalisation des labos. Dans une implémentation réelle, vous donneriez à ces éléments des noms logiques.
 
-## Tâche \#1 : Créer une application
+## <a name="task-1-create-application"></a>Tâche \#1 : Créer une application
 
 1.  Ouvrez votre solution Gestion du campus si vous n’y êtes pas déjà.
 
@@ -162,7 +161,9 @@ Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les vi
     
 2.  Créer une application pilotée par modèle
 
-    -   Cliquez sur **Nouveau** et sélectionnez **App**, puis **Application pilotée par modèle**. Cela va ouvrir un nouvel onglet.
+    -   Cliquez sur **Nouveau** et sélectionnez **App**, puis **Application pilotée par modèle**.
+    
+    -   Dans l’écran vide l’application basée sur des modèles, cliquez sur **Créer**.
     
     -   Saisissez **[Votre nom de famille] Gestion du campus** dans la zone Nom.
 
@@ -190,8 +191,7 @@ Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les vi
 
     -   Sélectionnez **Nouvelle sous-zone**.
 
-    -   Accédez au volet **Propriétés** et sélectionnez **Entité** dans la liste déroulante
-        comme **Type**.
+    -   Accédez au volet **Propriétés** et sélectionnez **Entité** dans la liste déroulante **Type**.
 
     -   Recherchez la table **Contact** dans la liste déroulante, pour la zone **Entité**.
     
@@ -203,18 +203,17 @@ Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les vi
 
     -   Allez dans le volet **Propriétés**.
 
-    -   Sélectionnez **Entité** dans la liste déroulante pour **Type** et recherchez
-        la table **Visite** dans la liste déroulante pour **Entité**.
+    -   Sélectionnez **Entité** dans la liste déroulante pour **Type** et recherchez la table **Visit** dans la liste déroulante **Entité**.
     
 7.  Ajoutez la table Bâtiment au plan du site.
 
     -   Sélectionnez la zone **Campus** et cliquez sur **Ajouter**.
     
-    -   Sélectionnez **Grouper**.
+    -   Sélectionnez **Groupe**.
     
     -   Saisissez **Réglages** pour **Titre** dans le volet **Propriétés**.
     
-    -   Maintenez le groupe **paramètres** sélectionné et cliquez sur **Ajouter**.
+    -   Tout en gardant le groupe **Paramètres** sélectionné, cliquez sur **Ajouter**.
     
     -   Sélectionnez **Sous-zone**.
     
@@ -234,21 +233,21 @@ Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les vi
 
 12.  Cliquez sur **Valider** pour valider les modifications effectuées dans l’application. 
 
->  Quelques avertissements s’afficheront, mais nous pouvons les ignorer, car nous n’avons pas référencé une vue et un formulaire spécifiques pour les entités. Les utilisateurs auront accès à toutes les vues et formulaires pour les entités **Visite** et **Bâtiment**.
+    >  Quelques avertissements s’afficheront, mais nous pouvons les ignorer, car nous n’avons pas référencé une vue et un formulaire spécifiques pour les entités. Les utilisateurs auront accès à toutes les vues et formulaires pour les entités **Visite** et **Bâtiment**.
      
 13. Cliquez sur **Publier**.
 
 14.  Cliquez sur **Enregistrer et fermer** pour fermer le concepteur d’application.
 
-15.  Cliquez sur **Terminé**.
+15.  Cliquez sur **Done**.
 
 16.  Sélectionnez **Solutions**, puis cliquez sur **Publier toutes les personnalisations**.
 
 17.  Sélectionnez **Applications**. Votre application devrait maintenant être répertoriée.
 
-## Tâche \#2 : Application de test
+## <a name="task-2-test-application"></a>Tâche \#2 : Application de test
 
-1.  Démarrer l’application
+1.  Lancer l’application
 
     -   Sélectionnez **Apps** et cliquez sur votre application **Gestion du campus**. (Si vous ne voyez pas votre application au début, vous devrez peut-être actualiser votre navigateur.)
 
@@ -274,10 +273,9 @@ Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les vi
 
     -   Cliquez sur **Nouveau**.
 
-    -   Saisissez `Microsoft Building` dans le champ **Nom**.
+    -   Entrez `Microsoft Building` en tant que **Nom**
         
-    -   Cliquez sur **Enregistrer et fermer**. Le nouvel enregistrement créé s’affichera au sein de
-        la vue Bâtiments actifs.
+    -   Cliquez sur **Enregistrer et fermer**. Cette opération affiche l’enregistrement qui vient d’être créé dans la vue des bâtiments actifs.
     
 4.  Créer une nouvelle visite
 
@@ -287,14 +285,13 @@ Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les vi
     
     -   Si nécessaire, remplissez les champs. 
     
-        -   **Nom** : `New test visit`
-        -   **Bâtiment** : sélectionnez Microsoft Building.
+        -   **Nom** : `New test visit`
+        -   **Bâtiment** : Alpine Ski House
         -   **Visiteur** : sélectionnez John Doe.
         -   **Début planifié** : sélectionnez la date de demain et 14 h 00 comme heure de début.
         -   **Fin planifiée** : sélectionnez la date de demain et 15 h 30 comme heure de fin.
         
-    -   Cliquez sur **Enregistrer et fermer**. La visite sera alors créée. Vous devez pouvoir la voir dans la
-        Vue Visites actives.
+    -   Cliquez sur **Enregistrer et fermer**. La visite sera alors créée. Vous devez pouvoir la voir dans la vue Visites actives.
         
     -   Changez la vue en **Visites du jour**. Vous ne devriez plus voir la nouvelle visite dans la vue, car elle est prévue pour demain.
     
@@ -304,7 +301,7 @@ Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les vi
 
 ![Exemple d’application pilotée par modèle](media/3-model-app.png)
 
-# Défis
+# <a name="challenges"></a>Défis
 
 * Sélectionner des vues et des formulaires spécifiques pour les visites et les bâtiments
 * Le personnel de sécurité travaille généralement dans un seul bâtiment. Comment leur fourniriez-vous un moyen simple d’afficher les visites uniquement pour un bâtiment sélectionné ?

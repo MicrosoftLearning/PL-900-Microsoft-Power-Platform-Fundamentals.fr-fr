@@ -1,13 +1,18 @@
 ---
 lab:
-    title: 'Labo : Valider l’environnement de labo'
-    module: 'Module 0 : Présentation du cours'
+  title: 'Labo : Valider l’environnement de labo'
+  module: 'Module 0: Course introduction'
+ms.openlocfilehash: f98bf8aee0be31934acee15f3b5668d3e6e6108a
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898832"
 ---
-
-Module 0 : Présentation du cours
+<a name="module-0-course-introduction"></a>Module 0 : Présentation du cours
 =================================
 
-Scénario
+<a name="scenario"></a>Scénario
 --------
 
 Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
@@ -18,13 +23,13 @@ Tout au long de ce cours, vous créerez des applications et effectuerez une auto
 
 Dans ce labo du module 0, vous allez acquérir un locataire d’essai Power Platform et accéder au centre d’administration Power Platform. Dans le Centre d’administration, vous allez créer votre environnement **Exercices pratiques**, dans lequel vous effectuerez la majorité de votre travail de labo.
 
-## Exercice n° 1 - Configuration
+## <a name="exercise-1--setup"></a>Exercice n° 1 - Configuration
 
-### Tâche 1  : Acquérir un locataire d’essai Power Platform
+### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>Tâche n° 1 - Acquérir votre locataire d’essai Microsoft Power Platform
 
 1. Copiez vos **informations d’identification Microsoft 365** à partir de l’hébergeur de labo autorisé.
 
-2. Accédez à <https://powerapps.microsoft.com> et cliquez sur **Démarrer gratuitement**.
+2. Accédez à <https://powerapps.microsoft.com>, puis cliquez sur **Démarrer gratuitement.**
 
 3. En dessous de **Démarrer**, saisissez l’adresse e-mail de vos informations d’identification Microsoft 365 dans la zone de texte qui indique **Entrez votre adresse e-mail professionnelle**.
 
@@ -34,15 +39,15 @@ Dans ce labo du module 0, vous allez acquérir un locataire d’essai Power Pla
 
 6. Sélectionnez **Oui** pour rester connecté.
 
-7. Renseignez les informations de votre compte et sélectionnez **Démarrer** pour vous connecter à votre locataire d’essai Power Platform.  
+7. Renseignez les informations de votre compte, puis sélectionnez **Démarrer** pour vous inscrire à votre version d’évaluation de Microsoft Power Platform.  
 
-### Tâche \#2 : Créer un environnement
+### <a name="task-2--create-environment"></a>Tâche \#2 : Créer un environnement
 
-1. Accédez à <https://admin.powerplatform.microsoft.com> et connectez-vous avec vos informations d’identification Microsoft 365 si vous y êtes à nouveau invité.
+1. Accédez à <https://admin.powerplatform.microsoft.com> et connectez-vous avec vos informations d’identification Microsoft 365 si vous y êtes invité.
 
 2. Sélectionnez **Environnements** et cliquez sur **+Nouveau**.
 
-    - Pour le **Nom**, saisissez **Exercice pratique [Mes initiales]**. (Exemple : Exercice pratique AJ)
+    - Pour le **Nom**, saisissez **Exercice pratique [Mes initiales]** . (Exemple : Exercice pratique AJ)
     
     - Pour le **Type**, sélectionnez **Essai** (ne sélectionnez pas l’option d’essai (basée sur un abonnement)).
     
@@ -56,11 +61,11 @@ Dans ce labo du module 0, vous allez acquérir un locataire d’essai Power Pla
 
     > L’approvisionnement de votre environnement peut prendre quelques minutes. Actualisez la page si nécessaire.
 
-# Exercice \#2 : Configurer un portail Power Apps
+# <a name="exercise-2-provision-a-power-apps-portal"></a>Exercice \#2 : Configurer un portail Power Apps
 
-**Objectif :** L’approvisionnement d’un portail Power Apps peut prendre un certain temps. Au cours de cet exercice, vous apprendrez à créer votre portail Power Apps dans votre environnement afin que le processus d’approvisionnement puisse être lancé. Vous utiliserez ce portail dans un labo ultérieur.
+**Objectif** : L’approvisionnement d’un portail Power Apps peut prendre un certain temps. Au cours de cet exercice, vous apprendrez à créer votre portail Power Apps dans votre environnement afin que le processus d’approvisionnement puisse être lancé. Vous utiliserez ce portail dans un labo ultérieur.
 
-## Tâche \#1 : Créer un portail Power Apps
+## <a name="task-1-create-power-apps-portal"></a>Tâche \#1 : Créer un portail Power Apps
 
 1.  Connectez-vous à <https://make.powerapps.com>.
 
@@ -72,12 +77,12 @@ Dans ce labo du module 0, vous allez acquérir un locataire d’essai Power Pla
 
 4.  Fournissez de nouveaux détails sur le portail
 
-    -   Saisissez **```Visiteurs du Bellows College```** comme **Nom** de portail.
+    -   Entrez **```Bellows College Visitors```** comme **Nom** de portail
 
     -   Fournissez une URL unique : **exemple**.powerappsportals.com (si le nom est déjà pris, choisissez-en un autre).
 
     -   Sélectionnez un **Langage** pour le portail de base.
 
-    -   Cliquez sur **Créer**.
+    -   Cliquez sur **Créer**
 
     > Le processus d’approvisionnement du portail durera de 30 à 45 minutes. Vous n’avez pas à attendre, le processus se poursuit lors du passage au module suivant.
