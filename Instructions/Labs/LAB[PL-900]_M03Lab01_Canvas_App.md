@@ -1,16 +1,16 @@
 ---
 lab:
-  title: 'Labo 3 : Comment créer une application canevas'
+  title: 'Labo 2 : Comment créer une application canevas'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: 0ac0874e80deb74b8a4cf0c8075adf6c9b14e375
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: 24d99d14079d40f74a43ed0de64dd6ae5d7046c7
+ms.sourcegitcommit: 0118c25a230425d0ccba16e6c3922053ee07c183
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424763"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "144810918"
 ---
 # <a name="module-3-get-started-with-power-apps"></a>Module 3 : Bien démarrer avec Power Apps
-## <a name="lab-1-how-to-build-a-canvas-app"></a>Labo 1 : Comment créer une application canevas
+## <a name="lab-how-to-build-a-canvas-app"></a>Labo : Comment créer une application canevas
 
 # <a name="scenario"></a>Scénario
 
@@ -46,18 +46,18 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
 2.  Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
 
-3.  Si nécessaire, cliquez sur l’icône **Accueil** à droite de l’écran. Sous la section **Démarrer à partir de**, sélectionnez **Dataverse**.
+3.  Si nécessaire, cliquez sur l’icône **Accueil** à gauche de l’écran. Sous la section **Démarrer à partir de**, sélectionnez **Dataverse**.
 
 4.  Sélectionnez votre connexion Dataverse. 
 
->   **REMARQUE :** *Si une connexion Dataverse n’existe pas :*
->   -   Sélectionnez **Nouvelle connexion**.
->   -   Localisez **Microsoft Dataverse**.
->   -   Cliquez sur **Créer**
+    >   **REMARQUE :** *Si une connexion Dataverse n’existe pas :*
+    >   -   Sélectionnez **Nouvelle connexion**.
+    >   -   Localisez **Microsoft Dataverse**.
+    >   -   Cliquez sur **Créer**
 
 5.  Recherchez et sélectionnez la table **Visites** que vous avez créée dans le labo précédent.
 
-6.  Sélectionnez le bouton **Connexion**.
+6.  Cliquez sur le bouton **Connecter** en bas à droite.
 
 7.  Une fois votre application créée, dans l’écran Bienvenue de Power Apps Studio, cochez la case **Ne plus afficher ce message**, puis sélectionnez **Ignorer**.
 
@@ -65,56 +65,68 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
 ![Application canevas créée à partir des données Visite.](media/2-canvas-app-from-data.png)
 
+9. Dans le Concepteur d’application, sélectionnez le bouton de **prévisualisation de l’application** (icône Lecture) dans la barre de commandes. *(Vous pouvez également appuyer sur la touche F5 de votre clavier pour prévisualiser l’application.)* Parcourez l’application pour constater qu’elle est application est prête à l'emploi.
+
+10. Fermez l’aperçu de l’application en sélectionnant le **X** en haut à droite de l’écran.
+
 Félicitations, vous avez créé une application Power Apps à partir d’une table Dataverse. L’étape suivante du processus consiste à personnaliser l’application pour refléter la stratégie de marque de votre établissement. La série suivante d’étapes vous guidera tout au long des tâches nécessaires pour personnaliser davantage l’application.
 
 ## <a name="task-2-modify-and-theme-the-newly-created-app"></a>Tâche \#2 : Modifier l’application nouvellement créée et lui appliquer un thème
 
-1.  Sélectionnez le nom de l’application, **Visites**.
+Dans cette tâche, vous allez personnaliser le texte d’en-tête de chacun des trois écrans de votre application (Parcourir, Détails et Modifier) et modifier le thème de l’application.
+
+1.  Vous êtes sur l’écran Parcourir. Sélectionnez l’étiquette **Visites** à l’écran.
 
 3.  À droite de l’écran, sous l’onglet Propriétés, remplacez la propriété du contrôle  **Texte** par « **Visites de Bellows College** ».
 
 4. Dans les propriétés, définissez la **Taille de police** sur **24**.
 
-4.  Dans le volet de navigation de gauche, sélectionnez **DetailsScreen1**.
+4.  Cliquez sur l’arrière-plan vide pour afficher le texte mis à jour sur votre écran Parcourir.
 
-5.  Sélectionnez le titre **Visites**.
+5.  Dans le volet de navigation de gauche, sélectionnez **DetailScreen1**.
+
+5.  Sélectionnez l’étiquette **Visites** à l’écran.
 
 6.  À droite de l’écran, sous l’onglet Propriétés, remplacez la propriété du contrôle  **Texte** par « **Détails de la visite** ».
 
-7.  Dans le volet de navigation de gauche, sélectionnez **EditScreen1**.
+7.  Cliquez sur l’arrière-plan vide pour afficher le texte mis à jour sur votre écran Détails.
 
-8.  Sélectionnez le titre **Visites**.
+8.  En utilisant les options de navigation sur la gauche, sélectionnez **EditScreen1** (vous devrez peut-être faire défiler l'écran pour voir cette option dans l’arborescence).
 
-9.  À droite de l’écran, sous l’onglet Propriétés, remplacez le texte Table1 dans la propriété du contrôle  **Texte** par « **Modifier les détails** ».
+9.  Sélectionnez l’étiquette **Visites** à l’écran.
 
-10. Dans le volet de navigation de gauche, sélectionnez **BrowseScreen1**.
+10.  À droite de l’écran, sous l’onglet Propriétés, remplacez le texte Table1 dans la propriété du contrôle  **Texte** par « **Modifier les détails** ».
 
-11. Dans la barre d’outils de commande, sélectionnez le bouton **Thème** et, dans la liste qui s’affiche, sélectionnez la couleur de thème **Rouge**.
+11.  Cliquez sur l’arrière-plan vide pour afficher le texte mis à jour sur votre écran Modifier.
+
+12. Dans le volet de navigation de gauche, sélectionnez **BrowseScreen1**.
+
+13. Dans la barre d’outils de commande, sélectionnez le bouton **Thème** et, dans la liste qui s’affiche, sélectionnez la couleur de thème **Rouge**.
 
 ## <a name="task-3-test-your-visits-app"></a>Tâche \#3 : Tester l’application Visites
 
-Dans cette tâche, vous allez configurer un formulaire pour modifier les informations sur les visites individuelles.
+Dans cette tâche, vous allez tester votre nouvelle application.
 
 1.  Ouvrez votre application dans le Concepteur d’application, sélectionnez **Fichier**, remplacez le nom de votre application par **Application Visites**, puis sélectionnez **Enregistrer**.
 
-2.  Une fois l’application enregistrée, utilisez la flèche **Précédent** pour revenir à votre application.
+2.  Cliquez sur la flèche **retour** pour revenir à votre application.
 
-3.  Dans le Concepteur d’application, sélectionnez le bouton de **prévisualisation de l’application** (icône Lecture) dans la barre de commandes. *(Vous pouvez également appuyer sur la touche F5 de votre clavier pour prévisualiser l’application.)*
+3.  Dans le volet de navigation de gauche, sélectionnez **BrowseScreen1**.
+
+4.  Dans le Concepteur d’application, sélectionnez le bouton de **prévisualisation de l’application** (icône Lecture) dans la barre de commandes. *(Vous pouvez également appuyer sur la touche F5 de votre clavier pour prévisualiser l’application.)*
 
 4.  Une fois l’application ouverte, dans le champ **Éléments de recherche**, entrez le texte **Maria**
      *(Notez la façon dont les éléments de la galerie sont filtrés en fonction de ce que vous tapez dans le champ de recherche.)*
 
-5.  Quand l’enregistrement **Contoso Suites** pour **Maria Campbell** s’affiche, cliquez sur la **flèche droite** de l’enregistrement pour accéder à l’écran **Détails de la visite**. (**Remarque** : *Si plusieurs enregistrements Contoso Suites pour Maria Campbell sont affichés, sélectionnez-en un.* )
+5.  Une fois l’enregistrement **Contoso Suites** pour **Maria Campbell** affiché, cliquez sur la ligne pour accéder aux détails de cette visite. (**Remarque** : *Si plusieurs enregistrements Contoso Suites pour Maria Campbell sont affichés, sélectionnez-en un.* )
 
 6.  Pour modifier l’enregistrement, sélectionnez l’**icône crayon** dans le coin supérieur droit de l’application.
 
-7.  En haut de l’écran, cliquez sur l’icône **X** pour revenir à l’écran **Détails de la propriété**.
+7.  Vous pouvez modifier ici le nom de la visite et cliquer sur l'icône en forme de coche en haut à droite pour enregistrer la modification.
 
-8.  Cliquez sur la **flèche gauche** pour revenir à l’écran Parcourir.
+8.  En haut à droite de l’écran, cliquez sur l’icône **X** pour revenir à l’éditeur de l’application canevas.
 
-9. Sélectionnez **Fichier**, puis **Enregistrer**.
-
-10. Sélectionnez **Publier**.
+Félicitations ! Vous avez créé et configuré votre première application canevas.
 
 # <a name="challenges"></a>Défis
 

@@ -1,13 +1,13 @@
 ---
 lab:
-  title: 'Labo 7 : Comment créer un tableau de bord simple'
+  title: 'Labo 5 : Comment créer un tableau de bord simple'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: b707cbf6b60af3b6d6a166565ccdeaeec844cb4a
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: 8d104c42de9d4114c668a63a4d8d30cbbcc4b39e
+ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424652"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "144812932"
 ---
 # <a name="module-5-get-started-with-power-bi"></a>Module 5 : démarrage de Power BI
 ## <a name="lab-how-to-build-a-simple-dashboard"></a>Labo : Comment créer un tableau de bord simple
@@ -58,7 +58,7 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer un tableau de
 
 ## <a name="task-1-prepare-power-bi-service"></a>Tâche \#1 : Préparer le service Power BI
 
-1.  Téléchargez [visites.pbix](../../Allfiles/visits.pbix) et enregistrez sur votre ordinateur.
+1.  Téléchargez [visites.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) et enregistrez sur votre ordinateur.
 
 2.  Accédez à <https://app.powerbi.com/> et connectez-vous si nécessaire.
 
@@ -80,7 +80,7 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
 1.  Appuyez sur l’icône **Graphique en secteurs** dans le panneau **Visualisations** pour insérer un graphique.
 
-2.  Appuyez sur la flèche déroulante en regard de **bc_Building** dans le volet Champs. Faites glisser le champ **Bâtiment** et déposez-le dans la zone **Légende**.
+2.  Appuyez sur la flèche déroulante en regard de **bc_name** dans le volet Champs. Faites glisser le champ **Bâtiment** et déposez-le dans la zone **Légende**.
 
 3.  Appuyez sur la flèche déroulante en regard de **bc_Visit** dans le volet Champs. Faites glisser le champ **Visite** et déposez-le dans la zone **Valeurs**.
 
@@ -98,9 +98,9 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
 10. Testez l’interactivité du rapport :
 
-    1.  Sélectionnez différents secteurs sur le graphique en secteurs et observez les changements sur le rapport de temps.
+    1.  Cliquez sur différents secteurs sur le graphique en secteurs et observez les changements sur le rapport de temps.
 
-    2.  Cliquez sur l’histogramme. Appuyez sur la flèche vers le bas pour activer le mode **Descendre dans la hiérarchie**, puis cliquez sur une colonne pour descendre au niveau suivant (jours). 
+    2.  Cliquez sur l’histogramme. Appuyez sur la flèche vers le bas pour activer le mode **Descendre dans la hiérarchie** (ou cliquez avec le bouton droit de la souris sur le graphique et sélectionnez **Descendre dans la hiérarchie**), puis cliquez sur une colonne pour descendre au niveau suivant (jours). 
     
     3.  Explorez en remontant ou en descendant d’un niveau et sélectionnez diverses barres sur l’histogramme du temps pour observer les changements sur le graphique en secteurs.
 
