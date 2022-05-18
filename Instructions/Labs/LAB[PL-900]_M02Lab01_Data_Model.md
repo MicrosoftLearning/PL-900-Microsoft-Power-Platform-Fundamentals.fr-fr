@@ -2,12 +2,12 @@
 lab:
   title: 'Labo 1 : Modélisation de données'
   module: 'Module 2: Introduction to Microsoft Dataverse'
-ms.openlocfilehash: 9e26f2eb6b2e6003510c25b5f66e4f43b30a0640
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: c3ea362eebf9156f069a9ab8635859e6186c1626
+ms.sourcegitcommit: 0118c25a230425d0ccba16e6c3922053ee07c183
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424688"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "144810906"
 ---
 # <a name="module-2-introduction-to-microsoft-dataverse"></a>Module 2 : introduction à Microsoft Dataverse
 
@@ -21,7 +21,7 @@ Tout au long de ce cours, vous créerez des applications et effectuerez une auto
 
 Dans ce labo, vous accéderez à votre environnement et créerez une base de données Microsoft Dataverse ainsi qu’une solution pour effectuer le suivi de vos modifications. Vous allez également créer un modèle de données pour prendre en charge les exigences suivantes :
 
--   R1 - Suivre les emplacements (bâtiments) des visites du campus
+-   R1 – Suivre les informations pour les visites planifiées sur le campus
 
 -   R2 - Enregistrer des informations de base pour identifier et suivre les visiteurs
 
@@ -35,7 +35,7 @@ Pour préparer vos environnements d’apprentissage, vous devez :
 
 * Créer une solution et un éditeur
 * Ajouter les composants, nouveaux et existants, nécessaires pour répondre aux exigences de l’application Vous référer au [document de modèle de données](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) pour la description des métadonnées (tables et relations) Vous pouvez maintenir appuyée la touche CTRL et cliquer ou faire un clic droit sur le lien pour ouvrir le document de modèle de données dans une nouvelle fenêtre.
-* Créer des tables Bâtiment et Visite
+* créer une table Visite
 * Importer les données de Visite avec une feuille de calcul Excel
 
 ## <a name="prerequisites"></a>Prérequis :
@@ -48,11 +48,11 @@ Pour préparer vos environnements d’apprentissage, vous devez :
 
 # <a name="exercise-1-create-new-table"></a>Exercice \#1 : Créer une table
 
-**Objectif** : Dans cet exercice, vous allez créer une table Visites personnalisée. 
+**Objectif** : Dans cet exercice, vous allez créer une table personnalisée pour Visites. 
 
 ## <a name="task--1-create-visit-table-and-columns"></a>Tâche \#1 : Créer des tables et des colonnes Visite
 
-La table **Visite** contient des informations sur les visites du campus, y compris le bâtiment, le visiteur, l’heure prévue et l’heure réelle de chaque visite.
+La table **Visite** contient des informations sur les visites du campus, y compris le visiteur, les heures prévues et les heures réelles de chaque visite.
 
 Nous aimerions attribuer à chaque visite un numéro unique qui peut être facilement saisi et interprété par un visiteur lorsque cela lui est demandé pendant le processus d’enregistrement de la visite.
 
@@ -158,9 +158,13 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
     4.  Sélectionnez **Contact** comme **Table associée**.
 
-    5.  Cliquez sur **Done**.
+    5.  Développez la section **Options avancées**.
+    
+    6.  Entrez **visitor_id** dans **nom de la relation**.
+    
+    7.  Cliquez sur **Done**.
 
-13. Cliquez sur **Enregistrer la table**.
+13. Cliquez sur **Enregistrer la table** en bas à droite.
 
 # <a name="exercise-2-import-data"></a>Exercice \#2 : Importer des données
 
@@ -168,29 +172,28 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 ## <a name="task-1-import-the-visitsxls-file"></a>Tâche \#1 : Importez le fichier Visits.xls.
 
-Dans cette tâche, vous importerez une solution contenant le flux Power Automate requis pour terminer l’importation des données.
+Dans cette tâche, vous allez importer des données Visite à partir d’un fichier Excel. 
 
-1.  Le fichier **Visits.xls** doit être stocké sur votre bureau. Si ce n’est pas le cas, téléchargez [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/majorupdate_april2022/Allfiles/Visits.xlsx).
+1.  Le fichier **Visits.xls** doit être stocké sur votre bureau. Si ce n’est pas le cas, téléchargez [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
 2.  Connectez-vous à <https://make.powerapps.com> si ce n’est déjà fait.
 
 3.  Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
 
 4.  Dans le volet de navigation de gauche, développez **Dataverse**, puis sélectionnez Tables.
+    >   Ces éléments peuvent apparaître sous forme de données et de tables sur votre écran. 
 
 5.  Recherchez et ouvrez la table **Visite** que vous avez créée dans l’exercice précédent.
 
 6.  Dans le menu en haut, sélectionnez la flèche déroulante en regard de **Données**, sélectionnez la flèche en regard de **Obtenir des données**, puis sélectionnez **Obtenir des données à partir d’Excel**.
 
-7.  Dans le menu qui s’affiche, sélectionnez **Obtenir des données**, puis **Obtenir des données à partir d’Excel**.
+7.  Dans le menu qui s’affiche, sélectionnez le bouton **Charger**.
 
-8.  Dans le menu qui s’affiche, sélectionnez le bouton **Charger**.
+8.  Recherchez et sélectionnez le fichier **Visits.xls** que vous avez téléchargé précédemment. *(Notez que le chargement du fichier peut prendre une minute ou deux. Ne vous inquiétez pas si vous recevez un message indiquant des erreurs de mappage. Nous les corrigerons juste après ceci.)*
 
-9.  Recherchez et sélectionnez le fichier **Visits.xls** que vous avez téléchargé précédemment. *(Notez que le chargement du fichier peut prendre une minute ou deux. Ne vous inquiétez pas si vous recevez un message indiquant des erreurs de mappage. Nous les corrigerons juste après ceci.)*
+9. Sélectionnez **Mapper des colonnes**.
 
-10. Sélectionnez **Mapper des colonnes**.
-
-11. Mappez les colonnes comme indiqué ci-dessous :
+10. Mappez les colonnes comme indiqué ci-dessous :
 
     | Colonnes de la base de données Visite | Valeurs sources   |
     |------------------|-----------------|
@@ -201,11 +204,13 @@ Dans cette tâche, vous importerez une solution contenant le flux Power Automate
     | Fin prévue    | Fin planifiée   |
     | Scheduled Start  | Début planifié |
 
-12. Laissez tous les autres champs sur **Non défini**.
+11. Laissez tous les autres champs sur **Non défini**.
 
-13. Dans le coin supérieur droit de l’écran, sélectionnez **Enregistrer les modifications**.
+12. Dans le coin supérieur droit de l’écran, sélectionnez **Enregistrer les modifications**.
 
-14. Dans l’écran **Importer des données**, vérifiez que l’état du mappage indique « Le mappage a réussi », puis sélectionnez le bouton **Importer**.
+13. Dans l’écran **Importer des données**, vérifiez que l’état du mappage indique « Le mappage a réussi ».
+
+14. Sélectionnez **Importer** en haut à droite pour terminer l’importation de données.
 
 **Remarque :** *L’importation de vos données dans votre table peut prendre plusieurs minutes. Ne vous inquiétez pas si vous recevez des erreurs ; c’est normal et cela n’aura aucun impact sur le reste du cours.*
 
@@ -213,8 +218,10 @@ Dans cette tâche, vous importerez une solution contenant le flux Power Automate
 
 1.  Une fois vos données importées, utilisez le volet de navigation à gauche de l’écran pour resélectionner la table **Visite**.
 
-2.  Sélectionnez l’onglet Données en haut de l’écran.
+2.  Notez que la table Visite comporte de nombreux onglets. Ceux-ci incluent Cikynns, Relations, Règles d’entreprise, Vues, etc. 
 
-3.  Vérifiez que votre table contient des enregistrements.
+3.  Sélectionnez l’onglet **Données** pour la table Visit. Cet onglet se trouve sous **Tables** \> **Visite**.
 
-Félicitations, vous avez créé des tables et importé des données.
+3.  Vérifiez que votre table contient des enregistrements. Vous pouvez modifier l’affichage en sélectionnant le nom de la vue en haut à droite, puis en le remplaçant par **Toutes les colonnes**. 
+
+Félicitations, vous avez créé une table et importé des données.
