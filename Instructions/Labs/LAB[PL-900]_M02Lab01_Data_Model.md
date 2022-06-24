@@ -2,12 +2,12 @@
 lab:
   title: 'Labo 1 : Modélisation de données'
   module: 'Module 2: Introduction to Microsoft Dataverse'
-ms.openlocfilehash: c3ea362eebf9156f069a9ab8635859e6186c1626
-ms.sourcegitcommit: 0118c25a230425d0ccba16e6c3922053ee07c183
+ms.openlocfilehash: 9edefbdf214d5a0f2e0693ffdf024dfc05c032c5
+ms.sourcegitcommit: dbffa13e13419f5b9aadc894eb95fd16215b2ebf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "144810906"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "146458360"
 ---
 # <a name="module-2-introduction-to-microsoft-dataverse"></a>Module 2 : introduction à Microsoft Dataverse
 
@@ -58,151 +58,151 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 >   Nous utilisons un comportement **indépendant du fuseau horaire** pour enregistrer les informations de date et d’heure, car l’heure d’une visite est toujours locale par rapport à l’emplacement du bâtiment et ne doit pas changer lorsqu’elle est vue depuis un autre fuseau horaire.
 
-1.  Connectez-vous à <https://make.powerapps.com> (si ce n’est déjà fait).
+1. Connectez-vous à [https://make.powerapps.com](https://make.powerapps.com/) (si ce n’est déjà fait).
 
-2.  Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
+2. Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
 
-3.  Dans le volet de navigation de gauche, développez Dataverse, puis sélectionnez Tables.
+3. Dans le volet de navigation de gauche, développez Dataverse, puis sélectionnez Tables.
 
-4.  Cliquez sur **Nouvelle table**.
+4. Cliquez sur **Nouvelle table**.
 
-5.  Entrez **Visite** comme **Nom d’affichage**.
+5. Entrez **Visite** comme **Nom d’affichage**.
 
-6.  Cliquez sur **Créer**. Cette action commence l’approvisionnement de la table en arrière-plan, tandis que vous pouvez commencer à ajouter d’autres colonnes.
+6. Cliquez sur **Enregistrer**. Cette action commence l’approvisionnement de la table en arrière-plan, tandis que vous pouvez commencer à ajouter d’autres colonnes.
 
-7.  Créer une colonne Début prévu
+7. Une fois la table créée, sous la section **Schéma**, sélectionnez **Colonnes**. 
 
-    1.  Vous devriez être dans la page des colonnes de la table Visite.
+8. Sélectionnez **Nouvelle colonne** et configurez comme suit : 
 
-    2.  Vérifiez que l’onglet **Colonnes** est sélectionné, puis cliquez sur **Ajouter une colonne**.
+    - Entrez **Début prévu** comme **Nom d’affichage**.
 
-    3.  Entrez **Début prévu** comme **Nom d’affichage**.
+    - Sélectionnez **Date et heure** comme **Type de données**.
 
-    4.  Sélectionnez **Date et heure** comme **Type de données**.
+    - Dans **Obligatoire**, sélectionnez **Contrainte obligatoire**.
 
-    5.  Dans le champ **Obligatoire**, sélectionnez **Obligatoire**.
+    - Développez la section **Options avancées**.
 
-    6.  Développez la section **Options avancées**.
+    - Dans le champ **Comportement**, sélectionnez **Indépendant du fuseau horaire**.
 
-    7.  Dans le champ **Comportement**, sélectionnez **Indépendant du fuseau horaire**.
+    - Cliquez sur **Enregistrer**.
 
-    8.  Cliquez sur **Done**.
+9. Créer une colonne Fin prévue 
 
-8.  Créer une colonne Fin prévue
+    - Cliquez sur **Ajouter une colonne**.
 
-    1.  Cliquez sur **Ajouter une colonne**.
+    - Entrez **Fin prévue** comme **Nom d’affichage**.
 
-    2.  Entrez **Fin prévue** comme **Nom d’affichage**.
+    - Sélectionnez **Date et heure** comme **Type de données**.
 
-    3.  Sélectionnez **Date et heure** comme **Type de données**.
+    - Dans **Obligatoire**, sélectionnez **Contrainte obligatoire**.
 
-    4.  Dans le champ **Obligatoire**, sélectionnez **Obligatoire**.
+    - Développez la section **Options avancées**.
 
-    5.  Développez la section **Options avancées**.
+    - Dans le champ **Comportement**, sélectionnez **Indépendant du fuseau horaire**.
 
-    6.  Dans le champ **Comportement**, sélectionnez **Indépendant du fuseau horaire**.
+    - Cliquez sur **Enregistrer**.
 
-    7.  Cliquez sur **Done**.
+10. Créer une colonne Début réel
 
-9.  Créer une colonne Début réel
+    - Cliquez sur **Ajouter une colonne**.
 
-    1.  Cliquez sur **Ajouter une colonne**.
+    - Entrez **Début réel** comme **Nom d’affichage**.
 
-    2.  Entrez **Début réel** comme **Nom d’affichage**.
+    - Sélectionnez **Date et heure** comme **Type de données**.
 
-    3.  Sélectionnez **Date et heure** comme **Type de données**.
+    - Dans le champ **Obligatoire**, laissez comme **Facultatif**.
 
-    4.  Dans le champ **Obligatoire**, laissez ceci comme **Optionnel**.
+    - Développez la section **Options avancées**.
 
-    5.  Développez la section **Options avancées**.
+    - Dans le champ **Comportement**, sélectionnez **Indépendant du fuseau horaire**.
 
-    6.  Dans le champ **Comportement**, sélectionnez **Indépendant du fuseau horaire**.
+    - Cliquez sur **Enregistrer**.
 
-    7.  Cliquez sur **Done**.
+11. Créer une colonne Fin réelle
 
-10. Créer une colonne Fin réelle
+    - Cliquez sur **Ajouter une colonne**.
 
-    1.  Cliquez sur **Ajouter une colonne**.
+    - Entrez **Fin réelle** comme **Nom d’affichage**.
 
-    2.  Entrez **Fin réelle** comme **Nom d’affichage**.
+    - Sélectionnez **Date et heure** comme **Type de données**.
 
-    3.  Sélectionnez **Date et heure** comme **Type de données**.
+    - Dans le champ **Obligatoire**, laissez ceci comme **Optionnel**.
 
-    4.  Dans le champ **Obligatoire**, laissez ceci comme **Optionnel**.
+    - Développez la section **Options avancées**.
 
-    5.  Développez la section **Options avancées**.
+    - Dans le champ **Comportement**, sélectionnez **Indépendant du fuseau horaire**.
 
-    6.  Dans le champ **Comportement**, sélectionnez **Indépendant du fuseau horaire**.
+    - Cliquez sur **Enregistrer**.
 
-    7.  Cliquez sur **Done**.
+12. Créer une colonne Code
 
-11. Créer une colonne Code
+    - Cliquez sur **Ajouter une colonne**.
 
-    1.  Cliquez sur **Ajouter une colonne**.
+    - Entrez **Code** comme **Nom d’affichage**.
 
-    2.  Entrez **Code** comme **Nom d’affichage**.
+    - Sélectionnez **Numérotation automatique** comme **Type de données**.
 
-    3.  Sélectionnez **Numérotation automatique** comme **Type de données**.
-    
-    4.  Sélectionnez **Nombre préfixé de date** pour **Type de numérotation automatique**.
+    - Sélectionnez **Nombre préfixé de date** pour **Type de numérotation automatique**.
 
-    5.  Cliquez sur **Done**.
+    - Cliquez sur **Enregistrer**.
 
-12. Créer une colonne de recherche Visiteur
+13. Créer une colonne de recherche Visiteur
 
-    1.  Cliquez sur **Ajouter une colonne**.
+    - Cliquez sur **Ajouter une colonne**.
 
-    2.  Entrez **Visiteur** comme **Nom d’affichage**.
+    - Entrez **Visiteur** comme **Nom d’affichage**.
 
-    3.  Sélectionnez **Recherche** comme **Type de données**.
+    - Sélectionnez **Recherche** comme **Type de données**.
 
-    4.  Sélectionnez **Contact** comme **Table associée**.
+    - Sélectionnez **Contact** comme **Table associée**.
 
-    5.  Développez la section **Options avancées**.
-    
-    6.  Entrez **visitor_id** dans **nom de la relation**.
-    
-    7.  Cliquez sur **Done**.
+    - Développez la section **Options avancées**.
 
-13. Cliquez sur **Enregistrer la table** en bas à droite.
+    - Entrez **visitor_id** dans **nom de la relation**.
 
-# <a name="exercise-2-import-data"></a>Exercice \#2 : Importer des données
+    - Cliquez sur **Enregistrer**.
+
+ 
+
+Exercice n° 2 : Importer des données
 
 **Objectif** : Au cours de cet exercice, vous apprendrez à importer des échantillons de données dans la base de données Dataverse.
 
-## <a name="task-1-import-the-visitsxls-file"></a>Tâche \#1 : Importez le fichier Visits.xls.
+Tâche n°1 : Importez le fichier Visits.xls.
 
-Dans cette tâche, vous allez importer des données Visite à partir d’un fichier Excel. 
+Dans cette tâche, vous allez importer des données Visite à partir d’un fichier Excel.
 
-1.  Le fichier **Visits.xls** doit être stocké sur votre bureau. Si ce n’est pas le cas, téléchargez [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
+1. Le fichier **Visits.xls** doit être stocké sur votre bureau. Si ce n’est pas le cas, téléchargez [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
-2.  Connectez-vous à <https://make.powerapps.com> si ce n’est déjà fait.
+2. Connectez-vous à [https://make.powerapps.com](https://make.powerapps.com/) si ce n’est déjà fait.
 
-3.  Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
+3. Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
 
-4.  Dans le volet de navigation de gauche, développez **Dataverse**, puis sélectionnez Tables.
-    >   Ces éléments peuvent apparaître sous forme de données et de tables sur votre écran. 
+4. Dans le volet de navigation de gauche, développez **Dataverse**, puis sélectionnez Tables.
 
-5.  Recherchez et ouvrez la table **Visite** que vous avez créée dans l’exercice précédent.
+Ces éléments peuvent apparaître comme Données > Tables sur votre écran.
 
-6.  Dans le menu en haut, sélectionnez la flèche déroulante en regard de **Données**, sélectionnez la flèche en regard de **Obtenir des données**, puis sélectionnez **Obtenir des données à partir d’Excel**.
+5. Recherchez et ouvrez la table **Visite** que vous avez créée dans l’exercice précédent.
 
-7.  Dans le menu qui s’affiche, sélectionnez le bouton **Charger**.
+6. Dans le menu en haut, sélectionnez la flèche déroulante à côté de **Importer**, puis sélectionnez **Importer les données à partir d’Excel**.
 
-8.  Recherchez et sélectionnez le fichier **Visits.xls** que vous avez téléchargé précédemment. *(Notez que le chargement du fichier peut prendre une minute ou deux. Ne vous inquiétez pas si vous recevez un message indiquant des erreurs de mappage. Nous les corrigerons juste après ceci.)*
+7. Dans le menu qui s’affiche, sélectionnez le bouton **Charger**.
+
+8. Recherchez et sélectionnez le fichier **Visits.xls** que vous avez téléchargé précédemment. (Notez que le chargement du fichier peut prendre une minute ou deux. Ne vous inquiétez pas si vous recevez un message indiquant des erreurs de mappage. Nous les corrigerons juste après ceci.)
 
 9. Sélectionnez **Mapper des colonnes**.
 
 10. Mappez les colonnes comme indiqué ci-dessous :
 
-    | Colonnes de la base de données Visite | Valeurs sources   |
-    |------------------|-----------------|
-    | Fin réelle       | Fin réelle      |
-    | Début réel     | Début réel    |
-    | Code             | Code            |
-    | Nom             | Nom            |
-    | Fin prévue    | Fin planifiée   |
-    | Scheduled Start  | Début planifié |
+| Colonnes de la base de données Visite| Valeurs sources |
+| - |
+| Fin réelle| Fin réelle |
+| Début réel| Début réel |
+| Code| Code |
+| Nom| Nom |
+| Fin prévue| Fin planifiée |
+| Scheduled Start| Début planifié |
+
 
 11. Laissez tous les autres champs sur **Non défini**.
 
@@ -212,16 +212,12 @@ Dans cette tâche, vous allez importer des données Visite à partir d’un fich
 
 14. Sélectionnez **Importer** en haut à droite pour terminer l’importation de données.
 
-**Remarque :** *L’importation de vos données dans votre table peut prendre plusieurs minutes. Ne vous inquiétez pas si vous recevez des erreurs ; c’est normal et cela n’aura aucun impact sur le reste du cours.*
+**Remarque :** L’importation de vos données dans votre table peut prendre plusieurs minutes. Ne vous inquiétez pas si vous recevez des erreurs, c’est normal et cela n’aura aucun impact sur le reste du cours.
 
-## <a name="task-2-verify-data-import"></a>Tâche \#2 : Vérifier une importation de données
+Tâche n° 2 : Vérifier une importation de données
 
-1.  Une fois vos données importées, utilisez le volet de navigation à gauche de l’écran pour resélectionner la table **Visite**.
+1. Une fois vos données importées, utilisez le volet de navigation à gauche de l’écran pour resélectionner la table **Visite**.
 
-2.  Notez que la table Visite comporte de nombreux onglets. Ceux-ci incluent Cikynns, Relations, Règles d’entreprise, Vues, etc. 
-
-3.  Sélectionnez l’onglet **Données** pour la table Visit. Cet onglet se trouve sous **Tables** \> **Visite**.
-
-3.  Vérifiez que votre table contient des enregistrements. Vous pouvez modifier l’affichage en sélectionnant le nom de la vue en haut à droite, puis en le remplaçant par **Toutes les colonnes**. 
+2. Vérifiez que vous voyez les données importées sous la section **Visiter les colonnes et les données**. 
 
 Félicitations, vous avez créé une table et importé des données.
