@@ -2,12 +2,12 @@
 lab:
   title: 'Labo 5 : Comment créer un tableau de bord simple'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 8d104c42de9d4114c668a63a4d8d30cbbcc4b39e
-ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
+ms.openlocfilehash: 1df94fcda0e59554c10ed772314e5138936b73a8
+ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "144812932"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "147125735"
 ---
 # <a name="module-5-get-started-with-power-bi"></a>Module 5 : démarrage de Power BI
 ## <a name="lab-how-to-build-a-simple-dashboard"></a>Labo : Comment créer un tableau de bord simple
@@ -88,9 +88,9 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
 5.  Cliquez sur le rapport en dehors du graphique en secteurs pour le désélectionner et sélectionnez l’histogramme empilé dans le panneau **Visualisations**.
 
-6.  Appuyez sur la flèche déroulante en regard de **bc_Visit** dans le volet Champs. Faites glisser le champ **Visite** et déposez-le dans la zone **Valeurs**.
+6.  Appuyez sur la flèche déroulante en regard de **bc_Visit** dans le volet Champs. Faites glisser le champ **Visite** et déposez-le dans la zone cible **Axe Y**.
 
-7.  Faites glisser le champ **Début** et déposez-le dans la zone cible **Axe**.
+7.  Faites glisser le champ **Début** et déposez-le dans la zone cible **Axe X**.
 
 8.  Dans le panneau Visualisations, cliquez sur le **x** en regard des champs **Année** et **Trimestre** pour ne laisser que les totaux **Mois** et **Jour** pour l’Axe.
 

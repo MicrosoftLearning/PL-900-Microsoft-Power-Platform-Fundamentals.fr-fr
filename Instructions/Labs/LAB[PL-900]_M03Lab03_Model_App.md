@@ -2,12 +2,12 @@
 lab:
   title: 'Labo 3 : Comment créer une application pilotée par modèle'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: ed98e1f2c2ff900f84b98910e0ef2d14d130f462
-ms.sourcegitcommit: dbffa13e13419f5b9aadc894eb95fd16215b2ebf
+ms.openlocfilehash: c69ca883cc8f8c8b00ed3f67fb18f93b035726e3
+ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "146458372"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "147125759"
 ---
 # <a name="module-3-get-started-with-power-apps"></a>Module 3 : Bien démarrer avec Power Apps
 ## <a name="lab-how-to-build-a-model-driven-app"></a>Labo : Comment créer une application pilotée par modèle
@@ -234,7 +234,7 @@ Tâche n°3 : Application de test
 
 2. Créer un nouveau contact
 
-    0. L’application doit s’ouvrir sur la vue **Mes contacts actifs**. Si ce n’est pas le cas, sélectionnez Visites sur la partie gauche.
+    0. L’application doit s’ouvrir sur la vue **Mes contacts actifs**. Si ce n’est pas le cas, sélectionnez Contacts à gauche.
 
     1. Cliquez sur **Nouveau** dans le menu supérieur.
 
