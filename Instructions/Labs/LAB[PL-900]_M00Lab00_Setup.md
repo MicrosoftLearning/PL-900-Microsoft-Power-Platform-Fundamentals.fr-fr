@@ -1,15 +1,15 @@
 ---
 lab:
-  title: 'Labo : Valider l’environnement de labo'
+  title: 'Labo 0 : Valider l’environnement de labo'
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: e69074549dddd4494db53a9ccb9ebfb3ae198d48
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: d25543d93be7e40749c8fee3a01c35b3a8f2947b
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424700"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154393"
 ---
-# <a name="module-0-course-introduction"></a>Module 0 : Présentation du cours
+# <a name="lab-0-validate-lab-environment"></a>Labo 0 : Valider l’environnement de labo
 
 ## <a name="scenario"></a>Scénario
 
@@ -19,42 +19,52 @@ L’administration du campus souhaite moderniser son système d’inscription de
 
 Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus.
 
-Dans ce labo du module 0, vous allez acquérir un locataire d’essai Power Platform et accéder au centre d’administration Power Platform. Dans le Centre d’administration, vous allez créer votre environnement **Exercices pratiques**, dans lequel vous effectuerez la majorité de votre travail de labo.
+Dans ce labo du module 0, vous allez acquérir un essai de Power Platform et accéder au Centre d’administration Power Platform. Dans le Centre d’administration, vous allez créer un environnement **Exercices pratiques**, dans lequel vous effectuerez la majorité de votre travail de labo.
 
 ## <a name="exercise-1--setup"></a>Exercice n° 1 - Configuration
 
-### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>Tâche n° 1 - Acquérir votre locataire d’essai Microsoft Power Platform
+### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>Tâche no 1 : acquérir votre locataire d’essai Microsoft Power Platform
 
-1.  Copiez vos **informations d’identification Microsoft 365** à partir de l’hébergeur de labo autorisé.
+1. Copiez vos **informations d’identification Microsoft 365** à partir de l’hébergeur de labo autorisé.
 
-2.  Accédez à <https://powerapps.microsoft.com>, puis cliquez sur **Démarrer gratuitement.**
+1. Accédez à <https://powerapps.microsoft.com>, puis cliquez sur **Démarrer gratuitement**.
 
-3.  En dessous de **Démarrer**, saisissez l’adresse e-mail de vos informations d’identification Microsoft 365 dans la zone de texte qui indique **Entrez votre adresse e-mail professionnelle**.
+1. En dessous de **Démarrer**, saisissez l’adresse e-mail de vos informations d’identification Microsoft 365 dans la zone de texte qui indique **Entrez votre adresse e-mail professionnelle** et cliquez sur **Suivant**.
 
-4.  Une invite apparaît indiquant que vous avez un compte existant avec Microsoft. Sélectionnez **Se connecter**.
+1. Une invite apparaît indiquant que vous avez un compte existant avec Microsoft. Sélectionnez **Connexion**.
 
-5.  Entrez le mot de passe fourni par l’hébergeur de labo autorisé et connectez-vous.
+1. Entrez le mot de passe fourni par l’hébergeur de labo autorisé et connectez-vous.
 
-6.  Sélectionnez **Oui** pour rester connecté.
+1. Sélectionnez **Oui** pour rester connecté.
 
-7.  Renseignez les informations de votre compte, puis sélectionnez **Démarrer** pour vous inscrire à votre version d’évaluation de Microsoft Power Platform.
+1. Ne modifiez pas le pays.
+
+1. Pour le **Numéro de téléphone**, entrez 01234567890.
+
+1. Renseignez les informations de votre compte, puis sélectionnez **Démarrer** pour vous inscrire à votre version d’évaluation de Microsoft Power Platform.
+
+1. Dans l’écran de confirmation, cliquez sur **Démarrage**.
+
+1. Si un message vous invite à entrer des coordonnées, cliquez sur **X** pour fermer la fenêtre contextuelle.
 
 ### <a name="task-2--create-environment"></a>Tâche \#2 : Créer un environnement
 
-1.  Accédez à <https://admin.powerplatform.microsoft.com> et connectez-vous avec vos informations d’identification Microsoft 365 si vous y êtes invité.
+1. Accédez à <https://admin.powerplatform.microsoft.com> et connectez-vous avec vos informations d’identification Microsoft 365 si vous y êtes invité.
 
-2.  Sélectionnez **Environnements** et cliquez sur **+Nouveau**.
+1. Si une fenêtre contextuelle de bienvenue s’affiche, cliquez sur **Démarrage**.
 
-    1.  Pour le **Nom**, saisissez **Exercice pratique [Mes initiales]** . (Exemple : Exercice pratique AJ)
+1. Sélectionnez **Environnements** et cliquez sur **+ Nouveau**.
 
-    2.  Pour le **Type**, sélectionnez **Essai** (ne sélectionnez pas l’option d’essai (basée sur un abonnement)).
+    1. Pour **Nom**, entrez **[Mes initiales] Exercices pratiques** (par exemple : AJ Exercices pratiques).
 
-    3.  Faites basculer **Créer une base de données pour cet environnement ?** sur **Oui**.
+    1. Pour le **Type**, sélectionnez **Essai** (ne sélectionnez pas l’option d’essai (basée sur un abonnement)).
 
-    4.  Laissez toutes les autres sélections par défaut et cliquez sur **Suivant**.
+    1. Faites basculer **Créer une base de données pour cet environnement ?** sur **Oui**.
 
-    5.  Dans l’onglet suivant, laissez toutes les sélections par défaut et cliquez sur **Enregistrer**.
+    1. Conservez toutes les autres sélections par défaut et cliquez sur **Suivant**.
 
-3.  Votre environnement **Exercice pratique** doit maintenant apparaître dans la liste des environnements.
+    1. Dans l’onglet suivant, conservez toutes les sélections par défaut et cliquez sur **Enregistrer**.
 
->   L’approvisionnement de votre environnement peut prendre quelques minutes. Actualisez la page si nécessaire.
+1. Votre environnement **Exercice pratique** doit maintenant apparaître dans la liste des environnements.
+
+> L’approvisionnement de votre environnement peut prendre quelques minutes. Actualisez la page si nécessaire.

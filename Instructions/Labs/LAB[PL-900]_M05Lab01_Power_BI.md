@@ -2,17 +2,16 @@
 lab:
   title: 'Labo 5 : Comment créer un tableau de bord simple'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 1df94fcda0e59554c10ed772314e5138936b73a8
-ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
+ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "147125735"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154441"
 ---
-# <a name="module-5-get-started-with-power-bi"></a>Module 5 : démarrage de Power BI
-## <a name="lab-how-to-build-a-simple-dashboard"></a>Labo : Comment créer un tableau de bord simple
+## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Labo 5 : Comment créer un tableau de bord simple
 
-# <a name="scenario"></a>Scénario
+## <a name="scenario"></a>Scénario
 
 Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
 
@@ -20,43 +19,33 @@ L’administration du campus souhaite moderniser son système d’inscription de
 
 Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus.
 
-Dans ce labo, vous allez créer un tableau de bord Power BI qui visualise les données sur les visites sur le campus.
+Dans ce labo, vous allez créer un rapport et un tableau de bord Power BI qui permet de visualiser les données des visites sur le campus.
 
-# <a name="high-level-lab-steps"></a>Étapes de labo de haut niveau
+## <a name="high-level-lab-steps"></a>Étapes de labo de haut niveau
 
 Nous allons suivre les étapes ci-dessous pour concevoir et créer un tableau de bord Power BI :
 
--   Se connecter à Dataverse
-
--   Transformez les données pour inclure des descriptions conviviales pour les lignes associées (recherches)
-
--   Créez et publiez un rapport avec diverses visualisations des informations sur les visites du campus
+-   Créer un rapport avec diverses visualisations des informations concernant les visites sur le campus
 
 -   Utiliser une requête en langage naturel pour créer des visualisations supplémentaires
 
--   Créer une vue mobile du tableau de bord Power BI
-
 ## <a name="prerequisites"></a>Prérequis
 
--   Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
-
--   Participation au **Module 2 - Labo 1 : Présentation de Microsoft Dataverse**
+- Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
+- Participation au **Module 2 Labo 1 : modélisation des données**
 
 ## <a name="things-to-consider-before-you-begin"></a>Éléments à considérer avant de commencer
 
 -   À quel public ce rapport est-il destiné ?
-
 -   Comment les participants utiliseront-ils le rapport ? Appareil courant ? L’emplacement ?
-
 -   Avez-vous suffisamment de données à visualiser ?
-
 -   Quelles sont les caractéristiques utilisables pour analyser les données sur les visites ?
 
-# <a name="exercise-1-create-power-bi-report"></a>Exercice \#1 : Créer des rapports Power BI
+## <a name="exercise-1-create-power-bi-report"></a>Exercice 1 : Créer des rapports Power BI
 
 **Objectif** : Dans cet exercice, vous allez créer un rapport Power BI basé sur les données de la feuille de calcul Excel que nous avons utilisée dans un exercice précédent.
 
-## <a name="task-1-prepare-power-bi-service"></a>Tâche \#1 : Préparer le service Power BI
+### <a name="task-1-prepare-power-bi-service"></a>Tâche \#1 : Préparer le service Power BI
 
 1.  Téléchargez [visites.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) et enregistrez sur votre ordinateur.
 
@@ -70,17 +59,17 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer un tableau de
 
 6.  Localisez et sélectionnez le fichier **visits.pbix** que vous avez téléchargé précédemment.
 
-7.  Une fois le chargement des données terminé, sélectionnez le rapport **visites** (notez que le Type est défini sur **Rapport**).
+7.  Après le chargement des données, développez **Mon espace de travail** et sélectionnez **visites** (notez que le Type est défini sur **Rapport**).
 
 8.  Cliquez sur **Modifier**. Si l’élément de menu **Modifier** n’est pas visible cliquez sur **...** , puis sélectionnez **Modifier**.
 
-Vous avez terminé la configuration du service Power BI que vous utiliserez pour vos labos. 
+Vous avez terminé la configuration du service Power BI que vous utiliserez pour vos labos.
 
-## <a name="task-2-create-chart-and-time-visualizations"></a>Tâche \#2 : Créer un graphique et des visualisations temporelles
+### <a name="task-2-create-chart-and-time-visualizations"></a>Tâche \#2 : Créer un graphique et des visualisations temporelles
 
 1.  Appuyez sur l’icône **Graphique en secteurs** dans le panneau **Visualisations** pour insérer un graphique.
 
-2.  Appuyez sur la flèche déroulante en regard de **bc_name** dans le volet Champs. Faites glisser le champ **Bâtiment** et déposez-le dans la zone **Légende**.
+2.  Appuyez sur la flèche déroulante à côté de **bc_building** dans le volet Champs. Faites glisser le champ **Bâtiment** et déposez-le dans la zone **Légende**.
 
 3.  Appuyez sur la flèche déroulante en regard de **bc_Visit** dans le volet Champs. Faites glisser le champ **Visite** et déposez-le dans la zone **Valeurs**.
 
@@ -100,15 +89,15 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
     1.  Cliquez sur différents secteurs sur le graphique en secteurs et observez les changements sur le rapport de temps.
 
-    2.  Cliquez sur l’histogramme. Appuyez sur la flèche vers le bas pour activer le mode **Descendre dans la hiérarchie** (ou cliquez avec le bouton droit de la souris sur le graphique et sélectionnez **Descendre dans la hiérarchie**), puis cliquez sur une colonne pour descendre au niveau suivant (jours). 
-    
+    2.  Cliquez sur l’histogramme. Appuyez sur la flèche vers le bas pour activer le mode **Descendre dans la hiérarchie** (ou cliquez avec le bouton droit de la souris sur le graphique et sélectionnez **Descendre dans la hiérarchie**), puis cliquez sur une colonne pour descendre au niveau suivant (jours).
+
     3.  Explorez en remontant ou en descendant d’un niveau et sélectionnez diverses barres sur l’histogramme du temps pour observer les changements sur le graphique en secteurs.
 
 11. Enregistrez le travail en cours en appuyant sur **Enregistrer**.
 
-# <a name="exercise-2-create-power-bi-dashboard"></a>Exercice \#2 : Créer un tableau de bord Power BI
+## <a name="exercise-2-create-power-bi-dashboard"></a>Exercice 2 : Créer un tableau de bord Power BI
 
-## <a name="task-1-create-power-bi-dashboard"></a>Tâche \#1 : Créer un tableau de bord Power BI
+### <a name="task-1-create-power-bi-dashboard"></a>Tâche \#1 : Créer un tableau de bord Power BI
 
 1.  Vous pouvez accéder au rapport ouvert depuis la tâche précédente.
 
@@ -118,13 +107,11 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
 4.  Entrez **Gestion du campus** comme un **Nom du tableau de bord** puis appuyez sur **Épingler un élément dynamique**.
 
-5.  Sélectionnez **Mon espace de travail** en haut, puis le tableau de bord [**Votre nom] Gestion du campus**.
+5.  Une fenêtre contextuelle vous indique que le tableau de bord a été créé. Sélectionnez **Accéder au tableau de bord**.
 
-6.  Une fenêtre contextuelle vous indique que le tableau de bord a été créé. Sélectionnez **Accéder au tableau de bord**.
+6.  Testez l’interactivité des graphiques en secteurs et à barres affichés.
 
-7.  Testez l’interactivité des graphiques en secteurs et à barres affichés.
-
-## <a name="task-2-add-visualizations-using-natural-language"></a>Tâche \#2 : Ajouter des visualisations à l’aide du langage naturel
+### <a name="task-2-add-visualizations-using-natural-language"></a>Tâche \#2 : Ajouter des visualisations à l’aide du langage naturel
 
 1.  Au sein de votre tableau de bord **Gestion du campus**, sélectionnez la barre **Poser une question sur vos données**.
 
