@@ -2,17 +2,16 @@
 lab:
   title: 'Labo 3 : Comment créer une application pilotée par modèle'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: ed98e1f2c2ff900f84b98910e0ef2d14d130f462
-ms.sourcegitcommit: dbffa13e13419f5b9aadc894eb95fd16215b2ebf
+ms.openlocfilehash: a5176245ed8ec696049d78e1022e82aa8236057f
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "146458372"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154417"
 ---
-# <a name="module-3-get-started-with-power-apps"></a>Module 3 : Bien démarrer avec Power Apps
-## <a name="lab-how-to-build-a-model-driven-app"></a>Labo : Comment créer une application pilotée par modèle
+# <a name="lab-3-how-to-build-a-model-driven-app"></a>Labo 3 : Comment créer une application pilotée par modèle
 
-# <a name="scenario"></a>Scénario
+## <a name="scenario"></a>Scénario
 
 Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
 
@@ -42,25 +41,20 @@ Les deux seront intégrés à l’application basée sur un modèle, pour une me
 
 Prérequis
 
-- Participation au **Module 0 - Labo : Valider l’environnement de labo**
-
-- Participation au **Module 2 - Labo : Modélisation des données**
-
-- Participation au **Module 3 - Labo : Comment générer une application canevas**
+- Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
+- Participation au **Module 2 Labo 1 : modélisation des données**
 
 Éléments à considérer avant de commencer
 
 - Quels changements devons-nous apporter pour améliorer l’expérience utilisateur ?
-
 - Que devrions-nous inclure dans une application pilotée par modèle d’après le modèle de données que nous avons créé ?
-
 - Quelles personnalisations peuvent être effectuées sur le plan du site d’une application pilotée par modèle ?
 
-Exercice n°1 : Personnaliser les vues et les formulaires
+## <a name="exercise-1-customize-views-and-forms"></a>Exercice 1 : personnaliser les affichages et les formulaires
 
 **Objectif** : Au cours de cet exercice, vous apprendrez à personnaliser les vues et les formulaires des tables personnalisées qui seront utilisées dans l’application pilotée par modèle.
 
-Tâche n°1 : Modifier le formulaire de visite
+### <a name="task-1-edit-visit-form"></a>Tâche \#1 : Modifier le formulaire de visite
 
 1. Connectez-vous à [https://make.powerapps.com](https://make.powerapps.com/) si vous n’êtes pas encore connecté.
 
@@ -70,23 +64,23 @@ Tâche n°1 : Modifier le formulaire de visite
 
 Si vous ne voyez pas la table Visite, vérifiez que vous êtes dans l’environnement approprié (étape 2).
 
-4. Sous la section Expériences des données, sélectionnez **Formulaires**, puis cliquez pour ouvrir le formulaire Informations de type **Principal**.
+4. Sous la section **Expériences des données**, sélectionnez **Formulaires**, puis cliquez pour ouvrir le formulaire Informations de type **Principal**.
 
-**IMPORTANT :** Par défaut, tous les formulaires sont nommés Informations, donc vérifiez que le formulaire que vous sélectionnez est de type **Principal** et pas autre chose. Par défaut, le formulaire comporte deux champs : Nom (champ principal) et Propriétaire.
+**IMPORTANT :** Par défaut, tous les formulaires sont nommés Informations, donc vérifiez que le formulaire que vous sélectionnez est de type **Principal** et pas autre chose. Le formulaire comporte deux champs par défaut : Nom et Propriétaire.
 
 5. À droite de l’écran dans le volet Propriétés, sélectionnez le champ **Nom complet**, puis remplacez-le par **Informations principales**.
 
 6. Dans le menu en haut de l’écran, sélectionnez **+ Champ de formulaire** et ajoutez les champs suivants sous le champ **Propriétaire** en faisant glisser les colonnes dans le formulaire ou simplement en cliquant sur les noms des colonnes appropriées :
 
-    0. **Visiteur**
+    1. **Visiteur**
 
     1. **Début prévu**
 
-    2. **Fin prévue**
+    1. **Fin prévue**
 
-    3. **Début réel**
+    1. **Début réel**
 
-    4. **Fin réelle**
+    1. **Fin réelle**
 
 7. Faites glisser la colonne **Code** et déposez-la dans l’en-tête du formulaire.
 
@@ -100,25 +94,25 @@ L’en-tête est la zone supérieure droite du formulaire. Vous devrez peut-êtr
 
 11. Cliquez sur **Publier** en haut à droite et attendez la fin de la publication.
 
-12. Si la vue d’édition est ouverte dans un nouvel onglet ou une nouvelle fenêtre de navigateur, fermez cette vue. Sinon, cliquez sur **Retour** en haut à gauche de l’écran. Vous devez maintenant revenir à l’onglet formulaires de tables de visite.
+12. Si la vue d’édition est ouverte dans un nouvel onglet ou une nouvelle fenêtre de navigateur, fermez cette vue. Sinon, cliquez sur **Retour** en haut à gauche de l’écran. Vous devez ensuite revenir aux Formulaires de tables de visite.
 
-13. Utilisation des barres de navigation en haut à gauche (Tables>Visite>Formulaires). Sélectionnez **Visite** pour revenir à l’écran principale de la table **Visite**. 
+13. Utilisation des barres de navigation en haut à gauche (Tables>Visite>Formulaires). Sélectionnez **Visite** pour revenir à l’écran principale de la table **Visite**.
 
-Tâche n° 2 : Modifier la vue Visites actives
+### <a name="task-2-edit-active-visits-view"></a>Tâche \#2 : Modifier la vue Visites actives
 
 Dans cette tâche, nous allons modifier la vue des visites actives par défaut et créer une nouvelle vue pour les visites du jour.
 
-1. Dans la section Expériences des données, sélectionnez **Vues** et cliquez pour ouvrir votre vue **Visites actives**.
+1. Dans la section **Expériences des données**, sélectionnez **Vues** et cliquez pour ouvrir votre vue **Visites actives**.
 
 2. Ajoutez les champs suivants à la vue en cliquant sur ou en faisant glisser-déposer les champs :
 
-    0. **Code**
+    1. **Code**
 
-    1. **Visiteur**
+    2. **Visiteur**
 
-    2. **Début prévu**
+    3. **Début prévu**
 
-    3. **Fin prévue**
+    4. **Fin prévue**
 
 3. Cliquez sur la colonne **Créé le** et sélectionnez **Supprimer**. Le champ **Créé sur** sera maintenant supprimé de la vue.
 
@@ -128,11 +122,11 @@ Dans cette tâche, nous allons modifier la vue des visites actives par défaut e
 
 6. Cliquez sur **Publier** et attendez la fin de la publication.
 
-Tâche n°3 : Créer une vue pour les visites du jour
+### <a name="task-3-create-new-view-for-todays-visits"></a>Tâche n°3 : Créer une vue pour les visites du jour
 
 Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les visites du jour.
 
-IMPORTANT : Veillez à ne pas fermer la vue Visites actives, car nous allons l’exploiter pour créer la vue de visites du jour. 
+IMPORTANT : Veillez à ne pas fermer la vue Visites actives, car nous allons l’exploiter pour créer la vue de visites du jour.
 
 1. Cliquez sur la **flèche déroulante** affichée en regard du bouton Enregistrer (attention à ne pas appuyer sur le bouton lui-même) et sélectionnez **Enregistrer sous**.
 
@@ -156,25 +150,27 @@ IMPORTANT : Veillez à ne pas fermer la vue Visites actives, car nous allons l�
 
 2. Cliquez sur **Publier** et attendez la fin de la publication.
 
-Exercice n° 2 : Créer une application pilotée par modèle
+## <a name="exercise-2-create-model-driven-app"></a>Exercice 2 : créer une application pilotée par modèle
 
-**Objectif** : Au cours de cet exercice, vous allez créer l’application pilotée par modèle, personnaliser le plan du site et tester l’application.
+**Objectif** : au cours de cet exercice, vous allez créer une application pilotée par modèle, personnaliser le plan du site et tester l’application.
 
 Pour rester simples et faute de temps, nous n’aborderons pas certaines des colonnes de la table Visite dans ce labo.
 
-Tâche n°1 : Créer une application
+### <a name="task-1-create-app"></a>Tâche no 1 : créer une application
 
 1. Connectez-vous à [https://make.powerapps.com](https://make.powerapps.com/) (si ce n’est déjà fait).
 
 2. Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
 
+3.  Si nécessaire, cliquez sur l’icône **Accueil** à gauche de l’écran.
+
 3. Créer l’application pilotée par modèle :
 
-    0. Sélectionnez **Application vide** dans la section **Démarrer à partir de** de l’écran d’accueil.
+    1. Sélectionnez **Application vide** dans la section **Démarrer à partir de** de l’écran d’accueil.
 
     1. Sous **Application vide basée sur Dataverse**, sélectionnez **Créer**.
 
-    2. Entrez **Gestion du campus Bellows** comme nom et sélectionnez **Créer**.
+    1. Entrez **Gestion du campus Bellows** comme nom et sélectionnez **Créer**.
 
 4. Une fois votre nouvelle application pilotée par modèle chargée, sélectionnez le bouton **+ Ajouter une page**.
 
@@ -182,7 +178,7 @@ Tâche n°1 : Créer une application
 
 6. Ajoutez les tables suivantes :
 
-    0. Accédez à
+    1. Accédez à
 
     1. Contact
 
@@ -194,13 +190,13 @@ Tâche n°1 : Créer une application
 
 10. À droite de l’écran, dans la section **Options d’affichage**, remplacez la propriété **Titre** par **Sécurité**.
 
-Tâche n° 2 : Modifier votre application
+### <a name="task-2-edit-your-app"></a>Tâche n° 2 : Modifier votre application
 
 Tous les composants nécessaires étant désormais ajoutés à l’application pilotée par modèle, nous allons organiser les éléments.
 
 1. Dans le volet de navigation, sous le groupe de sécurité, sélectionnez **SubArea1**.
 
-2. Sélectionnez les **Points de suspension**, et dans le menu qui s’affiche, sélectionnez **SubArea1**.
+2. Sélectionnez les **Points de suspension**. Dans le menu qui s’affiche, sélectionnez **Supprimer SubArea1**.
 
 3. Dans le volet de navigation à gauche de l’écran, sélectionnez **Pages**.
 
@@ -226,41 +222,41 @@ Tous les composants nécessaires étant désormais ajoutés à l’application p
 
 14. Une fois l’opération **Enregistrer** terminée, sélectionnez le bouton **Publier** pour publier vos modifications.
 
-Tâche n°3 : Application de test
+### <a name="task-3-test-application"></a>Tâche n°3 : Application de test
 
 1. Lancer l’application
 
-    0. Sélectionnez **Lire** pour ouvrir votre application dans une nouvelle fenêtre.
+    1. Sélectionnez **Lire** pour ouvrir votre application dans une nouvelle fenêtre.
 
 2. Créer un nouveau contact
 
-    0. L’application doit s’ouvrir sur la vue **Mes contacts actifs**. Si ce n’est pas le cas, sélectionnez Visites sur la partie gauche.
+    1. L’application doit s’ouvrir sur la vue **Mes contacts actifs**. Si ce n’est pas le cas, sélectionnez Contacts dans la navigation de gauche.
 
     1. Cliquez sur **Nouveau** dans le menu supérieur.
 
-    2. Indiquez John comme **Prénom** et Doe comme **Nom**.
+    1. Indiquez John comme **Prénom** et Doe comme **Nom**.
 
-    3. Indiquez votre adresse e-mail personnelle dans **E-mail**. Elle sera utilisée dans un prochain labo où vous recevrez un e-mail.
+    1. Indiquez votre adresse e-mail personnelle dans **E-mail**. Elle sera utilisée dans un prochain labo où vous recevrez un e-mail.
 
-    4. Cliquez sur **Enregistrer et fermer**.
+    1. Cliquez sur **Enregistrer et fermer**.
 
-    5. Vous devriez maintenant voir le contact créé dans la vue **Contacts actifs**.
+    1. Vous devriez maintenant voir le contact créé dans la vue **Mes contacts actifs**.
 
 3. Créer une nouvelle visite
 
-    0. Sélectionnez **Visites** dans le plan du site.
+    1. Sélectionnez **Visites** à partir de la navigation de gauche du plan du site.
 
-    1. Cliquez sur **Nouveau**.
+    1. Cliquez sur **+ Nouveau**.
 
-    2. Si nécessaire, remplissez les champs.
+    1. Si nécessaire, remplissez les champs.
 
-        0. **Nom** : Nouvelle visite test
+        1. **Nom** : Nouvelle visite test
 
         1. **Visiteur** : sélectionnez John Doe.
 
-        2. **Début planifié** : sélectionnez la date de demain et 14h00 comme heure de début.
+        1. **Début planifié** : sélectionnez la date de demain et 14h00 comme heure de début.
 
-        3. **Fin planifiée** : sélectionnez la date de demain et 15h30 comme heure de fin.
+        1. **Fin planifiée** : sélectionnez la date de demain et 15h30 comme heure de fin.
 
 - Cliquez sur **Enregistrer et fermer**. La visite sera alors créée. Vous devez pouvoir la voir dans la vue Visites actives.
 
@@ -274,6 +270,6 @@ Votre application en cours d’exécution doit ressembler à ceci :
 
 Félicitations ! Vous avez créé et configuré votre première application pilotée par modèle.
 
-# <a name="challenges"></a>Défis
+## <a name="challenges"></a>Défis
 
--   Sélectionner des vues et des formulaires spécifiques pour les contacts
+- Sélectionner des vues et des formulaires spécifiques pour les contacts

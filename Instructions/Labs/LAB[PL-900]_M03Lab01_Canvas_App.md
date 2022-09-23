@@ -2,17 +2,16 @@
 lab:
   title: 'Labo 2 : Comment créer une application canevas'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: 24d99d14079d40f74a43ed0de64dd6ae5d7046c7
-ms.sourcegitcommit: 0118c25a230425d0ccba16e6c3922053ee07c183
+ms.openlocfilehash: 9a9a447ac07176e7f7ed3471c105b2d06fa60c97
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "144810918"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154429"
 ---
-# <a name="module-3-get-started-with-power-apps"></a>Module 3 : Bien démarrer avec Power Apps
-## <a name="lab-how-to-build-a-canvas-app"></a>Labo : Comment créer une application canevas
+# <a name="lab-2-how-to-build-a-canvas-app"></a>Labo 2 : Comment créer une application canevas
 
-# <a name="scenario"></a>Scénario
+## <a name="scenario"></a>Scénario
 
 Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visites sur le campus sont actuellement enregistrées dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
 
@@ -20,27 +19,28 @@ Actuellement, l’administration du campus utilise une feuille de calcul Excel p
 
 Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus.
 
-# <a name="high-level-lab-steps"></a>Étapes de labo de haut niveau
+## <a name="high-level-lab-steps"></a>Étapes de labo de haut niveau
 
 Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
--   Créer une application canevas à partir de données dans la table Visite
+- Créer une application canevas à partir de données dans la table Visite
 
--   Configurer l’affichage des visites sur l’écran de navigation
+- Configurer l’affichage des visites sur l’écran de navigation
 
--   Apporter des modifications de base à l’application
+- Apporter des modifications de base à l’application
 
--   Tester les fonctionnalités de l’application
+- Tester les fonctionnalités de l’application
 
 ## <a name="prerequisites"></a>Prérequis
 
--   Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
+- Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
+- Participation au **Module 2 Labo 1 : modélisation des données**
 
-# <a name="exercise-1-create-visits-app"></a>Exercice \#1 : Créer l’application Visites
+## <a name="exercise-1-create-visits-canvas-app"></a>Exercice 1 : créer une application canevas Visites
 
-**Objectif** : Dans cet exercice, vous allez créer une application canevas en connectant la table Visites Initiales que vous avez créée précédemment.
+**Objectif :** dans cet exercice, vous allez créer une application canevas en connectant la table Visites que vous avez créée précédemment.
 
-## <a name="task-1-create-a-visits-app"></a>Tâche \#1 : Créer une application Visites
+### <a name="task-1-create-the-visits-app"></a>Tâche no 1 : créer l’application Visites
 
 1.  Accédez à <https://make.powerapps.com>. Vous devrez peut-être vous authentifier à nouveau. Cliquez sur **Se connecter** et suivez les instructions si nécessaire.
 
@@ -48,12 +48,12 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
 3.  Si nécessaire, cliquez sur l’icône **Accueil** à gauche de l’écran. Sous la section **Démarrer à partir de**, sélectionnez **Dataverse**.
 
-4.  Sélectionnez votre connexion Dataverse. 
+4.  Sélectionnez votre connexion Dataverse.
 
-    >   **REMARQUE :** *Si une connexion Dataverse n’existe pas :*
-    >   -   Sélectionnez **Nouvelle connexion**.
-    >   -   Localisez **Microsoft Dataverse**.
-    >   -   Cliquez sur **Créer**
+    > **REMARQUE :** *Si une connexion Dataverse n’existe pas :*
+    > - Sélectionnez **Nouvelle connexion**.
+    > - Localisez **Microsoft Dataverse**.
+    > - Cliquez sur **Créer**
 
 5.  Recherchez et sélectionnez la table **Visites** que vous avez créée dans le labo précédent.
 
@@ -65,45 +65,45 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
 ![Application canevas créée à partir des données Visite.](media/2-canvas-app-from-data.png)
 
-9. Dans le Concepteur d’application, sélectionnez le bouton de **prévisualisation de l’application** (icône Lecture) dans la barre de commandes. *(Vous pouvez également appuyer sur la touche F5 de votre clavier pour prévisualiser l’application.)* Parcourez l’application pour constater qu’elle est application est prête à l'emploi.
+9. Dans le concepteur d’applications, sélectionnez le bouton **Afficher un aperçu de l’application** (icône Lecture) dans la barre de commandes. *(Vous pouvez également appuyer sur la touche F5 de votre clavier pour prévisualiser l’application.)* Parcourez l’application pour constater qu’elle est application est prête à l'emploi.
 
 10. Fermez l’aperçu de l’application en sélectionnant le **X** en haut à droite de l’écran.
 
 Félicitations, vous avez créé une application Power Apps à partir d’une table Dataverse. L’étape suivante du processus consiste à personnaliser l’application pour refléter la stratégie de marque de votre établissement. La série suivante d’étapes vous guidera tout au long des tâches nécessaires pour personnaliser davantage l’application.
 
-## <a name="task-2-modify-and-theme-the-newly-created-app"></a>Tâche \#2 : Modifier l’application nouvellement créée et lui appliquer un thème
+### <a name="task-2-modify-and-theme-the-newly-created-app"></a>Tâche \#2 : Modifier l’application nouvellement créée et lui appliquer un thème
 
 Dans cette tâche, vous allez personnaliser le texte d’en-tête de chacun des trois écrans de votre application (Parcourir, Détails et Modifier) et modifier le thème de l’application.
 
 1.  Vous êtes sur l’écran Parcourir. Sélectionnez l’étiquette **Visites** à l’écran.
 
-3.  À droite de l’écran, sous l’onglet Propriétés, remplacez la propriété du contrôle  **Texte** par « **Visites de Bellows College** ».
+1.  À droite de l’écran, sous l’onglet Propriétés, remplacez la propriété du contrôle  **Texte** par « **Visites de Bellows College** ».
 
-4. Dans les propriétés, définissez la **Taille de police** sur **24**.
+1. Dans les propriétés, définissez la **Taille de police** sur **24**.
 
-4.  Cliquez sur l’arrière-plan vide pour afficher le texte mis à jour sur votre écran Parcourir.
+1.  Cliquez sur l’arrière-plan vide de l’écran pour afficher le texte mis à jour sur votre écran Parcourir.
 
-5.  Dans le volet de navigation de gauche, sélectionnez **DetailScreen1**.
+1.  À l’aide de l’arborescence dans le volet de navigation de gauche, sélectionnez **DetailScreen1**.
 
-5.  Sélectionnez l’étiquette **Visites** à l’écran.
+1.  Sélectionnez l’étiquette **Visites** à l’écran.
 
-6.  À droite de l’écran, sous l’onglet Propriétés, remplacez la propriété du contrôle  **Texte** par « **Détails de la visite** ».
+1.  À droite de l’écran, sous l’onglet Propriétés, remplacez la propriété du contrôle  **Texte** par « **Détails de la visite** ».
 
-7.  Cliquez sur l’arrière-plan vide pour afficher le texte mis à jour sur votre écran Détails.
+1.  Cliquez sur l’arrière-plan vide de l’écran pour afficher le texte mis à jour sur votre écran Détails.
 
-8.  En utilisant les options de navigation sur la gauche, sélectionnez **EditScreen1** (vous devrez peut-être faire défiler l'écran pour voir cette option dans l’arborescence).
+1.  À l’aide de l’arborescence dans le volet de navigation de gauche, sélectionnez **EditScreen1** (vous devrez peut-être faire défiler l’écran pour afficher cette option dans l’arborescence).
 
-9.  Sélectionnez l’étiquette **Visites** à l’écran.
+1.  Sélectionnez l’étiquette **Visites** à l’écran.
 
-10.  À droite de l’écran, sous l’onglet Propriétés, remplacez le texte Table1 dans la propriété du contrôle  **Texte** par « **Modifier les détails** ».
+1.  À droite de l’écran, sous l’onglet Propriétés, remplacez le texte Table1 dans la propriété du contrôle  **Texte** par « **Modifier les détails** ».
 
-11.  Cliquez sur l’arrière-plan vide pour afficher le texte mis à jour sur votre écran Modifier.
+1.  Cliquez sur l’arrière-plan vide de l’écran pour afficher le texte mis à jour sur votre écran Modifier.
 
-12. Dans le volet de navigation de gauche, sélectionnez **BrowseScreen1**.
+1. À l’aide de l’arborescence dans le volet de navigation de gauche, sélectionnez **BrowseScreen1**.
 
-13. Dans la barre d’outils de commande, sélectionnez le bouton **Thème** et, dans la liste qui s’affiche, sélectionnez la couleur de thème **Rouge**.
+1. Dans la barre d’outils de commande, sélectionnez le bouton **Thème** et, dans la liste qui s’affiche, sélectionnez la couleur de thème **Rouge**.
 
-## <a name="task-3-test-your-visits-app"></a>Tâche \#3 : Tester l’application Visites
+### <a name="task-3-test-your-visits-app"></a>Tâche \#3 : Tester l’application Visites
 
 Dans cette tâche, vous allez tester votre nouvelle application.
 
@@ -113,7 +113,7 @@ Dans cette tâche, vous allez tester votre nouvelle application.
 
 3.  Dans le volet de navigation de gauche, sélectionnez **BrowseScreen1**.
 
-4.  Dans le Concepteur d’application, sélectionnez le bouton de **prévisualisation de l’application** (icône Lecture) dans la barre de commandes. *(Vous pouvez également appuyer sur la touche F5 de votre clavier pour prévisualiser l’application.)*
+4.  Dans le concepteur d’applications, sélectionnez le bouton **Afficher un aperçu de l’application** (icône Lecture) dans la barre de commandes. *(Vous pouvez également appuyer sur la touche F5 de votre clavier pour prévisualiser l’application.)*
 
 4.  Une fois l’application ouverte, dans le champ **Éléments de recherche**, entrez le texte **Maria**
      *(Notez la façon dont les éléments de la galerie sont filtrés en fonction de ce que vous tapez dans le champ de recherche.)*
@@ -128,6 +128,6 @@ Dans cette tâche, vous allez tester votre nouvelle application.
 
 Félicitations ! Vous avez créé et configuré votre première application canevas.
 
-# <a name="challenges"></a>Défis
+## <a name="challenges"></a>Défis
 
--   Ajoutez les colonnes suivantes aux formulaires dans DetailScreen1 et EditScreen1 : Début réel, Fin réelle, Code, Début prévu et Fin prévue
+- Ajoutez les colonnes suivantes aux formulaires dans DetailScreen1 et EditScreen1 : Début réel, Fin réelle, Code, Début prévu et Fin prévue
