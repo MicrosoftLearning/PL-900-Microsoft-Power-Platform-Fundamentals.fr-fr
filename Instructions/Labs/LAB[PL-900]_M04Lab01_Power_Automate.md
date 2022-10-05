@@ -1,19 +1,14 @@
 ---
 lab:
-  title: 'Labo 4 : Création d’une solution automatisée'
+  title: "Labo\_4\_: Création d’une solution automatisée"
   module: 'Module 4: Get Started with Power Automate'
-ms.openlocfilehash: 35d4b6940f31e1a2aef5e8b43d8ca7007e1b72f2
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154321"
 ---
+
 # <a name="lab-4-how-to-build-an-automated-solution"></a>Labo 4 : Création d’une solution automatisée
 
 ## <a name="scenario"></a>Scénario
 
-Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 L’administration du campus souhaite moderniser son système d’inscription des visiteurs où l’accès aux bâtiments est contrôlé par le personnel de sécurité et toutes les visites doivent être pré-enregistrées et enregistrées par leurs hôtes.
 
@@ -36,11 +31,11 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 
 ## <a name="exercise-1-create-visit-notification-flow"></a>Exercice 1 : Créer un flux de notification de visite
 
-**Objectif** : Dans cet exercice, vous allez créer un flux Power Automate qui met en place ces conditions. Le visiteur doit recevoir un e-mail contenant le code unique attribué à la visite lorsqu’une visite est créée.
+<bpt id="p1">**</bpt>Objective:<ept id="p1">**</ept> In this exercise, you will create a Power Automate flow that implements the requirement. The visitor should be sent an email that includes the unique code assigned to the visit when a visit is created.
 
 ### <a name="task-1-create-a-flow"></a>Tâche \#1 : Créer un flux
 
-1.  Accédez à <https://make.powerapps.com>. Vous devrez peut-être vous authentifier à nouveau. Cliquez sur **Se connecter** et suivez les instructions si nécessaire.
+1.  Navigate to <ph id="ph1">&lt;https://make.powerapps.com&gt;</ph>. You may need to reauthenticate - click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> and follow instructions if needed.
 
 2.  Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
 
@@ -64,11 +59,11 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 
     3.  Sélectionnez **Organisation** dans la liste **Étendue**.
 
-    4.  À l’étape de déclenchement, cliquez sur les points de suspension ( **...** ), puis sur **Renommer**. Renommez ce déclencheur **« Lorsqu’une visite est ajoutée »** . Il s’agit d’une bonne pratique, qui vous permet, ainsi qu’autres éditeurs de flux, de comprendre le but de l’étape sans vous plonger dans les détails.
+    4.  On the trigger step, click the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) and click <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>. Rename this trigger <bpt id="p1">**</bpt>"When a visit is added"<ept id="p1">**</ept>. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
 ### <a name="task-2-create-a-step-to-get-the-visitor-row"></a>Tâche \#2 : Créer une étape pour obtenir la ligne du visiteur
 
-1.  Sélectionnez **+ Nouvelle étape**. Cette étape est nécessaire pour récupérer les informations des visiteurs, y compris les adresses e-mail.
+1.  Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus.
 
 2.  Recherchez **Dataverse**.
 
@@ -76,16 +71,16 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 
 4.  Sélectionnez **Contacts** comme **Nom de table**.
 
-5.  Sélectionnez le champ **ID de ligne** . Remarquez qu'une fenêtre s'ouvre pour sélectionner Contenu dynamique ou Expressions.
+5.  Les visiteurs du campus sont actuellement enregistrés dans des journaux papier.
 
-6.  Dans le champ **Identifiant de ligne**, sélectionnez **Visiteur (valeur)** dans la liste de contenu dynamique. Dans cette étape, vous recherchez le contact pour la ligne Visite créée afin de déclencher ce flux. Comme l’adresse e-mail fait partie de la table Contact, vous aurez besoin de ces informations pour envoyer l’e-mail au visiteur.
+6.  Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
 
-7.  Dans cette action, cliquez sur les points de suspension ( **...** ), puis sur **Renommer**.
-        Renommez cette action **« Obtenir le visiteur »** . Il s’agit d’une bonne pratique, qui vous permet, ainsi qu’autres éditeurs de flux, de comprendre le but de l’étape sans vous plonger dans les détails.
+7.  On this action, click the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) and click <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>.
+        Rename this action <bpt id="p1">**</bpt>"Get the Visitor"<ept id="p1">**</ept>. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
 ### <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Tâche \#3 : Créer une étape pour envoyer un e-mail au visiteur
 
-1.  Cliquez sur **+ Nouvelle étape**. Il s’agit de l’étape qui permettra d’envoyer un e-mail au visiteur.
+1.  Click <bpt id="p1">**</bpt>+ New step<ept id="p1">**</ept>. This is the step that will send an email to the visitor.
 
 2.  Recherchez *message*, sélectionnez le connecteur **Office 365 Outlook** et l’action **Envoyer un e-mail (V2)** .
 
@@ -102,7 +97,7 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 
 7.  Entrez le texte suivant dans le **Corps du courriel**.
 
->   Le contenu dynamique doit être placé là où les champs sont nommés entre crochets. Il est recommandé de commencer par copier et coller l’ensemble du texte, puis d’ajouter du contenu dynamique aux endroits appropriés.
+>   Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy &amp; paste all text first and then add dynamic content in the correct places.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    Dear {First Name},
@@ -112,18 +107,18 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
    Best regards,
 
    Campus Administration
-   Bellows College
+   Bellows College
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-8.  Mettez en surbrillance le texte **{First Name}** . Remplacez-le par le champ **Prénom** de l’étape **Obtenir le visiteur**.
+8.  Highlight the <bpt id="p1">**</bpt>{First Name}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>First Name<ept id="p1">**</ept> field from the <bpt id="p2">**</bpt>Get the Visitor<ept id="p2">**</ept> step.
 
-9.  Mettez en surbrillance le texte **{Scheduled Start}** . Remplacez-le par le champ **Début prévu** de l’étape **Lorsqu’une visite est ajoutée**.
+9.  Highlight the <bpt id="p1">**</bpt>{Scheduled Start}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>Scheduled Start<ept id="p1">**</ept> field <bpt id="p2">**</bpt>When a visit is added<ept id="p2">**</ept> step.
 
-10.  Mettez en surbrillance le texte **{Scheduled End}** . Remplacez-le par le champ **Fin prévue** de l’étape **Lorsqu’une visite est ajoutée**.
+10.  Highlight the <bpt id="p1">**</bpt>{Scheduled End}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>Scheduled End<ept id="p1">**</ept> field from the <bpt id="p2">**</bpt>When a visit is added<ept id="p2">**</ept> step.
 
 11.  Cliquez sur **Enregistrer**.
 
-Laissez cet onglet de flux ouvert pour la tâche suivante. Votre flux doit ressembler à ce qui suit :
+Leave this flow tab open for the next task. You flow should look approximately like the following:
 
 ![Exemple d’étapes de flux.](media/4-Flow.png)
 
@@ -137,7 +132,7 @@ Laissez cet onglet de flux ouvert pour la tâche suivante. Votre flux doit resse
 
 3.  En laissant cet onglet de navigateur ouvert, revenez à l’onglet précédent avec votre flux.
 
-4.  Dans la barre de commandes, cliquez sur **Test**. Sélectionnez **Manuel**, puis cliquez sur **Test**.
+4.  On the command bar, click <bpt id="p1">**</bpt>Test<ept id="p1">**</ept>. Select <bpt id="p1">**</bpt>Manually<ept id="p1">**</ept> and then click <bpt id="p2">**</bpt>Test<ept id="p2">**</ept>.
 
 5.  Accédez à l’onglet du navigateur en ayant votre application pilotée par modèle ouverte. 
 
@@ -157,10 +152,10 @@ Laissez cet onglet de flux ouvert pour la tâche suivante. Votre flux doit resse
 
 8. Sélectionnez le bouton **Enregistrer et fermer**.
 
-9. Accédez à l’onglet du navigateur en ayant votre test de flux en cours d’exécution. Après un court délai, vous devez voir le flux en cours d’exécution. C'est là que vous pouvez détecter tout problème dans le flux ou confirmer qu’il s'est bien déroulé.
+9. Navigate to the browser tab with your flow test running. After a short delay, you should see the flow running. This is where you can catch any issues in the flow or confirm that it ran successfully.
 
-Après un court délai, vous devriez voir un e-mail dans votre boîte de réception, car vous avez indiqué l’e-mail de John Doe comme votre e-mail personnel. Notez que cet e-mail peut se retrouver dans votre dossier Courrier indésirable.
+After a short delay, you should see an email in your inbox, since you populated John Doe's email as your personal email. Note that it may go to your Junk Email folder.
 
 ## <a name="challenges"></a>Défis
 
-- Essayez différentes options de mise en forme sur l’e-mail. Comment pouvez-vous le rendre plus professionnel ?
+- Play around with the formatting on the email. How can you make it more professional looking?

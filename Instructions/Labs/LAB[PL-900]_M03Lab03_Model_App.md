@@ -1,19 +1,14 @@
 ---
 lab:
-  title: 'Labo 3 : Comment créer une application pilotée par modèle'
+  title: "Labo 3\_: Comment créer une application pilotée par modèle"
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: a5176245ed8ec696049d78e1022e82aa8236057f
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154417"
 ---
+
 # <a name="lab-3-how-to-build-a-model-driven-app"></a>Labo 3 : Comment créer une application pilotée par modèle
 
 ## <a name="scenario"></a>Scénario
 
-Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 L’administration du campus souhaite moderniser son système d’inscription des visiteurs où l’accès aux bâtiments est contrôlé par le personnel de sécurité et toutes les visites doivent être pré-enregistrées et enregistrées par leurs hôtes.
 
@@ -66,7 +61,7 @@ Si vous ne voyez pas la table Visite, vérifiez que vous êtes dans l’environn
 
 4. Sous la section **Expériences des données**, sélectionnez **Formulaires**, puis cliquez pour ouvrir le formulaire Informations de type **Principal**.
 
-**IMPORTANT :** Par défaut, tous les formulaires sont nommés Informations, donc vérifiez que le formulaire que vous sélectionnez est de type **Principal** et pas autre chose. Le formulaire comporte deux champs par défaut : Nom et Propriétaire.
+<bpt id="p1">**</bpt>IMPORTANT:<ept id="p1">**</ept> Since by default all forms are named Information, make sure to verify that the form you select has a Form Type of <bpt id="p2">**</bpt>Main<ept id="p2">**</ept> and not something else. By default, the form has two fields: Name and Owner.
 
 5. À droite de l’écran dans le volet Propriétés, sélectionnez le champ **Nom complet**, puis remplacez-le par **Informations principales**.
 
@@ -84,19 +79,19 @@ Si vous ne voyez pas la table Visite, vérifiez que vous êtes dans l’environn
 
 7. Faites glisser la colonne **Code** et déposez-la dans l’en-tête du formulaire.
 
-L’en-tête est la zone supérieure droite du formulaire. Vous devrez peut-être réduire le panneau Propriétés sur le côté droit de l’écran pour voir le champ sur le formulaire.
+The header is the top right area of the form. You may need to collapse the Properties panel on the right side of the screen to see the field on the form.
 
 8. En gardant le champ **Code** sélectionné, cochez la case en regard de **Lecture seule** dans le panneau Propriétés à droite de l’écran.
 
-9. Sélectionnez le champ **Propriétaire**. Dans le volet Propriétés, remplacez **Étiquette** par **Hôte**
+9. Select <bpt id="p1">**</bpt>Owner<ept id="p1">**</ept> field. In the Properties panel, change the <bpt id="p1">**</bpt>Label<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Host<ept id="p2">**</ept>
 
 10. Cliquez sur **Enregistrer** en haut à droite et attendez la fin de l’enregistrement.
 
 11. Cliquez sur **Publier** en haut à droite et attendez la fin de la publication.
 
-12. Si la vue d’édition est ouverte dans un nouvel onglet ou une nouvelle fenêtre de navigateur, fermez cette vue. Sinon, cliquez sur **Retour** en haut à gauche de l’écran. Vous devez ensuite revenir aux Formulaires de tables de visite.
+12. Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus.
 
-13. Utilisation des barres de navigation en haut à gauche (Tables>Visite>Formulaires). Sélectionnez **Visite** pour revenir à l’écran principale de la table **Visite**.
+13. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier.
 
 ### <a name="task-2-edit-active-visits-view"></a>Tâche \#2 : Modifier la vue Visites actives
 
@@ -114,7 +109,7 @@ Dans cette tâche, nous allons modifier la vue des visites actives par défaut e
 
     4. **Fin prévue**
 
-3. Cliquez sur la colonne **Créé le** et sélectionnez **Supprimer**. Le champ **Créé sur** sera maintenant supprimé de la vue.
+3. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
 
 4. Redimensionnez la largeur de chaque colonne pour faire rentrer les données.
 
@@ -138,13 +133,13 @@ IMPORTANT : Veillez à ne pas fermer la vue Visites actives, car nous allons l�
 
 5. Sélectionnez le champ **Début programmé**, puis sélectionnez la condition **Aujourd’hui** dans la liste déroulante.
 
-6. Cliquez sur **…** dans la ligne **État**, puis sur **Supprimer** pour supprimer cette condition de filtre.
+6. Click the <bpt id="p1">**</bpt>…<ept id="p1">**</ept> on the <bpt id="p1">**</bpt>Status<ept id="p1">**</ept> row and click <bpt id="p2">**</bpt>Delete<ept id="p2">**</ept> to delete that filter condition.
 
-7. Appuyez sur **OK** pour enregistrer la condition. La vue est désormais filtrée pour n’afficher que les enregistrements dont la date de début programmé est aujourd’hui.
+7. Press <bpt id="p1">**</bpt>Ok<ept id="p1">**</ept> to save the condition. The view is now filtered to show only records where the Scheduled Start date is today.
 
 8. Ajoutez les champs **Début réel** et **Fin réelle** à la vue.
 
-**Remarque :** Étant donné que nous ne filtrons plus l’état de la vue, nous verrons toutes les visites du jour, y compris les visites terminées. Ces champs permettront de différencier les visites terminées et les visites en cours.
+<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Since we no longer filter on the view status, we will get all today’s visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
 1. Cliquez sur **Enregistrer**.
 
@@ -230,13 +225,13 @@ Tous les composants nécessaires étant désormais ajoutés à l’application p
 
 2. Créer un nouveau contact
 
-    1. L’application doit s’ouvrir sur la vue **Mes contacts actifs**. Si ce n’est pas le cas, sélectionnez Contacts dans la navigation de gauche.
+    1. The app should open to the <bpt id="p1">**</bpt>My Active Contacts<ept id="p1">**</ept> view. If it does not, select Contacts on the left-hand navigation.
 
     1. Cliquez sur **Nouveau** dans le menu supérieur.
 
     1. Indiquez John comme **Prénom** et Doe comme **Nom**.
 
-    1. Indiquez votre adresse e-mail personnelle dans **E-mail**. Elle sera utilisée dans un prochain labo où vous recevrez un e-mail.
+    1. Provide your personal email as <bpt id="p1">**</bpt>Email<ept id="p1">**</ept>. This will be used in a future lab where you will receive an email.
 
     1. Cliquez sur **Enregistrer et fermer**.
 
@@ -258,9 +253,9 @@ Tous les composants nécessaires étant désormais ajoutés à l’application p
 
         1. **Fin planifiée** : sélectionnez la date de demain et 15h30 comme heure de fin.
 
-- Cliquez sur **Enregistrer et fermer**. La visite sera alors créée. Vous devez pouvoir la voir dans la vue Visites actives.
+- Click <bpt id="p1">**</bpt>Save &amp; Close<ept id="p1">**</ept>. This will create the Visit and you should be able to see it on the Active Visits View.
 
-- Remplacez la vue par **Visites du jour**. Vous ne devriez plus voir la nouvelle visite dans la vue, car elle est prévue pour demain.
+- Change view to <bpt id="p1">**</bpt>Today’s Visits<ept id="p1">**</ept>. You should no longer see the new visit in the view, since it is scheduled for tomorrow.
 
 4. Vous pouvez ajouter d’autres enregistrements test.
 
@@ -268,7 +263,7 @@ Votre application en cours d’exécution doit ressembler à ceci :
 
 ![](media/3-model-driven-app.png)
 
-Félicitations ! Vous avez créé et configuré votre première application pilotée par modèle.
+Congratulations! You have created and configured your first model-driven app.
 
 ## <a name="challenges"></a>Défis
 

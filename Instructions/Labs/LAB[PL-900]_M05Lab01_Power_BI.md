@@ -1,19 +1,14 @@
 ---
 lab:
-  title: 'Labo 5 : Comment créer un tableau de bord simple'
+  title: "Labo\_5\_: Comment créer un tableau de bord simple"
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154441"
 ---
+
 ## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Labo 5 : Comment créer un tableau de bord simple
 
 ## <a name="scenario"></a>Scénario
 
-Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 L’administration du campus souhaite moderniser son système d’inscription des visiteurs où l’accès aux bâtiments est contrôlé par le personnel de sécurité et toutes les visites doivent être pré-enregistrées et enregistrées par leurs hôtes.
 
@@ -37,7 +32,7 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer un tableau de
 ## <a name="things-to-consider-before-you-begin"></a>Éléments à considérer avant de commencer
 
 -   À quel public ce rapport est-il destiné ?
--   Comment les participants utiliseront-ils le rapport ? Appareil courant ? L’emplacement ?
+-   How will the audience consume the report? Typical device? Location?
 -   Avez-vous suffisamment de données à visualiser ?
 -   Quelles sont les caractéristiques utilisables pour analyser les données sur les visites ?
 
@@ -61,7 +56,7 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer un tableau de
 
 7.  Après le chargement des données, développez **Mon espace de travail** et sélectionnez **visites** (notez que le Type est défini sur **Rapport**).
 
-8.  Cliquez sur **Modifier**. Si l’élément de menu **Modifier** n’est pas visible cliquez sur **...** , puis sélectionnez **Modifier**.
+8.  Click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>. If <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu item is not visible click <bpt id="p2">**</bpt>...<ept id="p2">**</ept> and then select <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept>.
 
 Vous avez terminé la configuration du service Power BI que vous utiliserez pour vos labos.
 
@@ -69,15 +64,15 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
 1.  Appuyez sur l’icône **Graphique en secteurs** dans le panneau **Visualisations** pour insérer un graphique.
 
-2.  Appuyez sur la flèche déroulante à côté de **bc_building** dans le volet Champs. Faites glisser le champ **Bâtiment** et déposez-le dans la zone **Légende**.
+2.  Press the drop-down arrow beside <bpt id="p1">**</bpt>bc_building<ept id="p1">**</ept> in the Fields pane. Drag the <bpt id="p1">**</bpt>Building<ept id="p1">**</ept> field and drop it into <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept> box.
 
-3.  Appuyez sur la flèche déroulante en regard de **bc_Visit** dans le volet Champs. Faites glisser le champ **Visite** et déposez-le dans la zone **Valeurs**.
+3.  Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus.
 
 4.  Redimensionnez le graphique en secteurs à l’aide des poignées d’angle afin que tous les composants du graphique soient visibles.
 
 5.  Cliquez sur le rapport en dehors du graphique en secteurs pour le désélectionner et sélectionnez l’histogramme empilé dans le panneau **Visualisations**.
 
-6.  Appuyez sur la flèche déroulante en regard de **bc_Visit** dans le volet Champs. Faites glisser le champ **Visite** et déposez-le dans la zone cible **Axe Y**.
+6.  Les visiteurs du campus sont actuellement enregistrés dans des journaux papier.
 
 7.  Faites glisser le champ **Début** et déposez-le dans la zone cible **Axe X**.
 
@@ -89,7 +84,7 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
     1.  Cliquez sur différents secteurs sur le graphique en secteurs et observez les changements sur le rapport de temps.
 
-    2.  Cliquez sur l’histogramme. Appuyez sur la flèche vers le bas pour activer le mode **Descendre dans la hiérarchie** (ou cliquez avec le bouton droit de la souris sur le graphique et sélectionnez **Descendre dans la hiérarchie**), puis cliquez sur une colonne pour descendre au niveau suivant (jours).
+    2.  Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
 
     3.  Explorez en remontant ou en descendant d’un niveau et sélectionnez diverses barres sur l’histogramme du temps pour observer les changements sur le graphique en secteurs.
 
@@ -101,13 +96,13 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
 1.  Vous pouvez accéder au rapport ouvert depuis la tâche précédente.
 
-2.  Sélectionnez **Épingler à un tableau de bord** dans le menu. Selon la disposition, vous devrez peut-être appuyer sur **...** pour afficher des éléments de menu supplémentaires.
+2.  Select <bpt id="p1">**</bpt>Pin to a dashboard<ept id="p1">**</ept> on the menu. Depending on the layout you may need to press <bpt id="p1">**</bpt>...<ept id="p1">**</ept> to show additional menu items.
 
 3.  Sélectionnez **Nouveau tableau de bord** sur l’invite **Épingler au tableau de bord**.
 
 4.  Entrez **Gestion du campus** comme un **Nom du tableau de bord** puis appuyez sur **Épingler un élément dynamique**.
 
-5.  Une fenêtre contextuelle vous indique que le tableau de bord a été créé. Sélectionnez **Accéder au tableau de bord**.
+5.  A pop-up will prompt you that the dashboard has been created. Select <bpt id="p1">**</bpt>Go to dashboard<ept id="p1">**</ept>.
 
 6.  Testez l’interactivité des graphiques en secteurs et à barres affichés.
 
@@ -115,7 +110,7 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
 1.  Au sein de votre tableau de bord **Gestion du campus**, sélectionnez la barre **Poser une question sur vos données**.
 
-2.  Entrez **bâtiments par nombre de visites** dans la zone Questions et réponses. Un graphique à barres s’affiche.
+2.  Enter <bpt id="p1">**</bpt>buildings by number of visits<ept id="p1">**</ept> in Q&amp;A area. A bar chart will be displayed.
 
 3.  Sélectionnez **Épingler un élément visuel**.
 
@@ -123,7 +118,7 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
 5.  Cliquez sur **Quitter les Q/R**.
 
-Votre tableau de bord **Gestion du campus** doit s’afficher avec trois visuels. Vous devrez peut-être faire défiler vers le bas pour voir le nouveau visuel de questions et réponses.
+Your <bpt id="p1">**</bpt>Campus Management<ept id="p1">**</ept> dashboard should be displayed with three visuals on it. You may have to scroll down to see the new Q&amp;A visual.
 
 Votre tableau de bord doit ressembler à ce qui suit :
 
