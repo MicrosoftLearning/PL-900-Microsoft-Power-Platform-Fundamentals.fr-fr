@@ -8,9 +8,9 @@ lab:
 
 ## <a name="scenario"></a>Scénario
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visites sur le campus sont actuellement enregistrées dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
 
-Currently, campus administration is leveraging an Excel spreadsheet to track visitor registration. They would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
+Actuellement, l’administration du campus utilise une feuille de calcul Excel pour suivre l’inscription des visiteurs. Elle souhaite moderniser son système d’inscription des visiteurs où l’accès aux bâtiments est contrôlé par le personnel de sécurité et toutes les visites doivent être pré-enregistrées et enregistrées par leurs hôtes.
 
 Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus.
 
@@ -37,11 +37,11 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
 ### <a name="task-1-create-the-visits-app"></a>Tâche no 1 : créer l’application Visites
 
-1.  Navigate to <ph id="ph1">&lt;https://make.powerapps.com&gt;</ph>. You may need to reauthenticate - click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> and follow instructions if needed.
+1.  Accédez à <https://make.powerapps.com>. Vous devrez peut-être vous authentifier à nouveau. Cliquez sur **Se connecter** et suivez les instructions si nécessaire.
 
 2.  Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
 
-3.  If necessary, click the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> icon on the left side of the screen. Under the <bpt id="p1">**</bpt>Start from<ept id="p1">**</ept> section, select <bpt id="p2">**</bpt>Dataverse<ept id="p2">**</ept>.
+3.  Si nécessaire, cliquez sur l’icône **Accueil** à gauche de l’écran. Sous la section **Démarrer à partir de**, sélectionnez **Dataverse**.
 
 4.  Sélectionnez votre connexion Dataverse.
 
@@ -60,17 +60,17 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
 ![Application canevas créée à partir des données Visite.](media/2-canvas-app-from-data.png)
 
-9. Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus.
+9. Dans le concepteur d’applications, sélectionnez le bouton **Afficher un aperçu de l’application** (icône Lecture) dans la barre de commandes. *(Vous pouvez également appuyer sur la touche F5 de votre clavier pour prévisualiser l’application.)* Parcourez l’application pour constater qu’elle est application est prête à l'emploi.
 
 10. Fermez l’aperçu de l’application en sélectionnant le **X** en haut à droite de l’écran.
 
-Les visites sur le campus sont actuellement enregistrées dans des journaux papier.
+Félicitations, vous avez créé une application Power Apps à partir d’une table Dataverse. L’étape suivante du processus consiste à personnaliser l’application pour refléter la stratégie de marque de votre établissement. La série suivante d’étapes vous guidera tout au long des tâches nécessaires pour personnaliser davantage l’application.
 
 ### <a name="task-2-modify-and-theme-the-newly-created-app"></a>Tâche \#2 : Modifier l’application nouvellement créée et lui appliquer un thème
 
 Dans cette tâche, vous allez personnaliser le texte d’en-tête de chacun des trois écrans de votre application (Parcourir, Détails et Modifier) et modifier le thème de l’application.
 
-1.  Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
+1.  Vous êtes sur l’écran Parcourir. Sélectionnez l’étiquette **Visites** à l’écran.
 
 1.  À droite de l’écran, sous l’onglet Propriétés, remplacez la propriété du contrôle  **Texte** par « **Visites de Bellows College** ».
 
@@ -102,18 +102,18 @@ Dans cette tâche, vous allez personnaliser le texte d’en-tête de chacun des 
 
 Dans cette tâche, vous allez tester votre nouvelle application.
 
-1.  Ouvrez votre application dans le Concepteur d’application, sélectionnez **Fichier**, remplacez le nom de votre application par **Application Visites**, puis sélectionnez **Enregistrer**.
+1.  Une fois que votre application s’ouvre dans le Concepteur d’applications, sélectionnez **Paramètres**, dans la section **Général** , mettez à jour le nom de votre application pour **visites** de l’application, cliquez sur **X** pour fermer l’écran paramètres, puis sélectionnez **Enregistrer**.
 
 2.  Cliquez sur la flèche **retour** pour revenir à votre application.
 
 3.  Dans le volet de navigation de gauche, sélectionnez **BrowseScreen1**.
 
-4.  In the app designer, select the <bpt id="p1">**</bpt>preview the app<ept id="p1">**</ept> button (Play icon) on the command bar. <bpt id="p1">*</bpt>(You can also preview the app by pressing F5 on your keyboard.)<ept id="p1">*</ept>
+4.  Dans le concepteur d’applications, sélectionnez le bouton **Afficher un aperçu de l’application** (icône Lecture) dans la barre de commandes. *(Vous pouvez également appuyer sur la touche F5 de votre clavier pour prévisualiser l’application.)*
 
 4.  Une fois l’application ouverte, dans le champ **Éléments de recherche**, entrez le texte **Maria**
      *(Notez la façon dont les éléments de la galerie sont filtrés en fonction de ce que vous tapez dans le champ de recherche.)*
 
-5.  Actuellement, l’administration du campus utilise une feuille de calcul Excel pour suivre l’inscription des visiteurs.
+5.  Une fois l’enregistrement **Contoso Suites** pour **Maria Campbell** affiché, cliquez sur la ligne pour accéder aux détails de cette visite. (**Remarque** : *Si plusieurs enregistrements Contoso Suites pour Maria Campbell sont affichés, sélectionnez-en un.* )
 
 6.  Pour modifier l’enregistrement, sélectionnez l’**icône crayon** dans le coin supérieur droit de l’application.
 
@@ -121,7 +121,7 @@ Dans cette tâche, vous allez tester votre nouvelle application.
 
 8.  En haut à droite de l’écran, cliquez sur l’icône **X** pour revenir à l’éditeur de l’application canevas.
 
-Elle souhaite moderniser son système d’inscription des visiteurs où l’accès aux bâtiments est contrôlé par le personnel de sécurité et toutes les visites doivent être pré-enregistrées et enregistrées par leurs hôtes.
+Félicitations ! Vous avez créé et configuré votre première application canevas.
 
 ## <a name="challenges"></a>Défis
 
