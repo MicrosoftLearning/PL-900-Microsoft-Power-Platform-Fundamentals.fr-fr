@@ -1,14 +1,9 @@
 ---
 lab:
-  title: 'Labo 2 : Comment créer une application canevas'
+  title: "Labo\_2\_: Comment créer une application canevas"
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: 9a9a447ac07176e7f7ed3471c105b2d06fa60c97
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154429"
 ---
+
 # <a name="lab-2-how-to-build-a-canvas-app"></a>Labo 2 : Comment créer une application canevas
 
 ## <a name="scenario"></a>Scénario
@@ -107,7 +102,7 @@ Dans cette tâche, vous allez personnaliser le texte d’en-tête de chacun des 
 
 Dans cette tâche, vous allez tester votre nouvelle application.
 
-1.  Ouvrez votre application dans le Concepteur d’application, sélectionnez **Fichier**, remplacez le nom de votre application par **Application Visites**, puis sélectionnez **Enregistrer**.
+1.  Une fois que votre application s’ouvre dans le Concepteur d’applications, sélectionnez **Paramètres**, dans la section **Général** , mettez à jour le nom de votre application pour **visites** de l’application, cliquez sur **X** pour fermer l’écran paramètres, puis sélectionnez **Enregistrer**.
 
 2.  Cliquez sur la flèche **retour** pour revenir à votre application.
 

@@ -1,14 +1,9 @@
 ---
 lab:
-  title: 'Labo 3 : Comment créer une application pilotée par modèle'
+  title: "Labo 3\_: Comment créer une application pilotée par modèle"
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: a5176245ed8ec696049d78e1022e82aa8236057f
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154417"
 ---
+
 # <a name="lab-3-how-to-build-a-model-driven-app"></a>Labo 3 : Comment créer une application pilotée par modèle
 
 ## <a name="scenario"></a>Scénario
@@ -146,9 +141,9 @@ IMPORTANT : Veillez à ne pas fermer la vue Visites actives, car nous allons l�
 
 **Remarque :** Étant donné que nous ne filtrons plus l’état de la vue, nous verrons toutes les visites du jour, y compris les visites terminées. Ces champs permettront de différencier les visites terminées et les visites en cours.
 
-1. Cliquez sur **Enregistrer**.
+9. Cliquez sur **Enregistrer**.
 
-2. Cliquez sur **Publier** et attendez la fin de la publication.
+10. Cliquez sur **Publier** et attendez la fin de la publication.
 
 ## <a name="exercise-2-create-model-driven-app"></a>Exercice 2 : créer une application pilotée par modèle
 
@@ -186,7 +181,7 @@ Pour rester simples et faute de temps, nous n’aborderons pas certaines des col
 
 8. À l’aide des icônes de navigation situées à gauche de l’écran, sélectionnez **Navigation**.
 
-9. Dans le volet de navigation, sélectionnez le **Groupe 1** sous l’indication Barre de navigation.
+9. Dans le volet de navigation, sélectionnez le **Groupe 1** sous l’indication Barre de navigation. Vous devrez peut-être développer le menu à gauche.
 
 10. À droite de l’écran, dans la section **Options d’affichage**, remplacez la propriété **Titre** par **Sécurité**.
 
@@ -260,7 +255,7 @@ Tous les composants nécessaires étant désormais ajoutés à l’application p
 
 - Cliquez sur **Enregistrer et fermer**. La visite sera alors créée. Vous devez pouvoir la voir dans la vue Visites actives.
 
-- Remplacez la vue par **Visites du jour**. Vous ne devriez plus voir la nouvelle visite dans la vue, car elle est prévue pour demain.
+- Modifiez **l’affichage des visites d’aujourd’hui à l’aide de** la liste déroulante en regard des **visites actives**. Vous ne devriez plus voir la nouvelle visite dans la vue, car elle est prévue pour demain.
 
 4. Vous pouvez ajouter d’autres enregistrements test.
 

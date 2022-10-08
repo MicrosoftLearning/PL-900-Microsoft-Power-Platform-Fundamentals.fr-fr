@@ -1,14 +1,9 @@
 ---
 lab:
-  title: 'Labo 5 : Comment créer un tableau de bord simple'
+  title: "Labo\_5\_: Comment créer un tableau de bord simple"
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154441"
 ---
+
 ## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Labo 5 : Comment créer un tableau de bord simple
 
 ## <a name="scenario"></a>Scénario
@@ -61,7 +56,7 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer un tableau de
 
 7.  Après le chargement des données, développez **Mon espace de travail** et sélectionnez **visites** (notez que le Type est défini sur **Rapport**).
 
-8.  Cliquez sur **Modifier**. Si l’élément de menu **Modifier** n’est pas visible cliquez sur **...** , puis sélectionnez **Modifier**.
+8.  Cliquez sur **Modifier**. Si l’élément de menu**Modifier** n’est pas visible cliquez sur **...** , puis sélectionnez **Modifier**.
 
 Vous avez terminé la configuration du service Power BI que vous utiliserez pour vos labos.
 
@@ -69,9 +64,9 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
 1.  Appuyez sur l’icône **Graphique en secteurs** dans le panneau **Visualisations** pour insérer un graphique.
 
-2.  Appuyez sur la flèche déroulante à côté de **bc_building** dans le volet Champs. Faites glisser le champ **Bâtiment** et déposez-le dans la zone **Légende**.
+2.  Appuyez sur la flèche déroulante en regard de **bc_Visit** dans le volet Champs. Faites glisser le champ **Bâtiment** et déposez-le dans la zone **Légende**.
 
-3.  Appuyez sur la flèche déroulante en regard de **bc_Visit** dans le volet Champs. Faites glisser le champ **Visite** et déposez-le dans la zone **Valeurs**.
+3.  Faites glisser le champ **Visite** et déposez-le dans la zone **Valeurs**.
 
 4.  Redimensionnez le graphique en secteurs à l’aide des poignées d’angle afin que tous les composants du graphique soient visibles.
 
