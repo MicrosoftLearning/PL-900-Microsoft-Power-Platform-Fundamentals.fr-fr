@@ -8,13 +8,13 @@ lab:
 
 ## <a name="scenario"></a>Scénario
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visites sur le campus sont actuellement enregistrées dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
 
 L’administration du campus souhaite moderniser son système d’inscription des visiteurs où l’accès aux bâtiments est contrôlé par le personnel de sécurité et toutes les visites doivent être pré-enregistrées et enregistrées par leurs hôtes.
 
 Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus.
 
-In this lab you will access your environment, create a Microsoft Dataverse database, and create a solution to track your changes. You will also create a data model to support the following requirements:
+Dans ce labo, vous accéderez à votre environnement et créerez une base de données Microsoft Dataverse ainsi qu’une solution pour effectuer le suivi de vos modifications. Vous allez également créer un modèle de données pour prendre en charge les exigences suivantes :
 
 - R1 – Suivre les informations pour les visites planifiées sur le campus
 
@@ -28,7 +28,7 @@ Enfin, vous importerez des échantillons de données dans Microsoft Dataverse.
 
 Pour préparer vos environnements d’apprentissage, vous devez :
 
-- Refer to the <bpt id="p1">[</bpt>data model document<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)</ept> for the metadata description (tables and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
+- Vous référer au [document de modèle de données](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) pour la description des métadonnées (tables et relations) Vous pouvez maintenir appuyée la touche CTRL et cliquer ou faire un clic droit sur le lien pour ouvrir le document de modèle de données dans une nouvelle fenêtre.
 - créer une table Visite
 - Importer les données de Visite avec une feuille de calcul Excel
 
@@ -166,7 +166,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 Dans cette tâche, vous allez importer des données Visite à partir d’un fichier Excel.
 
-1. You should have the <bpt id="p1">**</bpt>Visits.xlsx<ept id="p1">**</ept> file stored on your Desktop. Download <bpt id="p1">[</bpt>Visits.xlsx<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)</ept> if you do not.
+1. Le fichier **Visits.xlsx** doit être stocké sur votre bureau. Si ce n’est pas le cas, téléchargez [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
 2. Connectez-vous à [https://make.powerapps.com](https://make.powerapps.com/) si ce n’est déjà fait.
 
@@ -180,7 +180,7 @@ Dans cette tâche, vous allez importer des données Visite à partir d’un fich
 
 7. Dans le menu qui s’affiche, sélectionnez le bouton **Charger**.
 
-8. Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus.
+8. Recherchez et sélectionnez le fichier **Visits.xlsx** que vous avez téléchargé précédemment. (Notez que le chargement du fichier peut prendre une minute ou deux. Ne vous inquiétez pas si vous recevez un message indiquant des erreurs de mappage. Nous les corrigerons juste après ceci.)
 
 9. Cliquez sur **Mapper les colonnes** (Notez que vous devrez peut-être faire défiler vers la droite pour afficher l’option Mapper les colonnes).
 
@@ -203,7 +203,7 @@ Dans cette tâche, vous allez importer des données Visite à partir d’un fich
 
 14. Cliquez sur **Importer** en haut à droite pour terminer l’importation de données.
 
-Les visites sur le campus sont actuellement enregistrées dans des journaux papier.
+**Remarque :** L’importation de vos données dans votre table peut prendre plusieurs minutes. Ne vous inquiétez pas si vous recevez des erreurs, c’est normal et cela n’aura aucun impact sur le reste du cours.
 
 15. Cliquez sur **X** pour fermer le panneau d’importation des données.
 
