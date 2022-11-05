@@ -20,7 +20,7 @@ Dans ce labo, vous allez créer une application Power Apps pilotée par modèle 
 
 Dans le cadre de la création de l’application basée sur un modèle, vous effectuerez les opérations suivantes :
 
-- Créer une nouvelle application pilotée par modèle nommée Gestion du campus
+- Créer une nouvelle application pilotée par modèle nommée Gestion du campus Bellows
 
 - Modifier la navigation de l’application pour référencer les tables requises
 
@@ -65,7 +65,7 @@ Si vous ne voyez pas la table Visite, vérifiez que vous êtes dans l’environn
 
 5. À droite de l’écran dans le volet Propriétés, sélectionnez le champ **Nom complet**, puis remplacez-le par **Informations principales**.
 
-6. Dans le menu en haut de l’écran, sélectionnez **+ Champ de formulaire** et ajoutez les champs suivants sous le champ **Propriétaire** en faisant glisser les colonnes dans le formulaire ou simplement en cliquant sur les noms des colonnes appropriées :
+6. Sélectionnez la **Table Colonnes** dans le volet de navigation de gauche et ajoutez les champs suivants sous le champ **Propriétaire** en faisant glisser les colonnes dans le formulaire ou en cliquant simplement sur les noms de colonne :
 
     1. **Visiteur**
 
@@ -255,7 +255,7 @@ Tous les composants nécessaires étant désormais ajoutés à l’application p
 
 - Cliquez sur **Enregistrer et fermer**. La visite sera alors créée. Vous devez pouvoir la voir dans la vue Visites actives.
 
-- Modifiez **l’affichage des visites d’aujourd’hui à l’aide de** la liste déroulante en regard des **visites actives**. Vous ne devriez plus voir la nouvelle visite dans la vue, car elle est prévue pour demain.
+- Passez à la vue **Visites du jour** en utilisant la liste déroulante à côté de **Visites actives**. Vous ne devriez plus voir la nouvelle visite dans la vue, car elle est prévue pour demain.
 
 4. Vous pouvez ajouter d’autres enregistrements test.
 

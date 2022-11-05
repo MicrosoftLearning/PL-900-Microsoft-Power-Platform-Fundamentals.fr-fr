@@ -162,9 +162,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 **Objectif** : Au cours de cet exercice, vous apprendrez à importer des échantillons de données dans la base de données Dataverse.
 
-### <a name="task-1-import-the-visitsxlsx-file"></a>Tâche no 1 : importez le fichier Visits.xlsx
-
-Dans cette tâche, vous allez importer des données Visite à partir d’un fichier Excel.
+### <a name="task-11-load-excel-file-to-onedrive"></a>Tâche \#1.1 : Charger le fichier Excel sur OneDrive
 
 1. Le fichier **Visits.xlsx** doit être stocké sur votre bureau. Si ce n’est pas le cas, téléchargez [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
@@ -172,42 +170,64 @@ Dans cette tâche, vous allez importer des données Visite à partir d’un fich
 
 3. Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
 
-4. Dans le volet de navigation de gauche, développez **Dataverse** et sélectionnez **Tables**.
+4. Cliquez sur le bouton Gaufre dans le coin supérieur gauche pour changer d’application et sélectionnez **OneDrive**. (La configuration de votre OneDrive peut prendre un moment. Cliquez sur Votre OneDrive est prêt lorsque vous le voyez à l’écran.)
 
-5. Recherchez et ouvrez la table **Visite** que vous avez créée dans l’exercice précédent.
+5. Cliquez sur **Charger** dans le menu supérieur, puis sélectionnez **Fichiers**.
 
-6. Dans le menu en haut, sélectionnez la flèche déroulante à côté de **Importer**, puis sélectionnez **Importer les données à partir d’Excel**.
+6. Recherchez et sélectionnez le fichier **Visits.xlsx**, puis cliquez sur **Ouvrir**.
 
-7. Dans le menu qui s’affiche, sélectionnez le bouton **Charger**.
+ **Remarque :** Ce fichier se trouve dans le dossier **Tous les fichiers** de votre ordinateur.
+ 
+### <a name="task-12-create-a-dataflow"></a>Tâche \#1.2 : Créer un flux de données
 
-8. Recherchez et sélectionnez le fichier **Visits.xlsx** que vous avez téléchargé précédemment. (Notez que le chargement du fichier peut prendre une minute ou deux. Ne vous inquiétez pas si vous recevez un message indiquant des erreurs de mappage. Nous les corrigerons juste après ceci.)
+1. Connectez-vous à [https://make.powerapps.com](https://make.powerapps.com/) si ce n’est déjà fait.
 
-9. Cliquez sur **Mapper les colonnes** (Notez que vous devrez peut-être faire défiler vers la droite pour afficher l’option Mapper les colonnes).
+2. Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
 
-10. Mappez les colonnes comme indiqué ci-dessous :
+3. Dans le volet de navigation de gauche, développez **Dataverse** et sélectionnez **Tables**.
 
-| Colonnes Visite| Valeurs Source |
+4. Recherchez et ouvrez la table **Visite** que vous avez créée dans l’exercice précédent.
+
+5. Dans le menu en haut, sélectionnez la flèche déroulante à côté de **Importer**, puis sélectionnez **Importer les données**.
+
+6. Dans la boîte de dialogue **Choisir une source de données**, sélectionnez **Classeur Excel**.
+
+7. Sélectionnez l’option **Lier au fichier**. Cliquez sur **Parcourir OneDrive**. Si vous y êtes invité, connectez-vous avec vos informations d’identification Microsoft 365.
+
+8. Sélectionnez le fichier **Visits.xlsx** qui a été chargé dans OneDrive, puis cliquez sur **Sélectionner**.
+
+9. Cliquez sur **Suivant**.
+
+10. Sous **Choisir les données**, cochez la case à côté du classeur Excel **Visits**.
+
+11. Cliquez sur **Suivant**. Ne quittez pas cette page.
+
+12. Cliquez sur **Suivant**.
+
+13. Dans la section **Mapper les tables**, sélectionnez **Charger dans une table existante** sous **Charger les paramètres**.
+
+14. Dans le menu déroulant **Table de destination**, sélectionnez le nom de la table qui commence par **crXXX_visit** (où XXX est un ensemble aléatoire de lettres et de chiffres)
+
+15. Dans **Mappage de colonnes**, mappez les colonnes à leurs colonnes de destination correspondantes.
+
+| Colonnes de destination| Valeurs Source |
 | - | - |
-| Fin réelle| fin réelle |
-| Début réel| début réel |
-| Code| code |
-| Name| name |
-| Fin prévue| fin prévue |
-| Scheduled Start| début prévu |
+| crxxx_ActualEnd| fin réelle |
+| crxxx_ActualStart| début réel |
+| crxxx_Code| code |
+| crxxx_Name| name |
+| crxxx_ScheduledEnd| fin prévue |
+| crxxx_ScheduledStart| début prévu |
 
-11. Laissez tous les autres champs sur **Non défini**.
+16. Cliquez sur **Suivant**.
 
-12. Dans le coin supérieur droit de l’écran, cliquez sur **Enregistrer les modifications**.
+17. Sélectionnez **Actualiser manuellement**.
 
-13. Dans l’écran **Importer des données**, vérifiez que l’état du mappage indique « Le mappage a réussi ».
-
-14. Cliquez sur **Importer** en haut à droite pour terminer l’importation de données.
+18. Cliquez sur **Publier**.
 
 **Remarque :** L’importation de vos données dans votre table peut prendre plusieurs minutes. Ne vous inquiétez pas si vous recevez des erreurs, c’est normal et cela n’aura aucun impact sur le reste du cours.
 
-15. Cliquez sur **X** pour fermer le panneau d’importation des données.
-
-### <a name="task-2-verify-data-import"></a>Tâche \#2 : Vérifier une importation de données
+### <a name="task-3-verify-data-import"></a>Tâche \#3 : Vérifier l’importation des données
 
 1. Une fois vos données importées, utilisez le volet de navigation à gauche de l’écran pour resélectionner la table **Visite**.
 
