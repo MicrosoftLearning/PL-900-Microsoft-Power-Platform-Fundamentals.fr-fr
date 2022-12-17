@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: 4ed3e8f1b4b97a760aeb60cff93ad06b89fedd6a
-ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137898989"
----
 # <a name="pl-900-power-platform-fundamentals"></a>PL-900 : Power Platform - Notions fondamentales
 
 - **[Télécharger le dernier manuel du participant et le contenu de tous les fichiers](../../releases/latest)**
@@ -22,11 +14,11 @@ ms.locfileid: "137898989"
 
 - Le manuel de l’instructeur et les fichiers PowerPoint seront toujours votre principale source d’enseignement du contenu du cours.
 
-- Ces fichiers sur GitHub sont conçus pour être utilisés conjointement avec le manuel du participant, mais sont dans GitHub en tant que référentiel central afin que les MCT et les auteurs de cours puissent avoir une source partagée pour les derniers fichiers de labo.
+- Ces fichiers sur GitHub sont conçus pour être utilisés conjointement avec le manuel de l'étudiant. Gardez à l’esprit qu’ils ne sont présents dans GitHub qu’en tant que référentiel central afin que les MCT et les auteurs de cours puissent avoir une source partagée pour les derniers fichiers de labo.
 
 - Pour chaque prestation, il est demandé aux formateurs de vérifier dans GitHub les modifications qui ont pu être apportées afin de prendre en charge les derniers services Azure et afin de garantir que ce sont bien les tout derniers fichiers qui seront utilisés dans la cadre de la formation.
 
-## <a name="what-about-changes-to-the-student-handbook"></a>Qu’en est-il des modifications apportées au manuel du participant ?
+## <a name="what-about-changes-to-the-student-handbook"></a>Qu’en est-il des modifications apportées au manuel de l'étudiant ?
 
 - Nous passerons en revue le manuel de l’étudiant sur une base trimestrielle et nous le mettrons à jour par le biais des canaux de diffusion MOC classiques, si nécessaire.
 
@@ -36,8 +28,8 @@ ms.locfileid: "137898989"
 
 - Vous pouvez soumettre des bogues, des changements, des améliorations et des idées.  Vous avez découvert une nouvelle fonctionnalité Azure avant nous ?  Envoyez une nouvelle démonstration !
 
-## <a name="notes"></a>Remarques
+## <a name="notes"></a>Notes
 
-### <a name="classroom-materials"></a>Documents de classe
+### <a name="classroom-materials"></a>Documents de cours
 
 Il est fortement recommandé que les MCT et les partenaires accèdent à ces documents et, à leur tour, les fournissent séparément aux participants.  Diriger les participants directement vers GitHub pour accéder aux étapes du labo pendant un cours leur ferait accéder à une autre interface utilisateur dans le cadre du cours, ce qui pourrait les dérouter. Une explication au participant concernant la raison pour laquelle il reçoit des instructions de labo distinctes peut mettre en évidence la nature d’une interface et d’une plateforme cloud en constante évolution. La prise en charge de Microsoft Learning pour l’accès aux fichiers sur GitHub et la prise en charge de la navigation sur le site GitHub sont limitées aux instructeurs MCT qui enseignent ce cours.

@@ -34,7 +34,7 @@ Dans ce labo du module 0, vous allez acquérir un essai de Power Platform et ac
 
 1. Ne modifiez pas le pays.
 
-1. Pour **numéro de téléphone**, entrez 0123456789.
+1. Pour le **Numéro de téléphone**, entrez 0123456789.
 
 1. Renseignez les informations de votre compte, puis sélectionnez **Démarrer** pour vous inscrire à votre version d’évaluation de Microsoft Power Platform.
 

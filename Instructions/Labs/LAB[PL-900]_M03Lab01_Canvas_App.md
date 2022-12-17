@@ -102,7 +102,7 @@ Dans cette tâche, vous allez personnaliser le texte d’en-tête de chacun des 
 
 Dans cette tâche, vous allez tester votre nouvelle application.
 
-1.  Une fois que votre application s’ouvre dans le Concepteur d’applications, sélectionnez **Paramètres**, dans la section **Général** , mettez à jour le nom de votre application pour **visites** de l’application, cliquez sur **X** pour fermer l’écran paramètres, puis sélectionnez **Enregistrer**.
+1.  Une fois que votre application s’ouvre dans le Concepteur d’applications, sélectionnez **Paramètres**. Dans la section **Général**, mettez à jour le nom de votre application avec **Application Visites**, cliquez sur **X** pour fermer l’écran des paramètres, puis sélectionnez **Enregistrer**.
 
 2.  Cliquez sur la flèche **retour** pour revenir à votre application.
 
