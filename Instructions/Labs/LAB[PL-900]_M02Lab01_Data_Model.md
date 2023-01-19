@@ -14,7 +14,7 @@ L’administration du campus souhaite moderniser son système d’inscription de
 
 Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus.
 
-Dans ce labo, vous accéderez à votre environnement et créerez une base de données Microsoft Dataverse ainsi qu’une solution pour effectuer le suivi de vos modifications. Vous allez également créer un modèle de données pour prendre en charge les exigences suivantes :
+Dans ce labo, vous accéderez à votre environnement et créerez une base de données Microsoft Dataverse. Vous allez également créer un modèle de données pour prendre en charge les exigences suivantes :
 
 - R1 – Suivre les informations pour les visites planifiées sur le campus
 
@@ -23,6 +23,7 @@ Dans ce labo, vous accéderez à votre environnement et créerez une base de don
 - R3 - Planifier, enregistrer et gérer les visites
 
 Enfin, vous importerez des échantillons de données dans Microsoft Dataverse.
+
 
 ## <a name="high-level-lab-steps"></a>Étapes de labo de haut niveau
 
@@ -40,9 +41,11 @@ Pour préparer vos environnements d’apprentissage, vous devez :
 
 - Conventions de nommage : tapez les noms sans aucune erreur.
 
+
 ## <a name="exercise-1-create-new-table"></a>Exercice 1 : Créer une table
 
 **Objectif** : Dans cet exercice, vous allez créer une table personnalisée pour Visites.
+
 
 ### <a name="task-1-create-visit-table-and-columns"></a>Tâche n° 1 : créer des tables et des colonnes Visite
 
@@ -170,7 +173,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 3. Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
 
-4. Cliquez sur le bouton Gaufre dans le coin supérieur gauche pour changer d’application et sélectionnez **OneDrive**. (La configuration de votre OneDrive peut prendre un moment. Cliquez sur Votre OneDrive est prêt lorsque vous le voyez à l’écran.)
+4. Cliquez sur le bouton Gaufre dans le coin supérieur gauche pour changer d’application et sélectionnez **OneDrive**. (La configuration de votre OneDrive peut prendre un moment. Cliquez sur **Votre OneDrive est prêt** lorsque vous le voyez à l’écran.)
 
 5. Cliquez sur **Charger** dans le menu supérieur, puis sélectionnez **Fichiers**.
 
@@ -210,14 +213,14 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 15. Dans **Mappage de colonnes**, mappez les colonnes à leurs colonnes de destination correspondantes.
 
-| Colonnes de destination| Valeurs Source |
-| - | - |
-| crxxx_ActualEnd| fin réelle |
-| crxxx_ActualStart| début réel |
-| crxxx_Code| code |
-| crxxx_Name| name |
-| crxxx_ScheduledEnd| fin prévue |
-| crxxx_ScheduledStart| début prévu |
+| Colonnes de destination  | Valeurs Source   |
+|:---------------------|:----------------|
+| crxxx_ActualEnd      | fin réelle      |
+| crxxx_ActualStart    | début réel    |
+| crxxx_Code           | code            |
+| crxxx_Name           | name            |
+| crxxx_ScheduledEnd   | fin prévue   |
+| crxxx_ScheduledStart | début prévu |
 
 16. Cliquez sur **Suivant**.
 
