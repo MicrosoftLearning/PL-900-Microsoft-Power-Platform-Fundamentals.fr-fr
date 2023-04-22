@@ -4,9 +4,9 @@ lab:
   module: 'Module 2: Introduction to Microsoft Dataverse'
 ---
 
-# <a name="lab-1-data-modeling"></a>Labo 1 : Modélisation de données
+# Labo 1 : Modélisation de données
 
-## <a name="scenario"></a>Scénario
+## Scénario
 
 Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visites sur le campus sont actuellement enregistrées dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
 
@@ -25,29 +25,29 @@ Dans ce labo, vous accéderez à votre environnement et créerez une base de don
 Enfin, vous importerez des échantillons de données dans Microsoft Dataverse.
 
 
-## <a name="high-level-lab-steps"></a>Étapes de labo de haut niveau
+## Étapes de labo de haut niveau
 
 Pour préparer vos environnements d’apprentissage, vous devez :
 
 - Vous référer au [document de modèle de données](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) pour la description des métadonnées (tables et relations) Vous pouvez maintenir appuyée la touche CTRL et cliquer ou faire un clic droit sur le lien pour ouvrir le document de modèle de données dans une nouvelle fenêtre.
-- créer une table Visite
+- Créer une table Visite
 - Importer les données de Visite avec une feuille de calcul Excel
 
-## <a name="prerequisites"></a>Prérequis
+## Prérequis
 
 - Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
 
-## <a name="things-to-consider-before-you-begin"></a>Éléments à considérer avant de commencer
+## Éléments à considérer avant de commencer
 
 - Conventions de nommage : tapez les noms sans aucune erreur.
 
 
-## <a name="exercise-1-create-new-table"></a>Exercice 1 : Créer une table
+## Exercice 1 : Créer une table
 
 **Objectif** : Dans cet exercice, vous allez créer une table personnalisée pour Visites.
 
 
-### <a name="task-1-create-visit-table-and-columns"></a>Tâche n° 1 : créer des tables et des colonnes Visite
+### Tâche n° 1 : créer des tables et des colonnes Visite
 
 La table **Visite** contient des informations sur les visites du campus, y compris le visiteur, les heures prévues et les heures réelles de chaque visite.
 
@@ -161,11 +161,11 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
     - Cliquez sur **Enregistrer**.
 
-## <a name="exercise-2-import-data"></a>Exercice 2 : importer des données
+## Exercice 2 : importer des données
 
 **Objectif** : Au cours de cet exercice, vous apprendrez à importer des échantillons de données dans la base de données Dataverse.
 
-### <a name="task-11-load-excel-file-to-onedrive"></a>Tâche \#1.1 : Charger le fichier Excel sur OneDrive
+### Tâche \#1.1 : Charger le fichier Excel sur OneDrive
 
 1. Le fichier **Visits.xlsx** doit être stocké sur votre machine virtuelle dans **C:/LabFiles**. Si ce n’est pas le cas, téléchargez [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
@@ -181,7 +181,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
  **Remarque :** Ce fichier se trouve dans le dossier **Tous les fichiers** de votre ordinateur.
  
-### <a name="task-12-create-a-dataflow"></a>Tâche \#1.2 : Créer un flux de données
+### Tâche \#1.2 : Créer un flux de données
 
 1. Connectez-vous à [https://make.powerapps.com](https://make.powerapps.com/) si ce n’est déjà fait.
 
@@ -230,7 +230,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 **Remarque :** L’importation de vos données dans votre table peut prendre plusieurs minutes. Ne vous inquiétez pas si vous recevez des erreurs, c’est normal et cela n’aura aucun impact sur le reste du cours.
 
-### <a name="task-3-verify-data-import"></a>Tâche \#3 : Vérifier l’importation des données
+### Tâche \#3 : Vérifier l’importation des données
 
 1. Une fois vos données importées, utilisez le volet de navigation à gauche de l’écran pour resélectionner la table **Visite**.
 
