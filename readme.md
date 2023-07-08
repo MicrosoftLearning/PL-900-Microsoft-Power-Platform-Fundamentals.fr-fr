@@ -18,7 +18,7 @@
 
 - Pour chaque prestation, il est demandé aux formateurs de vérifier dans GitHub les modifications qui ont pu être apportées afin de prendre en charge les derniers services Azure et afin de garantir que ce sont bien les tout derniers fichiers qui seront utilisés dans la cadre de la formation.
 
-## Qu’en est-il des modifications apportées au manuel de l'étudiant ?
+## Qu’en est-il des modifications apportées au manuel du participant ?
 
 - Nous passerons en revue le manuel de l’étudiant sur une base trimestrielle et nous le mettrons à jour par le biais des canaux de diffusion MOC classiques, si nécessaire.
 
