@@ -4,9 +4,11 @@ lab:
   module: 'Module 4: Get Started with Power Automate'
 ---
 
-# <a name="lab-4-how-to-build-an-automated-solution"></a>Labo 4 : Création d’une solution automatisée
+# Labo 4 : Création d’une solution automatisée
 
-## <a name="scenario"></a>Scénario
+**Locataires WWL - Conditions d’utilisation** Si un locataire est fourni dans le cadre d’une formation dispensée par un instructeur, notez qu’il est mis à votre disposition dans le seul but de prendre en charge les labos pratiques de la formation. Vous ne devez ni partager ni utiliser les locataires en dehors des labos pratiques. Le locataire utilisé dans ce cours est un locataire d’essai. Au terme de la classe, le locataire ne pourra pas faire l’objet d’une prolongation et vous ne pourrez plus l’utiliser ni y accéder. Vous n’êtes pas autorisé à convertir un locataire en abonnement payant. Les locataires obtenus dans le cadre de ce cours sont la propriété de Microsoft Corporation. Nous nous réservons le droit d’y accéder et d’en reprendre possession à tout moment. 
+
+## Scénario
 
 Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
 
@@ -16,24 +18,24 @@ Tout au long de ce cours, vous créerez des applications et effectuerez une auto
 
 Dans ce labo, vous allez créer un flux Power Automate pour prévenir par un e-mail un visiteur qu’une visite est programmée.
 
-## <a name="high-level-lab-steps"></a>Étapes de labo de haut niveau
+## Étapes de labo de haut niveau
 
 Les éléments suivants ont été identifiés comme des exigences que vous devez implémenter pour terminer le projet :
 
 - Les contacts doivent être avertis par e-mail lorsqu’une visite est planifiée.
 
-## <a name="prerequisites"></a>Prérequis
+## Prérequis
 
 - Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
 - Participation au **Module 2 Labo 1 : modélisation des données**
 - Participation au **Module 2 Labo 3 : comment générer une application pilotée par modèle**
-- Contact John Doe créé avec une adresse e-mail personnelle renseignée
+- Contact John Doe créé avec une adresse e-mail personnelle renseignée.
 
-## <a name="exercise-1-create-visit-notification-flow"></a>Exercice 1 : Créer un flux de notification de visite
+## Exercice 1 : Créer un flux de notification de visite
 
 **Objectif** : Dans cet exercice, vous allez créer un flux Power Automate qui met en place ces conditions. Le visiteur doit recevoir un e-mail contenant le code unique attribué à la visite lorsqu’une visite est créée.
 
-### <a name="task-1-create-a-flow"></a>Tâche \#1 : Créer un flux
+### Tâche \#1 : Créer un flux
 
 1.  Accédez à <https://make.powerapps.com>. Vous devrez peut-être vous authentifier à nouveau. Cliquez sur **Se connecter** et suivez les instructions si nécessaire.
 
@@ -61,7 +63,7 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 
     4.  À l’étape de déclenchement, cliquez sur les points de suspension ( **...** ), puis sur **Renommer**. Renommez ce déclencheur **« Lorsqu’une visite est ajoutée »** . Il s’agit d’une bonne pratique, qui vous permet, ainsi qu’autres éditeurs de flux, de comprendre le but de l’étape sans vous plonger dans les détails.
 
-### <a name="task-2-create-a-step-to-get-the-visitor-row"></a>Tâche \#2 : Créer une étape pour obtenir la ligne du visiteur
+### Tâche \#2 : Créer une étape pour obtenir la ligne du visiteur
 
 1.  Sélectionnez **+ Nouvelle étape**. Cette étape est nécessaire pour récupérer les informations des visiteurs, y compris les adresses e-mail.
 
@@ -78,7 +80,7 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 7.  Dans cette action, cliquez sur les points de suspension ( **...** ), puis sur **Renommer**.
         Renommez cette action **« Obtenir le visiteur »** . Il s’agit d’une bonne pratique, qui vous permet, ainsi qu’autres éditeurs de flux, de comprendre le but de l’étape sans vous plonger dans les détails.
 
-### <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Tâche \#3 : Créer une étape pour envoyer un e-mail au visiteur
+### Tâche \#3 : Créer une étape pour envoyer un e-mail au visiteur
 
 1.  Cliquez sur **+ Nouvelle étape**. Il s’agit de l’étape qui permettra d’envoyer un e-mail au visiteur.
 
@@ -122,7 +124,7 @@ Laissez cet onglet de flux ouvert pour la tâche suivante. Votre flux doit resse
 
 ![Exemple d’étapes de flux.](media/4-Flow.png)
 
-### <a name="task-4-validate-and-test-the-flow"></a>Tâche \#4 : Valider et tester le flux
+### Tâche \#4 : Valider et tester le flux
 
 1.  Ouvrez un nouvel onglet dans votre navigateur et accédez à <https://make.powerapps.com>.
 
@@ -156,6 +158,6 @@ Laissez cet onglet de flux ouvert pour la tâche suivante. Votre flux doit resse
 
 Après un court délai, vous devriez voir un e-mail dans votre boîte de réception, car vous avez indiqué l’e-mail de John Doe comme votre e-mail personnel. Notez que cet e-mail peut se retrouver dans votre dossier Courrier indésirable.
 
-## <a name="challenges"></a>Défis
+## Défis
 
 - Essayez différentes options de mise en forme sur l’e-mail. Comment pouvez-vous le rendre plus professionnel ?
