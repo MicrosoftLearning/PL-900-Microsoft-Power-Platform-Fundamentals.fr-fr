@@ -174,7 +174,7 @@ Exercice 2 : importer des données
 
 3.  Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
 
-4.  Sélectionnez le bouton Gaufre dans le coin supérieur gauche pour changer d’application et sélectionnez **OneDrive**. (La configuration de votre OneDrive peut prendre un moment. Cliquez sur **Votre OneDrive est prêt** lorsque vous le voyez à l’écran.)
+4.  Sélectionnez le bouton Gaufre dans le coin supérieur gauche pour changer d’application et sélectionnez **OneDrive**. (La configuration de votre OneDrive peut prendre un moment. Sélectionnez **Votre OneDrive est prêt** quand vous le voyez à l’écran.
 
 5.  Sélectionnez **Charger** dans le menu supérieur, puis **Fichiers**.
 
@@ -193,7 +193,7 @@ Exercice 2 : importer des données
 
 4.  Ouvrez la table **Visit** que vous avez créée dans l’exercice précédent. 
 
-5.  Dans le menu situé en haut, sélectionnez **Importer** > Importer des données**.
+5.  Dans le menu du haut, sélectionnez **Importer** > **Importer des données**.
 
 6.  Dans la boîte de dialogue **Choisir une source de données**, sélectionnez **Classeur Excel**.
 
@@ -203,7 +203,7 @@ Exercice 2 : importer des données
 
 9.  Sélectionnez **Suivant**. 
 
-10. Sous **Choisir les données**, cochez la case à côté du classeur Excel **Visits**. 
+10. Dans l’écran **Power Query** > **Choisir des données**, vérifiez le classeur Excel **Visits**. 
 
 11. Sélectionnez **Suivant**. Ne quittez pas cette page.
 
@@ -213,7 +213,7 @@ Exercice 2 : importer des données
 
 14. Dans le menu déroulant **Table de destination**, sélectionnez la table **crXXX_Visit** (où XXX est un ensemble aléatoire de lettres et de chiffres).
 
-15. Dans **Mappage de colonnes**, mappez les colonnes à leurs colonnes de destination correspondantes.
+15. Dans la section **Mappage des colonnes**, mappez les colonnes à leurs colonnes de destination correspondantes :
 
     | Colonnes de destination  | Valeurs Source   |
     |:---------------------|:----------------|
@@ -240,3 +240,4 @@ Tâche n°3 : Vérifier une importation de données
 2.  Vérifiez que vous voyez les données importées sous la section **Visiter les colonnes et les données**.
 
 Félicitations, vous avez créé une table et importé des données.
+
