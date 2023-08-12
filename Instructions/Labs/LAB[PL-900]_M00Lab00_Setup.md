@@ -25,23 +25,15 @@ Tâche no 1 : Acquérir votre locataire d’essai Microsoft Power Platform
 
 1.  Copiez vos **informations d’identification Microsoft 365** à partir de l’hébergeur de labo autorisé. 
 
-1.  Accédez à <https://powerapps.microsoft.com>, puis cliquez sur **Démarrer gratuitement**.
+1.  Accédez à <https://powerapps.microsoft.com>, puis sélectionnez **Démarrer gratuitement**.
 
 1.  Sous **Démarrons**, entrez l’adresse e-mail fournie par l’hébergeur de labo autorisé, puis sélectionnez **Démarrer votre essai gratuit**. 
 
 1.  Une invite apparaît indiquant que vous avez un compte existant avec Microsoft. Sélectionnez **Connexion**. 
 
-1.  Entrez le mot de passe fourni par l’hébergeur de labo autorisé, puis sélectionnez **Se connecter**.
+1.  Entrez le mot de passe fourni par l’hébergeur de labo autorisé, puis sélectionnez **Se connecter**. 
 
 1.  Sélectionnez **Oui** pour rester connecté. 
-
-1.  Ne modifiez pas le pays. 
-
-1.  Entrez `0123456789` comme **Numéro de téléphone**, puis sélectionnez **Envoyer**. 
-
-1.  Dans l’écran de confirmation, sélectionnez **Démarrage**. 
-
-1.  Si un message vous invite à entrer des coordonnées, cliquez sur **X** pour fermer la fenêtre contextuelle. 
 
 
 Tâche no 2 : Créer un environnement
@@ -60,14 +52,13 @@ Tâche no 2 : Créer un environnement
 
     1. Conservez toutes les autres sélections par défaut et sélectionnez **Suivant**. 
 
-    1. Cliquez sur le bouton **+ Sélectionner** sous l’en-tête **Groupe de sécurité** .
+    1. Sous le titre **Groupe de sécurité**, utilisez le bouton **+ Sélectionner**.
 
     1. Cochez la case correspondant à l’élément **Aucun** sous le titre **Ouvrir l’accès**, puis sélectionnez **Terminé**.
 
-    1. Conservez les valeurs par défaut pour les options restantes et sélectionnez **Enregistrer**.
+    1. Conservez les valeurs par défaut pour les options restantes et sélectionnez **Enregistrer**. 
 
 1.  Votre environnement **Exercice pratique** doit maintenant apparaître dans la liste des environnements. 
 
     > L’approvisionnement de votre environnement peut prendre quelques minutes. Actualisez la page si nécessaire.
-
 
