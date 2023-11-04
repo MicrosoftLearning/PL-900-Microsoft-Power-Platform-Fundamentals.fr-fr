@@ -43,11 +43,12 @@ Pour préparer vos environnements d’apprentissage, vous devez :
 
 - Conventions de nommage : tapez les noms sans aucune erreur.
 
-Exercice 1 : Créer une table
+
+# Exercice 1 : Créer une table
 
 **Objectif** : Dans cet exercice, vous allez créer une table personnalisée pour Visites.
 
-Tâche n° 1 : Créer une table Visit et des colonnes
+## Tâche n° 1 : Créer une table Visit et des colonnes
 
 La table **Visite** contient des informations sur les visites du campus, y compris le visiteur, les heures prévues et les heures réelles de chaque visite.
 
@@ -59,7 +60,7 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 1.  Dans le volet de navigation de gauche, sélectionnez **Tables**.
 
-1.  Sélectionnez **+ Nouvelle table** et choisissez **+ Nouvelle table**. 
+1.  Sélectionnez **+ Nouvelle table**, puis choisissez **Définir les propriétés avancées**. 
 
 1.  Pour **Nom d’affichage**, entrez `Visit`
 
@@ -67,7 +68,8 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 1.  Dans la section **Schéma**, sélectionnez **Colonnes**. 
 
-# Créer une colonne Début prévu
+
+## Créer une colonne Début prévu
 
 1.  Sélectionnez **+ Nouvelle colonne**. 
 
@@ -85,7 +87,8 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 1.  Sélectionnez **Enregistrer**. 
 
-# Créer une colonne Fin prévue
+
+## Créer une colonne Fin prévue
 
 1.  Sélectionnez **+ Nouvelle colonne**. 
 
@@ -101,7 +104,8 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 1.  Sélectionnez **Enregistrer**. 
 
-# Créer une colonne Début réel
+
+## Créer une colonne Début réel
 
 1.  Sélectionnez **+ Nouvelle colonne**. 
 
@@ -117,11 +121,12 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 1.  Sélectionnez **Enregistrer**. 
 
-# Créer une colonne Fin réelle
+
+## Créer une colonne Fin réelle
 
 1.  Sélectionnez **+ Nouvelle colonne**.
 
-1.  Entrez **Fin réelle** comme **Nom d’affichage**.
+1.  Entrez `Actual End` comme **Nom d’affichage**.
 
 1.  Sélectionnez **Date et heure** comme **Type de données**.
 
@@ -133,7 +138,8 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 1.  Sélectionnez **Enregistrer**.
 
-# Créer une colonne Code
+
+## Créer une colonne Code
 
 1.  Sélectionnez **+ Nouvelle colonne**.
 
@@ -145,15 +151,16 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 1.  Sélectionnez **Enregistrer**. 
 
-# Créer une colonne de recherche Visiteur
+
+## Créer une colonne de recherche Visiteur
 
 1.  Sélectionnez **+ Nouvelle colonne**.
 
 1.  Entrez `Visitor` comme **Nom d’affichage**.
 
-1.  Sélectionnez **Recherche** comme **Type de données**. 
+1.  Sélectionnez **Recherche** > **Recherche** pour **Type de données**. 
 
-1.  Sélectionnez **Contact** comme **Table associée**. 
+1.  Sélectionnez **Contact** pour la **Table associée**. 
 
 1.  Développez **Options avancées**. 
 
@@ -162,11 +169,11 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 1.  Sélectionnez **Enregistrer**.
 
 
-Exercice 2 : importer des données
+# Exercice 2 : importer des données
 
 **Objectif** : Au cours de cet exercice, vous apprendrez à importer des échantillons de données dans la base de données Dataverse.
 
-### Tâche n° 1 : Charger le fichier Excel sur OneDrive
+## Tâche n° 1 : Charger le fichier Excel sur OneDrive
 
 1.  Le fichier **Visits.xlsx** doit être stocké sur votre machine virtuelle dans **C:/LabFiles**. Si ce n’est pas le cas, téléchargez [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
@@ -176,14 +183,14 @@ Exercice 2 : importer des données
 
 4.  Sélectionnez le bouton Gaufre dans le coin supérieur gauche pour changer d’application et sélectionnez **OneDrive**. (La configuration de votre OneDrive peut prendre un moment. Sélectionnez **Votre OneDrive est prêt** quand vous le voyez à l’écran.
 
-5.  Sélectionnez **Charger** dans le menu supérieur, puis **Fichiers**.
+5.  Sélectionnez **+Ajouter nouveau** dans le menu, puis **Chargement de fichiers**.
 
 6.  Recherchez et sélectionnez le fichier **Visits.xlsx**, puis sélectionnez **Ouvrir**.
 
-    > **Remarque :** Ce fichier se trouve dans le dossier **Tous les fichiers** de votre ordinateur.
+    > **Remarque :** le fichier doit se trouver dans le dossier **Bureau** > **Tous les fichiers** sur votre machine virtuelle.
 
 
-### Tâche n° 2 : Créer un flux de données
+## Tâche n° 2 : Créer un flux de données
 
 1.  Si vous n’êtes pas déjà connecté, connectez-vous à <https://make.powerapps.com> 
 
@@ -233,7 +240,7 @@ Exercice 2 : importer des données
     > **Remarque :** L’importation de vos données dans votre table peut prendre plusieurs minutes. Ne vous inquiétez pas si vous recevez des erreurs, c’est normal et cela n’aura aucun impact sur le reste du cours.
 
 
-Tâche n°3 : Vérifier une importation de données
+## Tâche \#3 : Vérifier l’importation des données
 
 1.  Une fois vos données importées, utilisez le volet de navigation à gauche de l’écran pour sélectionner **Tables** et ouvrir la table **Visit**.
 
