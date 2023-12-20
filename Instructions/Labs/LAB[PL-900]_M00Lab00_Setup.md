@@ -25,9 +25,11 @@ Tâche no 1 : Acquérir votre locataire d’essai Microsoft Power Platform
 
 1.  Copiez vos **informations d’identification Microsoft 365** à partir de l’hébergeur de labo autorisé. 
 
-1.  Accédez à <https://powerapps.microsoft.com>, puis sélectionnez **Démarrer gratuitement**.
+1.  Accédez à <https://powerapps.microsoft.com> et sélectionnez **Démarrer gratuitement**.
 
 1.  Sous **Démarrons**, entrez l’adresse e-mail fournie par l’hébergeur de labo autorisé, puis sélectionnez **Démarrer votre essai gratuit**. 
+
+1.  Si une autre page s’affiche avec les boutons **Commencer à créer des applications** et **Commencer à utiliser des applications**, cliquez sur **Commencer à utiliser des applications** et non sur Commencer à créer des applications.
 
 1.  Une invite apparaît indiquant que vous avez un compte existant avec Microsoft. Sélectionnez **Connexion**. 
 

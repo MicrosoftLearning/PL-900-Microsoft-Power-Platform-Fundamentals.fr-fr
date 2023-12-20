@@ -87,7 +87,7 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 
 ### Tâche \#3 : Créer une étape pour envoyer un e-mail au visiteur
 
-1.  Sélectionnez **+ Nouvelle étape**. Il s’agit de l’étape qui permettra d’envoyer un e-mail au visiteur.
+1.  Cliquez sur **+ Nouvelle étape**. Il s’agit de l’étape qui permettra d’envoyer un e-mail au visiteur.
 
 2.  Recherchez `mail`, sélectionnez l’action **Envoyer un e-mail (V2)** dans le connecteur **Office 365 Outlook**.
 
@@ -97,9 +97,9 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
     
 5.  Sélectionnez **E-mail** dans la liste Contenu dynamique.
 
-    > Ils sont accessibles sous l’en-tête **Recevoir le visiteur**. Cela signifie que vous sélectionnez l’e-mail associé au visiteur que vous avez recherché à l’étape précédente.
+    > Notez qu’il se trouve sous l’en-tête **Obtenir le visiteur**. Cela signifie que vous sélectionnez l’e-mail lié au visiteur que vous avez recherché à l’étape précédente.
 
-7.  Dans le champ **Objet**, entrez `Your scheduled visit to Bellows College`.
+7.  Dans le champ **Objet**, saisissez `Your scheduled visit to Bellows College`
 
 8.  Entrez le texte suivant dans le **Corps du courriel**.
 
@@ -164,7 +164,7 @@ Laissez cet onglet de flux ouvert pour la tâche suivante. Votre flux doit resse
     Après un court délai, vous devriez voir un e-mail dans votre boîte de réception, car vous avez indiqué l’e-mail de John Doe comme votre e-mail personnel. Notez que cet e-mail peut se retrouver dans votre dossier Courrier indésirable.
 
 
-## Problème
+## Défi
 
 - Essayez différentes options de mise en forme sur l’e-mail. Comment pouvez-vous le rendre plus professionnel ?
 
