@@ -18,7 +18,7 @@ Tout au long de ce cours, vous créerez des applications et effectuerez une auto
 
 Dans ce labo, vous allez créer une application Power Apps pilotée par modèle pour permettre au personnel de bureau du campus de gérer les enregistrements de visites sur l’ensemble du campus.
 
-Étapes de labo de haut niveau
+## Étapes de labo de haut niveau
 
 Dans le cadre de la création de l’application basée sur un modèle, vous effectuerez les opérations suivantes :
 
@@ -36,7 +36,7 @@ Nous travaillerons avec les composants suivants :
 
 Les deux seront intégrés à l’application basée sur un modèle, pour une meilleure expérience utilisateur.
 
-Prérequis
+## Prérequis
 
 - Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
 
@@ -50,11 +50,11 @@ Prérequis
 
 - Quelles personnalisations peuvent être effectuées sur le plan du site d’une application pilotée par modèle ?
 
-Exercice 1 : personnaliser les affichages et les formulaires
+## Exercice 1 : personnaliser les affichages et les formulaires
 
 **Objectif** : Au cours de cet exercice, vous apprendrez à personnaliser les vues et les formulaires des tables personnalisées qui seront utilisées dans l’application pilotée par modèle.
 
-Tâche n°1 : Modifier le formulaire de visite
+### Tâche n°1 : Modifier le formulaire de visite
 
 1.  Connectez-vous à <https://make.powerapps.com> si vous n’êtes pas encore connecté.
 
@@ -66,7 +66,7 @@ Tâche n°1 : Modifier le formulaire de visite
 
 4.  Sous la section **Expériences des données**, sélectionnez **Formulaires**, puis ouvrez le formulaire **Informations** avec le type de formulaire **Principal**. (**Important :** Veillez à sélectionner le formulaire de type **Principal**.) 
 
-    **IMPORTANT :** Par défaut, tous les formulaires sont nommés Informations, donc vérifiez que le formulaire que vous sélectionnez est de type **Principal** et pas autre chose. Le formulaire comporte deux champs par défaut : Nom et Propriétaire.
+> **IMPORTANT :** Par défaut, tous les formulaires sont nommés Informations, donc vérifiez que le formulaire que vous sélectionnez est de type **Principal** et pas autre chose. Le formulaire comporte deux champs par défaut : Nom et Propriétaire.
 
 5.  À droite de l’écran, dans le volet **Propriétés**, sélectionnez le champ **Nom d’affichage**, puis remplacez-le par `Main Information`.
 
@@ -88,7 +88,7 @@ Tâche n°1 : Modifier le formulaire de visite
 
 8.  En gardant le champ **Code** sélectionné, cochez la case en regard de **Lecture seule** dans le panneau Propriétés à droite de l’écran.
 
-9.  Sélectionnez le champ **Propriétaire**. Dans le volet Propriétés, remplacez **Étiquette** par `Host`
+9.  Sélectionnez le champ **Propriétaire**. Dans le volet Propriétés, remplacez **Étiquette** par `Host`.
 
 10. Sélectionnez le bouton **Enregistrer et publier** en haut à droite et attendez la fin de l’opération d’enregistrement et de publication.
 
@@ -97,7 +97,7 @@ Tâche n°1 : Modifier le formulaire de visite
 12. Utilisation des barres de navigation en haut à gauche (**Tables** > **Visit** > **Formulaires**). Sélectionnez **Visit** pour revenir à l’écran des propriétés de la table **Visit**. 
 
 
-Tâche n° 2 : Modifier la vue Visites actives
+### Tâche n° 2 : Modifier la vue Visites actives
 
 Dans cette tâche, nous allons modifier la vue des visites actives par défaut et créer une nouvelle vue pour les visites du jour.
 
@@ -124,11 +124,11 @@ Dans cette tâche, nous allons modifier la vue des visites actives par défaut e
 7.  Sélectionnez le bouton **Enregistrer et publier** en haut à droite et attendez la fin de l’opération de publication.
 
 
-Tâche n°3 : Créer une vue pour les visites du jour
+### Tâche n°3 : Créer une vue pour les visites du jour
 
 Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les visites du jour.
 
-IMPORTANT : Veillez à ne pas fermer la vue Visites actives, car nous allons l’exploiter pour créer la vue de visites du jour.
+> **IMPORTANT :** veillez à ne pas fermer la vue Visites actives, car nous allons l’exploiter pour créer la vue de visites du jour.
 
 1.  Sélectionnez **Enregistrer sous**.
 
@@ -146,18 +146,18 @@ IMPORTANT : Veillez à ne pas fermer la vue Visites actives, car nous allons l�
 
 8.  Ajoutez les champs **Début réel** et **Fin réelle** à la vue.
 
-    **Remarque :** Étant donné que nous ne filtrons plus l’état de la vue, nous verrons toutes les visites du jour, y compris les visites terminées. Ces champs permettront de différencier les visites terminées et les visites en cours.
+> **REMARQUE :** étant donné que nous ne filtrons plus l’état de la vue, nous verrons toutes les visites du jour, y compris les visites terminées. Ces champs permettront de différencier les visites terminées et les visites en cours.
 
 9.  Sélectionnez le bouton **Enregistrer et publier** en haut à droite et attendez la fin de l’opération de publication.
 
 
-Exercice 2 : créer une application pilotée par modèle
+## Exercice 2 : créer une application pilotée par modèle
 
 **Objectif** : au cours de cet exercice, vous allez créer une application pilotée par modèle, personnaliser le plan du site et tester l’application.
 
 Pour rester simples et faute de temps, nous n’aborderons pas certaines des colonnes de la table Visite dans ce labo.
 
-Tâche no 1 : Créer une application
+### Tâche no 1 : Créer une application
 
 1.  Connectez-vous à <https://make.powerapps.com> si vous n’êtes pas encore connecté.
 
@@ -196,7 +196,7 @@ Tâche no 1 : Créer une application
 13. Une fois l’opération **Enregistrer** terminée, sélectionnez le bouton **Publier** pour publier vos modifications.
 
 
-Tâche 2 : Tester l’application
+### Tâche 2 : Tester l’application
 
 Lancer l’application
 
@@ -212,7 +212,7 @@ Créer un contact
 
 5.  Indiquez votre adresse e-mail personnelle dans **E-mail**. Ceci sera utilisé dans un prochain labo, où vous recevrez un e-mail.
 
-6.  Sélectionnez **Enregistrer et fermer**.
+6.  Cliquez sur **Enregistrer et fermer**.
 
 7.  Vous devriez maintenant voir le contact créé dans la vue **Mes contacts actifs**.
 
@@ -220,11 +220,11 @@ Créer une visite
 
 8.  Sélectionnez **Visits** dans la navigation gauche (également appelée « plan du site »).
 
-9.  Sélectionnez **+Nouveau**.
+9.  Cliquez sur **+ Nouveau**.
 
 10. Renseignez les champs comme suit :
 
-    1. **Nom** : `New test visit`
+    1. **Nom :** `New test visit`
 
     2. **Visitor** (Visiteur) : sélectionnez **John Doe**
 
@@ -232,7 +232,7 @@ Créer une visite
 
     4. **Scheduled End** : sélectionnez la date de demain et 15h30 comme heure de fin.
 
-11. Sélectionnez **Enregistrer et fermer**. Ceci va créer la visite et vous devez normalement la voir dans la vue **Active Visits**.
+11. Cliquez sur **Enregistrer et fermer**. Ceci va créer la visite et vous devez normalement la voir dans la vue **Active Visits**.
 
 12. Passez à la vue **Today’s Visits** (Visites du jour) en utilisant la liste déroulante en regard de **Active Visits**. Vous ne devriez plus voir la nouvelle visite dans la vue, car elle est prévue pour demain.
 

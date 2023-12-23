@@ -43,7 +43,6 @@ Pour préparer vos environnements d’apprentissage, vous devez :
 
 - Conventions de nommage : tapez les noms sans aucune erreur.
 
-
 # Exercice 1 : Créer une table
 
 **Objectif** : Dans cet exercice, vous allez créer une table personnalisée pour Visites.
@@ -208,11 +207,11 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 8.  Sélectionnez le fichier  **Visits.xlsx** qui a été chargé sur OneDrive dans la tâche précédente. 
 
-9.  Sélectionnez **Suivant**. 
+9.  Cliquez sur **Suivant**. 
 
 10. Dans l’écran **Power Query** > **Choisir des données**, vérifiez le classeur Excel **Visits**. 
 
-11. Sélectionnez **Suivant**. Ne quittez pas cette page.
+11. Cliquez sur **Suivant**. Ne quittez pas cette page.
 
 12. Sélectionnez **Suivant**. 
 
