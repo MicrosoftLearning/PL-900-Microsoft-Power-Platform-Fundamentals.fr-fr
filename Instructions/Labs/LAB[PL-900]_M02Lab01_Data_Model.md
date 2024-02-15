@@ -41,7 +41,8 @@ Pour préparer vos environnements d’apprentissage, vous devez :
 
 Éléments à considérer avant de commencer
 
-- Conventions de nommage : tapez les noms sans aucune erreur.
+- Conventions d’affectation de noms : tapez les noms sans aucune erreur.
+
 
 # Exercice 1 : Créer une table
 
@@ -53,9 +54,9 @@ La table **Visite** contient des informations sur les visites du campus, y compr
 
 Nous aimerions attribuer à chaque visite un numéro unique qui peut être facilement saisi et interprété par un visiteur lorsque cela lui est demandé pendant le processus d’enregistrement de la visite.
 
-1.  Si vous n’êtes pas déjà connecté, connectez-vous à <https://make.powerapps.com> 
+1.  Si vous n’êtes pas déjà connecté, connectez-vous à `https://make.powerapps.com`
 
-1.  Dans le menu **Environnement** en haut à droite, vérifiez que votre environnement **Exercice pratique** est sélectionné. 
+1.  Dans le menu **Environnement** en haut à droite, vérifiez que votre environnement **Dev One** est sélectionné. 
 
 1.  Dans le volet de navigation de gauche, sélectionnez **Tables**.
 
@@ -176,11 +177,11 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 1.  Le fichier **Visits.xlsx** doit être stocké sur votre machine virtuelle dans **C:/LabFiles**. Si ce n’est pas le cas, téléchargez [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx).
 
-2.  Connectez-vous à [https://make.powerapps.com](https://make.powerapps.com/) si ce n’est déjà fait. 
+2.  Connectez-vous à `https://make.powerapps.com` si ce n’est déjà fait
 
-3.  Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
+3.  Sélectionnez l’environnement **Dev One** en haut à droite, s’il n’est pas déjà sélectionné.
 
-4.  Sélectionnez le bouton Gaufre dans le coin supérieur gauche pour changer d’application et sélectionnez **OneDrive**. (La configuration de votre OneDrive peut prendre un moment. Sélectionnez **Votre OneDrive est prêt** quand vous le voyez à l’écran.
+4.  Sélectionnez le Lanceur d’application (bouton Gaufre) dans le coin supérieur gauche pour changer d’application et sélectionnez **OneDrive**. (La configuration de votre OneDrive peut prendre un moment. Sélectionnez **Votre OneDrive est prêt** quand vous le voyez à l’écran.
 
 5.  Sélectionnez **+Ajouter nouveau** dans le menu, puis **Chargement de fichiers**.
 
@@ -191,9 +192,9 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 
 ## Tâche n° 2 : Créer un flux de données
 
-1.  Si vous n’êtes pas déjà connecté, connectez-vous à <https://make.powerapps.com> 
+1.  Si vous n’êtes pas déjà connecté, connectez-vous à `https://make.powerapps.com`
 
-2.  Dans le menu **Environnement** en haut à droite, vérifiez que votre environnement **Exercice pratique** est sélectionné. 
+2.  Dans le menu **Environnement** en haut à droite, vérifiez que votre environnement **Dev One** est sélectionné. 
 
 3.  Dans le volet de navigation de gauche, sélectionnez **Tables**. 
 
@@ -246,4 +247,5 @@ Nous aimerions attribuer à chaque visite un numéro unique qui peut être facil
 2.  Vérifiez que vous voyez les données importées sous la section **Visiter les colonnes et les données**.
 
 Félicitations, vous avez créé une table et importé des données.
+
 
