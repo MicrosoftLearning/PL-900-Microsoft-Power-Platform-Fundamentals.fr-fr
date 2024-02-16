@@ -46,7 +46,7 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer un tableau de
 
 1.  Vous devez avoir un fichier visits.pbix stocké sur votre machine virtuelle, dans le dossier AllFiles sur le Bureau. Téléchargez [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) et enregistrez-le sur votre ordinateur, s’il n’y est pas déjà.
 
-2.  Ouvrez un nouvel onglet, accédez à <https://app.powerbi.com/> et connectez-vous si besoin.
+2.  Ouvrez un nouvel onglet, accédez à `https://app.powerbi.com` et connectez-vous si besoin.
 
 3.  Sélectionnez **Mon espace de travail** dans le volet de navigation de gauche.
 
@@ -102,7 +102,7 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
 1.  Vous pouvez accéder au rapport ouvert depuis la tâche précédente.
 
-2.  Sélectionnez **Épingler à un tableau de bord** dans le menu. Selon la disposition, il peut être nécessaire d’appuyer sur  **…** pour afficher plus d’options.
+2.  Sélectionnez **Épingler à un tableau de bord** dans le menu. Selon la disposition, il peut être nécessaire de sélectionner le menu de points de suspension  **…** pour afficher plus d’options.
 
 3.  Sélectionnez **Nouveau tableau de bord** sur l’invite **Épingler au tableau de bord**.
 
@@ -130,3 +130,4 @@ Votre tableau de bord **Gestion du campus** doit s’afficher avec trois visuels
 Votre tableau de bord doit ressembler à ce qui suit :
 
 ![](media/5-powerbi-result.png)
+

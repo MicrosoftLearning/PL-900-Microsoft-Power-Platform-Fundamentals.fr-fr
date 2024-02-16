@@ -37,23 +37,25 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 
 ### Tâche \#1 : Créer un flux
 
-1.  Accédez à <https://make.powerapps.com>. Vous devrez peut-être vous réauthentifier. Sélectionnez **Se connecter** et suivez les instructions si nécessaire.
+1.  Accédez à `https://make.powerapps.com`.
 
-2.  Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
+2.  Vous devrez peut-être vous réauthentifier. Sélectionnez **Se connecter** et suivez les instructions si nécessaire.
 
-3.  Dans le volet de navigation de gauche, sélectionnez **Flux**.
+3.  Sélectionnez l’environnement **Dev One** en haut à droite, si ce n’est pas déjà fait.
 
-4.  Si vous y êtes invité, sélectionnez **Démarrage**.
+4.  Dans le volet de navigation de gauche, sélectionnez **Flux**.
 
-5.  Sélectionnez **+ Nouveau flux**, puis sélectionnez **Flux cloud automatisé**.
+5.  Si vous y êtes invité, sélectionnez **Démarrage**.
 
-6.  Entrez `Visit Notification` pour **Nom du flux**.
+6.  Sélectionnez **+ Nouveau flux**, puis sélectionnez **Flux cloud automatisé**.
 
-7.  Dans **Choisir le déclencheur de votre flux**, recherchez `Dataverse`.
+7.  Entrez `Visit Notification` pour **Nom du flux**.
 
-8.  Choisissez le déclencheur **Quand une ligne est ajoutée, modifiée ou supprimée**, puis sélectionnez **Créer**.
+8.  Dans **Choisir le déclencheur de votre flux**, recherchez `Dataverse`.
 
-9.  Remplissez les conditions du déclencheur pour le flux :
+9.  Choisissez le déclencheur **Quand une ligne est ajoutée, modifiée ou supprimée**, puis sélectionnez **Créer**.
+
+10.  Remplissez les conditions du déclencheur pour le flux :
 
     1.  Sélectionner **Ajouté** pour **Type de modification**
 
@@ -131,9 +133,9 @@ Laissez cet onglet de flux ouvert pour la tâche suivante. Votre flux doit resse
 
 ### Tâche \#4 : Valider et tester le flux
 
-1.  Ouvrez un nouvel onglet dans votre navigateur et accédez à <https://make.powerapps.com>.
+1.  Ouvrez un nouvel onglet dans votre navigateur, puis accédez à `https://make.powerapps.com`
 
-2.  Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
+2.  Sélectionnez l’environnement **Dev One** en haut à droite, si ce n’est pas déjà fait.
 
 3.  Sélectionnez **Applications**, puis ouvrez l’application pilotée par modèle **Bellows Campus Management** que vous avez créée précédemment.
 
