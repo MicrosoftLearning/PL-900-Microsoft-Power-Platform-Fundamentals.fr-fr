@@ -42,13 +42,15 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
 ### Tâche no 1 : créer l’application Visites
 
-1.  Accédez à <https://make.powerapps.com>. Vous devrez peut-être vous authentifier à nouveau. Sélectionnez **Se connecter** et suivez les instructions si nécessaire.
+1.  Accédez à `https://make.powerapps.com`.
 
-2.  Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
+2.  Vous devrez peut-être vous réauthentifier. Sélectionnez **Se connecter** et suivez les instructions si nécessaire.
 
-3.  Sélectionnez **+ Créer** dans le volet de navigation gauche de l’écran. Sous la section **Démarrer à partir de**, sélectionnez **Dataverse**.
+3.  Sélectionnez l’environnement **Dev One** en haut à droite, si ce n’est pas déjà fait.
 
-4.  Sélectionnez votre connexion Dataverse.
+4.  Sélectionnez **+ Créer** dans le volet de navigation gauche de l’écran. Sous la section **Démarrer à partir de**, sélectionnez **Dataverse**.
+
+5.  Sélectionnez votre connexion Dataverse.
 
     > **Remarque :** *S’il n’existe pas de connexion Dataverse :*
     > - Sélectionnez **+ Nouvelle connexion**.
@@ -56,19 +58,19 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
     > - Sélectionnez **Créer**
     > - **Connectez-vous** et sélectionnez **Autoriser l’accès**.
 
-5.  Recherchez et sélectionnez la table **Visites** que vous avez créée dans le labo précédent.
+6.  Recherchez et sélectionnez la table **Visites** que vous avez créée dans le labo précédent.
 
-6.  Cliquez sur le bouton **Connecter** en bas à droite.
+7.  Cliquez sur le bouton **Connecter** en bas à droite.
 
-7.  Une fois votre application créée, dans l’écran Bienvenue dans Power Apps Studio, sélectionnez **Ne plus afficher ce message**, puis sélectionnez **Ignorer**.
+8.  Une fois votre application créée, dans l’écran Bienvenue dans Power Apps Studio, sélectionnez **Ne plus afficher ce message**, puis sélectionnez **Ignorer**.
 
-8.  Une fois la création terminée, l’application Canevas doit se présenter comme dans l’image ci-dessous :
+9.  Une fois la création terminée, l’application Canevas doit se présenter comme dans l’image ci-dessous :
 
     ![Application canevas créée à partir des données Visite.](media/2-canvas-app-from-data.png)
 
-9.  Dans le concepteur d’applications, sélectionnez le bouton **Afficher un aperçu de l’application** (icône Lecture) dans la barre de commandes. *(Vous pouvez aussi prévisualiser l’application en appuyant sur F5.)* Parcourez l’application pour constater qu’elle est prête à l’emploi.
+10.  Dans le concepteur d’applications, sélectionnez le bouton **Afficher un aperçu de l’application** (icône Lecture) dans la barre de commandes. *(Vous pouvez aussi prévisualiser l’application en appuyant sur F5.)* Parcourez l’application pour constater qu’elle est prête à l’emploi.
 
-10. Fermez l’aperçu de l’application en sélectionnant le **X** en haut à droite de l’écran.
+11. Fermez l’aperçu de l’application en sélectionnant le **X** en haut à droite de l’écran.
 
 Félicitations, vous avez créé une application Power Apps à partir d’une table Dataverse. L’étape suivante du processus consiste à adapter l’application pour qu’elle reflète la marque de votre établissement Bellows College. La série suivante d’étapes vous guidera tout au long des tâches nécessaires pour personnaliser davantage l’application.
 

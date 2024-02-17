@@ -21,46 +21,21 @@ Dans ce labo du module 0, vous allez acquérir un essai de Power Platform et ac
 
 ## Exercice n° 1 - Configuration
 
-Tâche no 1 : Acquérir votre locataire d’essai Microsoft Power Platform
+Tâche n° 1 : vérifier votre locataire d’essai Microsoft Power Platform
 
-1.  Copiez vos **informations d’identification Microsoft 365** à partir de l’hébergeur de labo autorisé. 
+1.  Vérifiez que vous disposez de vos **informations d’identification Microsoft 365** à partir de l’hébergeur de labo autorisé disponible. 
 
-1.  Accédez à <https://powerapps.microsoft.com> et sélectionnez **Démarrer gratuitement**.
+2.  Dans un nouvel onglet de navigateur, accédez à `https://make.powerapps.com`
 
-1.  Sous **Démarrons**, entrez l’adresse e-mail fournie par l’hébergeur de labo autorisé, puis sélectionnez **Démarrer votre essai gratuit**. 
+3.  Saisissez le `email address` fourni par l’hôte de labo autorisé. 
 
-1.  Si une autre page s’affiche avec les boutons **Commencer à créer des applications** et **Commencer à utiliser des applications**, cliquez sur **Commencer à utiliser des applications** et non sur Commencer à créer des applications.
+4.  Cliquez sur **Connexion**. 
 
-1.  Une invite apparaît indiquant que vous avez un compte existant avec Microsoft. Sélectionnez **Connexion**. 
+5.  Saisissez le `password` fourni par l’hôte de labo autorisé. 
 
-1.  Entrez le mot de passe fourni par l’hébergeur de labo autorisé, puis sélectionnez **Se connecter**. 
+6.  Si vous le souhaitez, sélectionnez **Oui** pour rester connecté.
 
-1.  Sélectionnez **Oui** pour rester connecté. 
+7.  Si vous y êtes invité, entrez `0123456789` pour le **numéro de téléphone** et sélectionnez **Envoyer**.
 
-
-Tâche no 2 : Créer un environnement
-
-1.  Accédez à <https://admin.powerplatform.microsoft.com> et connectez-vous avec vos informations d’identification Microsoft 365 si vous y êtes invité. 
-
-1.  Si une fenêtre contextuelle de bienvenue s’affiche, sélectionnez **Démarrage**. 
-
-1.  Sélectionnez **Environnements**, puis **+ Nouveau**.
-
-    1. Pour **Nom**, entrez **[Mes initiales] Exercices pratiques** (par exemple : AJ Exercices pratiques).
-
-    1. Pour **Type**, choisissez **Essai**. Ne sélectionnez pas l’option *Essai (basé sur un abonnement)* .
-
-    1. Basculez **Ajouter un magasin de données Dataverse ?** sur **Oui**. 
-
-    1. Conservez toutes les autres sélections par défaut et sélectionnez **Suivant**. 
-
-    1. Sous le titre **Groupe de sécurité**, utilisez le bouton **+ Sélectionner**.
-
-    1. Cochez la case correspondant à l’élément **Aucun** sous le titre **Ouvrir l’accès**, puis sélectionnez **Terminé**.
-
-    1. Conservez les valeurs par défaut pour les options restantes et sélectionnez **Enregistrer**. 
-
-1.  Votre environnement **Exercice pratique** doit maintenant apparaître dans la liste des environnements. 
-
-    > L’approvisionnement de votre environnement peut prendre quelques minutes. Actualisez la page si nécessaire.
+8.  **Actualisez** l’onglet et vérifiez que l’environnement **Dev One** est sélectionné sous **Environnement** en haut à droite. 
 
