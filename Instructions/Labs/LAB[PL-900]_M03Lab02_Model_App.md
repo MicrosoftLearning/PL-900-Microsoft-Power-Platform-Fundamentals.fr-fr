@@ -56,9 +56,9 @@ Les deux seront intégrés à l’application basée sur un modèle, pour une me
 
 ### Tâche n°1 : Modifier le formulaire de visite
 
-1.  Connectez-vous à <https://make.powerapps.com> si vous n’êtes pas encore connecté.
+1.  Si ce n’est pas déjà fait, connectez-vous à `https://make.powerapps.com` 
 
-2.  Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
+2.  Sélectionnez l’environnement **Dev One** en haut à droite, si ce n’est pas déjà fait.
 
 3.  Dans le volet de navigation gauche, sélectionnez **Tables**, puis ouvrez votre table **Visit** (Visite).
 
@@ -66,7 +66,7 @@ Les deux seront intégrés à l’application basée sur un modèle, pour une me
 
 4.  Sous la section **Expériences des données**, sélectionnez **Formulaires**, puis ouvrez le formulaire **Informations** avec le type de formulaire **Principal**. (**Important :** Veillez à sélectionner le formulaire de type **Principal**.) 
 
-> **IMPORTANT :** Par défaut, tous les formulaires sont nommés Informations, donc vérifiez que le formulaire que vous sélectionnez est de type **Principal** et pas autre chose. Le formulaire comporte deux champs par défaut : Nom et Propriétaire.
+    > **IMPORTANT :** Par défaut, tous les formulaires sont nommés Informations, donc vérifiez que le formulaire que vous sélectionnez est de type **Principal** et pas autre chose. Le formulaire comporte deux champs par défaut : Nom et Propriétaire.
 
 5.  À droite de l’écran, dans le volet **Propriétés**, sélectionnez le champ **Nom d’affichage**, puis remplacez-le par `Main Information`.
 
@@ -159,9 +159,9 @@ Pour rester simples et faute de temps, nous n’aborderons pas certaines des col
 
 ### Tâche no 1 : Créer une application
 
-1.  Connectez-vous à <https://make.powerapps.com> si vous n’êtes pas encore connecté.
+1.  Si ce n’est pas déjà fait, connectez-vous à `https://make.powerapps.com` 
 
-2.  Sélectionnez votre environnement **Exercices pratiques [mes initiales]** en haut à droite, si ce n’est déjà fait.
+2.  Sélectionnez l’environnement **Dev One** en haut à droite, si ce n’est pas déjà fait.
 
 3.  Sélectionnez **+ Créer** dans le volet de navigation gauche.
 
@@ -171,7 +171,7 @@ Pour rester simples et faute de temps, nous n’aborderons pas certaines des col
 
     2. Sous **Application vide basée sur Dataverse**, sélectionnez **Créer**.
 
-    3. Entrez `Bellows Campus Management` pour **Nom**, puis sélectionnez **Créer**.
+    3. Entrez `Bellows Campus Management` comme **Nom**, puis sélectionnez **Créer**.
 
 5.  Une fois votre nouvelle application pilotée par modèle chargée, sélectionnez le bouton **+ Ajouter une page**.
 
@@ -193,7 +193,7 @@ Pour rester simples et faute de temps, nous n’aborderons pas certaines des col
 
 12. Sélectionnez **Enregistrer** et attendez la fin de l’enregistrement.
 
-13. Une fois l’opération **Enregistrer** terminée, sélectionnez le bouton **Publier** pour publier vos modifications.
+13. Une fois l’opération **Enregistrer** terminée, sélectionnez le bouton **Publier** pour publier vos modifications. Attendez la fin de la publication.
 
 
 ### Tâche 2 : Tester l’application
@@ -204,7 +204,7 @@ Lancer l’application
 
 Créer un contact
 
-2.  L’application doit s’ouvrir sur la vue **Mes contacts actifs**. Si ce n’est pas le cas, sélectionnez **Contacts** dans la navigation de gauche.
+2.  L’application doit s’ouvrir sur la vue **Mes contacts actifs**. Si ce n’est pas le cas, sélectionnez **Contacts** dans le menu de gauche.
 
 3.  Sélectionnez **+ Nouveau** dans la barre de commandes.
 
