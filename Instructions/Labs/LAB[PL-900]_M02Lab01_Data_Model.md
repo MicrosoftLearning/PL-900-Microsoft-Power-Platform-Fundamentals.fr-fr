@@ -37,7 +37,7 @@ Pour préparer vos environnements d’apprentissage, vous devez :
 
 ## Prérequis
 
-- Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
+- Conclusion du **Module 1 Lab 0 – Valider l'environnement de laboratoire **
 
 Éléments à considérer avant de commencer
 
