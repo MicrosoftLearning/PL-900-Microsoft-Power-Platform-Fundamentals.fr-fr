@@ -28,7 +28,7 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer un tableau de
 
 ## Prérequis
 
-- Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
+- Participation au **Module 1 Labo 0 – Valider l’environnement de labo**
 - Participation au **Module 2 Labo 1 : modélisation des données**
 
 ## Éléments à considérer avant de commencer

@@ -26,7 +26,7 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 
 ## Prérequis
 
-- Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
+- Participation au **Module 1 Labo 0 – Valider l’environnement de labo**
 - Participation au **Module 2 Labo 1 : modélisation des données**
 - Participation au **Module 2 Labo 3 : comment générer une application pilotée par modèle**
 - Contact John Doe créé avec une adresse e-mail personnelle renseignée.
