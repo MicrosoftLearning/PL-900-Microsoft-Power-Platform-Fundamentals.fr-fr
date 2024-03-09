@@ -38,7 +38,7 @@ Les deux seront intégrés à l’application basée sur un modèle, pour une me
 
 ## Prérequis
 
-- Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
+- Participation au **Module 1 Labo 0 – Valider l’environnement de labo**
 
 - Participation au **Module 2 Labo 1 : modélisation des données**
 
