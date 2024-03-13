@@ -6,15 +6,15 @@ lab:
 
 # Labo 2 : Comment créer une application canevas
 
-**Locataires WWL - Conditions d’utilisation** Si un locataire est fourni dans le cadre d’une formation dispensée par un instructeur, notez qu’il est mis à votre disposition dans le seul but de prendre en charge les labos pratiques de la formation. Vous ne devez ni partager ni utiliser les locataires en dehors des labos pratiques. Le locataire utilisé dans ce cours est un locataire d’essai. Au terme de la classe, le locataire ne pourra pas faire l’objet d’une prolongation et vous ne pourrez plus l’utiliser ni y accéder. Vous n’êtes pas autorisé à convertir un locataire en abonnement payant. Les locataires obtenus dans le cadre de ce cours sont la propriété de Microsoft Corporation. Nous nous réservons le droit d’y accéder et d’en reprendre possession à tout moment. 
+**Locataires WWL - Conditions d’utilisation** Si un locataire est fourni dans le cadre d’une formation dispensée par un instructeur, notez qu’il est mis à votre disposition dans le seul but de prendre en charge les labos pratiques de la formation. Vous ne devez ni partager ni utiliser les locataires en dehors des labos pratiques. Le locataire utilisé dans ce cours est un locataire d’essai qui ne peut pas être utilisé ni être accessible une fois la classe terminée, ni faire l’objet d’une prolongation. Vous n’êtes pas autorisé à convertir un locataire en abonnement payant. Les locataires obtenus dans le cadre de ce cours sont la propriété de Microsoft Corporation. Nous nous réservons le droit d’y accéder et d’en reprendre possession à tout moment. 
 
 ## Scénario
 
-Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visites sur le campus sont actuellement enregistrées dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
+Bellows College est un établissement d’enseignement avec plusieurs campus et plusieurs cursus. De nombreux enseignants et administrateurs de Bellow College doivent assister à des événements et acheter des articles. Le suivi de ces dépenses a toujours été un défi en soi. 
 
-Actuellement, l’administration du campus utilise une feuille de calcul Excel pour suivre l’inscription des visiteurs. Elle souhaite moderniser son système d’inscription des visiteurs où l’accès aux bâtiments est contrôlé par le personnel de sécurité et toutes les visites doivent être pré-enregistrées et enregistrées par leurs hôtes.
+L’administration des campus aimerait moderniser son système de notes de frais en fournissant aux employés un moyen numérique de soumettre leurs dépenses. 
 
-Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus.
+Tout au long de ce cours, vous allez créer des applications et effectuer une automatisation pour permettre aux employés de Bellows College de gérer les dépenses. 
 
 
 ## Étapes de labo de haut niveau
@@ -31,103 +31,100 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
 ## Prérequis
 
-- Participation au **Module 0 - Labo 0 : Valider l’environnement de labo**
-- Participation au **Module 2 Labo 1 : modélisation des données**
+- Participation au **Module 1 Labo 0 – Valider l’environnement de labo**
 
+## Exercice 1 : Créer une application canevas Notes de frais
 
-## Exercice 1 : créer une application canevas Visites
+### Objectif : Dans cet exercice, vous allez créer une application canevas en vous connectant à une table Expense Reports (Rapports de dépenses).
 
-**Objectif :** Dans cet exercice, vous allez créer une application canevas en connectant la table Visits que vous avez créée précédemment.
+### Tâche n°1 : Créer l’application Notes de frais
 
+1. Accédez à https://make.powerapps.com.
 
-### Tâche no 1 : créer l’application Visites
+1. Vous devrez peut-être vous réauthentifier. Sélectionnez **Se connecter** et suivez les instructions si nécessaire.
 
-1.  Accédez à `https://make.powerapps.com`.
+1. Sélectionnez l’environnement **Dev One** en haut à droite, si ce n’est pas déjà fait.
 
-2.  Vous devrez peut-être vous réauthentifier. Sélectionnez **Se connecter** et suivez les instructions si nécessaire.
+1. Sélectionnez **+ Créer** dans le volet de navigation gauche de l’écran. Sous la section **Démarrer à partir de**, sélectionnez **Dataverse**.
 
-3.  Sélectionnez l’environnement **Dev One** en haut à droite, si ce n’est pas déjà fait.
+1. Sélectionnez votre connexion Dataverse.
 
-4.  Sélectionnez **+ Créer** dans le volet de navigation gauche de l’écran. Sous la section **Démarrer à partir de**, sélectionnez **Dataverse**.
+    >**Remarque** : Si une connexion Dataverse n’existe pas :
 
-5.  Sélectionnez votre connexion Dataverse.
+    >   - Sélectionnez **+ Nouvelle connexion**.
 
-    > **Remarque :** *S’il n’existe pas de connexion Dataverse :*
-    > - Sélectionnez **+ Nouvelle connexion**.
-    > - Localisez **Microsoft Dataverse**.
-    > - Sélectionnez **Créer**
-    > - **Connectez-vous** et sélectionnez **Autoriser l’accès**.
+    >   - Localisez **Microsoft Dataverse**.
 
-6.  Recherchez et sélectionnez la table **Visites** que vous avez créée dans le labo précédent.
+    >   - Sélectionnez **Créer**
 
-7.  Cliquez sur le bouton **Connecter** en bas à droite.
+    >   - **Connectez-vous** et sélectionnez **Autoriser l’accès**.
 
-8.  Une fois votre application créée, dans l’écran Bienvenue dans Power Apps Studio, sélectionnez **Ne plus afficher ce message**, puis sélectionnez **Ignorer**.
+1. Recherchez et sélectionnez la table **Notes de frais**.
 
-9.  Une fois la création terminée, l’application Canevas doit se présenter comme dans l’image ci-dessous :
+1. Cliquez sur le bouton **Connecter** en bas à droite.
 
-    ![Application canevas créée à partir des données Visite.](media/2-canvas-app-from-data.png)
+1. Une fois votre application créée, dans l’écran Bienvenue dans Power Apps Studio, sélectionnez **Ne plus afficher ce message**, puis sélectionnez **Ignorer**.
 
-10.  Dans le concepteur d’applications, sélectionnez le bouton **Afficher un aperçu de l’application** (icône Lecture) dans la barre de commandes. *(Vous pouvez aussi prévisualiser l’application en appuyant sur F5.)* Parcourez l’application pour constater qu’elle est prête à l’emploi.
+1. Dans le concepteur d’applications, sélectionnez le bouton **Afficher un aperçu de l’application** (icône Lecture) dans la barre de commandes. (Vous pouvez aussi prévisualiser l’application en appuyant sur F5.) Parcourez l’application pour constater qu’elle est prête à l’emploi.
 
-11. Fermez l’aperçu de l’application en sélectionnant le **X** en haut à droite de l’écran.
+1. Fermez l’aperçu de l’application en sélectionnant le **X** en haut à droite de l’écran.
 
-Félicitations, vous avez créé une application Power Apps à partir d’une table Dataverse. L’étape suivante du processus consiste à adapter l’application pour qu’elle reflète la marque de votre établissement Bellows College. La série suivante d’étapes vous guidera tout au long des tâches nécessaires pour personnaliser davantage l’application.
+Félicitations, vous avez créé une application Power Apps à partir d’une table Dataverse. L’étape suivante du processus consiste à adapter l’application pour qu’elle reflète votre établissement. La série suivante d’étapes vous guidera tout au long des tâches nécessaires pour personnaliser davantage l’application.
 
+### Tâche 2 : Modifier l’application nouvellement créée et lui appliquer un thème
 
-### Tâche \#2 : Modifier l’application nouvellement créée et lui appliquer un thème
+Dans cette tâche, vous allez personnaliser le texte d’en-tête de chacun des trois écrans de votre application (Parcourir, Détails et Modifier) et modifier le thème de l’application.
 
-Dans cette tâche, vous allez personnaliser le texte d’en-tête de chacun des trois écrans de votre application (Parcourir, Détails et Modifier) et modifier le thème de l’application. 
+1. Vous êtes sur l’écran Parcourir. Sélectionnez l’étiquette **Notes de frais** à l’écran.
 
-1.  Vous êtes sur l’écran Parcourir. Sélectionnez l’étiquette **Visites** à l’écran.
+1. À droite de l’écran, sous l’onglet Propriétés, remplacez la propriété du contrôle ** Texte** par Mes notes de frais
 
-1.  À droite de l’écran, sous l’onglet Propriétés, remplacez la propriété du contrôle **Texte** par `Bellows College Visits`
+1. Dans l’onglet **Propriétés**, modifiez la **Taille de la police** en **24**.
 
-1.  Dans l’onglet **Propriétés**, modifiez la **Taille de la police** en **24**. 
+1. Sélectionnez l’arrière-plan vide de l’écran pour afficher le texte mis à jour sur votre écran Parcourir.
 
-1.  Sélectionnez l’arrière-plan vide de l’écran pour afficher le texte mis à jour sur votre écran Parcourir. 
+1. En utilisant l’**arborescence** dans le volet de navigation gauche, sélectionnez **DetailScreen1**.
 
-1.  En utilisant l’**arborescence** dans le volet de navigation gauche, sélectionnez **DetailScreen1**. 
+1. Sélectionnez l’étiquette **Notes de frais** à l’écran.
 
-1.  Sélectionnez l’étiquette **Visites** à l’écran.
+1. À droite de l’écran, sous l’onglet **Propriétés**, remplacez la propriété du contrôle **Texte** par Détails de la note
 
-1.  À droite de l’écran, sous l’onglet **Propriétés**, remplacez la propriété du contrôle **Texte** par `Visit Details`.
+1. Cliquez sur l’arrière-plan vide de l’écran pour afficher le texte mis à jour sur votre écran Détails.
 
-1.  Cliquez sur l’arrière-plan vide de l’écran pour afficher le texte mis à jour sur votre écran Détails.
+1. En utilisant l’**arborescence** dans le volet de navigation gauche, sélectionnez **EditScreen1** (il peut être nécessaire de faire défiler vers le bas pour voir cette option dans l’arborescence).
 
-1.  En utilisant l’**arborescence** dans le volet de navigation gauche, sélectionnez **EditScreen1** (il peut être nécessaire de faire défiler vers le bas pour voir cette option dans l’arborescence).
+1. Sélectionnez l’étiquette **Notes de frais** à l’écran.
 
-1.  Sélectionnez l’étiquette **Visites** à l’écran.
+1. À droite de l’écran, sous l’onglet **Propriétés**, remplacez le texte dans la propriété du contrôle **Texte** par Modifier les détails
 
-1.  À droite de l’écran, sous l’onglet **Propriétés**, remplacez le texte dans la propriété du contrôle **Texte** par `Edit Details`
+1. Cliquez sur l’arrière-plan vide de l’écran pour afficher le texte mis à jour sur votre écran Modifier.
 
-1.  Cliquez sur l’arrière-plan vide de l’écran pour afficher le texte mis à jour sur votre écran Modifier.
+1. En utilisant l’**arborescence** dans le volet de navigation gauche, sélectionnez **BrowseScreen1**.
 
-1.  En utilisant l’**arborescence** dans le volet de navigation gauche, sélectionnez **BrowseScreen1**.
+1. Dans la barre d’outils de commande, sélectionnez le bouton **Thème** puis, dans la liste qui s’affiche, sélectionnez la couleur de thème **Rouge**.
 
-1.  Dans la barre d’outils de commande, sélectionnez le bouton **Thème** puis, dans la liste qui s’affiche, sélectionnez la couleur de thème **Rouge**.
-
-
-### Tâche \#3 : Tester l’application Visites
+### Tâche n°3 : Tester votre application Notes de frais
 
 Dans cette tâche, vous allez tester votre nouvelle application.
 
-1.  Une fois que votre application s’ouvre dans le Concepteur d’applications, sélectionnez **Paramètres**. Dans la section **Général**, remplacez le nom de votre application par `Visits App`, sélectionnez **X** pour fermer l’écran des paramètres, puis sélectionnez **Enregistrer**.
+1. Une fois votre application ouverte dans le Concepteur d’application, sélectionnez **Paramètres** (vous devrez peut-être sélectionner … pour faire apparaître l’icône Paramètres). Dans la section **Général**, remplacez le nom de votre application par Application Visites, sélectionnez **X** pour fermer l’écran des paramètres, puis sélectionnez **Enregistrer**.
 
-2.  Dans le volet de navigation de gauche, sélectionnez **BrowseScreen1**.
+1. Dans le volet de navigation de gauche, sélectionnez **BrowseScreen1**.
 
-3.  Dans le concepteur d’applications, sélectionnez le bouton **Afficher un aperçu de l’application** (icône Lecture) dans la barre de commandes. *(Vous pouvez aussi prévisualiser l’application en appuyant sur F5.)*
+1. Dans le concepteur d’applications, sélectionnez le bouton **Afficher un aperçu de l’application** (icône Lecture) dans la barre de commandes. (Vous pouvez aussi prévisualiser l’application en appuyant sur F5.)
 
-4.  Une fois l’application ouverte, dans le champ **Éléments de recherche**, entrez le texte `Maria`
-     *(Notez la façon dont les éléments de la galerie sont filtrés en fonction de ce que vous tapez dans le champ de recherche.)*
+1. Une fois l’application ouverte, dans le champ **Éléments de recherche**, entrez le texte Déplacement (notez la façon dont les éléments de la galerie sont filtrés en fonction de ce que vous tapez dans le champ de recherche).
 
-5.  Une fois l’enregistrement **Contoso Suites** pour **Maria Campbell** affiché, sélectionnez une ligne pour ouvrir l’écran Détails de cette visite. (**Remarque** : *Si plusieurs enregistrements Contoso Suites pour Maria Campbell sont affichés, sélectionnez-en un.* )
+1. Une fois que l’enregistrement **Déplacement pour la conférence Power Platform** apparaît, sélectionnez une ligne afin d’ouvrir l’écran Détails de cette Dépense.
+ 
+    >**Remarque** : Si plusieurs enregistrements Déplacement pour la conférence Power Platform s’affichent, sélectionnez l’un d’entre eux.
 
-6.  Pour modifier l’enregistrement, sélectionnez l’**icône crayon** dans le coin supérieur droit de l’application.
+1. Pour modifier l’enregistrement, sélectionnez l’**icône crayon** dans le coin supérieur droit de l’application.
 
-7.  Vous pouvez modifier ici le **Nom de la visite** et sélectionner l’icône **Coche** en haut à droite pour enregistrer la modification.
+1. Vous pouvez modifier le **Nom de la note** ici et sélectionner l’icône **Coche** en haut à droite pour enregistrer la modification.
 
-8.  En haut à droite de l’écran, sélectionnez l’icône **X** pour fermer le mode Aperçu et revenir à l’éditeur de l’application canevas.
+1. En haut à droite de l’écran, sélectionnez l’icône **X** pour fermer le mode Aperçu et revenir à l’éditeur de l’application canevas.
 
 Félicitations ! Vous avez créé et configuré votre première application canevas.
 
+ 
