@@ -6,7 +6,7 @@ lab:
 
 # Labo en bonus : Créer une application canevas en utilisant Copilot
 
-**Locataires WWL - Conditions d’utilisation** Si un locataire est fourni dans le cadre d’une formation dispensée par un instructeur, notez qu’il est mis à votre disposition dans le seul but de prendre en charge les labos pratiques de la formation. Vous ne devez ni partager ni utiliser les locataires en dehors des labos pratiques. Le locataire utilisé dans ce cours est un locataire d’essai. Au terme de la classe, le locataire ne pourra pas faire l’objet d’une prolongation et vous ne pourrez plus l’utiliser ni y accéder. Vous n’êtes pas autorisé à convertir un locataire en abonnement payant. Les locataires obtenus dans le cadre de ce cours sont la propriété de Microsoft Corporation. Nous nous réservons le droit d’y accéder et d’en reprendre possession à tout moment. 
+**Locataires WWL - Conditions d’utilisation** Si un locataire est fourni dans le cadre d’une formation dispensée par un instructeur, notez qu’il est mis à votre disposition dans le seul but de prendre en charge les labos pratiques de la formation. Vous ne devez ni partager ni utiliser les locataires en dehors des labos pratiques. Le locataire utilisé dans ce cours est un locataire d’essai qui ne peut pas être utilisé ni être accessible une fois la classe terminée, ni faire l’objet d’une prolongation. Vous n’êtes pas autorisé à convertir un locataire en abonnement payant. Les locataires obtenus dans le cadre de ce cours sont la propriété de Microsoft Corporation. Nous nous réservons le droit d’y accéder et d’en reprendre possession à tout moment. 
 
 ## Scénario
 
@@ -76,6 +76,6 @@ Initialement, un champ comme **Objectif** a été ajouté et mis en forme avec u
 
 17. Si nécessaire, dans l’écran **Bienvenue dans Power Apps Studio**, sélectionnez **Ne plus me le montrer**, puis cliquez sur le bouton **Ignorer**. 
 
-![](media/bonus-lab-copilot-01.png)
+![Capture d’écran de l’application qui vient d’être créée](media/bonus-lab-copilot-01.png)
 
 Félicitations, vous avez utilisé Copilot pour créer une application. 
