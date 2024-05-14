@@ -30,7 +30,7 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
 ## Exercice 1 : Utilisez Copilot pour créer une application de visites d’une université.
 
-**Objectif** : Dans cet exercice, vous allez créer une application canevas en vous connectant à une table Expense Reports (Rapports de dépenses).
+**Objectif** : Dans cet exercice, vous allez créer une application canevas en vous connectant à une table Campus visits (Visites du campus).
 
 ### Tâche \#1 : Créer la structure initiale
 

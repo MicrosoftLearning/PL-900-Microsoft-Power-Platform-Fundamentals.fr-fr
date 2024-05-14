@@ -14,15 +14,7 @@ Bellows College est un établissement d’enseignement avec plusieurs campus et 
 
 L’administration des campus aimerait moderniser son système de notes de frais en fournissant aux employés un moyen numérique de soumettre leurs dépenses. 
 
-Tout au long de ce cours, vous allez créer des applications et effectuer une automatisation pour permettre aux employés de Bellows College de gérer les dépenses.
-
-Dans ce labo, vous allez créer un modèle de données pour prendre en charge les exigences suivantes :
-
-- R1 - Suivre les informations pour les visites planifiées sur le campus.
-
-- R2 - Enregistrer des informations de base pour identifier et suivre les visiteurs.
-
-- R3 - Planifier, enregistrer et gérer les visites.
+Tout au long de ce cours, vous allez générer des applications et effectuer une automatisation pour permettre aux employés de Bellows College de gérer les frais.
 
 Enfin, vous importerez des échantillons de données dans Microsoft Dataverse.
 
@@ -80,7 +72,7 @@ La table **Dépenses** contient des informations sur les dépenses individuelles
 
 1. Dans **Ajustement du fuseau horaire**, sélectionnez **Date uniquement**.
 
-    >**Remarque :** Nous utilisons le comportement **Date uniquement** pour enregistrer les informations de date, car la date de la visite ne doit pas changer lorsqu’elle est vue à partir d’un autre fuseau horaire.
+    >**Remarque :** Nous utilisons le comportement **Date uniquement** pour enregistrer les informations de date, car la date des frais ne doit pas changer lorsqu’elle est vue à partir d’un autre fuseau horaire.
 
 1. Sélectionnez **Enregistrer**.
 
