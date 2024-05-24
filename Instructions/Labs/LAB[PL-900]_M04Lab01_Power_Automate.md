@@ -141,8 +141,6 @@ Laissez cet onglet de flux ouvert pour la tâche suivante. Votre flux doit resse
 
     - **Nom de note :** Impression test
 
-    - **Montant total de la note :** $750,00
-
     - **Date d’échéance de la note :** Demain 
 
 1. Cliquez sur le bouton **Enregistrer et fermer**.
