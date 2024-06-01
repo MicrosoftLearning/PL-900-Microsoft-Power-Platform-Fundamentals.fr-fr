@@ -1,7 +1,7 @@
 ---
 lab:
   title: "Labo\_5\_: Comment créer un tableau de bord simple"
-  module: 'Module 5: Get Started with Power BI'
+  module: 'Module 5: Describe the capabilities of Microsoft Power BI'
 ---
 
 ## Labo 5 : Comment créer un tableau de bord simple

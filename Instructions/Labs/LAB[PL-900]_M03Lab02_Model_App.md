@@ -1,7 +1,7 @@
 ---
 lab:
   title: "Labo 3\_: Comment créer une application pilotée par modèle"
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Labo 3 : Comment créer une application pilotée par modèle

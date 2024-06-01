@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'Labo en bonus : Créer une application canevas en utilisant Copilot'
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Labo en bonus : Créer une application canevas en utilisant Copilot

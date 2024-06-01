@@ -1,7 +1,7 @@
 ---
 lab:
   title: "Labo\_2\_: Comment créer une application canevas"
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Labo 2 : Comment créer une application canevas
