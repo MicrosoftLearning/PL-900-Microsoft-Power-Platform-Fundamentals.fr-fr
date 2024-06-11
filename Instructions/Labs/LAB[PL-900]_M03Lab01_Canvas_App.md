@@ -1,7 +1,7 @@
 ---
 lab:
   title: "Labo\_2\_: Comment créer une application canevas"
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Labo 2 : Comment créer une application canevas
@@ -21,9 +21,9 @@ Tout au long de ce cours, vous allez créer des applications et effectuer une au
 
 Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
-- Créer une application canevas à partir de données dans la table Visite
+- Créer une application canevas de notes de frais 
 
-- Configurer l’affichage des visites sur l’écran de navigation
+- Configurer l’affichage des notes de frais sur l’écran de navigation
 
 - Apporter des modifications de base à l’application
 
@@ -107,7 +107,7 @@ Dans cette tâche, vous allez personnaliser le texte d’en-tête de chacun des 
 
 Dans cette tâche, vous allez tester votre nouvelle application.
 
-1. Une fois votre application ouverte dans le Concepteur d’application, sélectionnez **Paramètres** (vous devrez peut-être sélectionner … pour faire apparaître l’icône Paramètres). Dans la section **Général**, remplacez le nom de votre application par Application Visites, sélectionnez **X** pour fermer l’écran des paramètres, puis sélectionnez **Enregistrer**.
+1. Une fois votre application ouverte dans le Concepteur d’application, sélectionnez **Paramètres** (vous devrez peut-être sélectionner … pour faire apparaître l’icône Paramètres). Dans la section **Général**, remplacez le nom de votre application par Application Notes de frais, sélectionnez **X** pour fermer l’écran des paramètres, puis sélectionnez **Enregistrer**.
 
 1. Dans le volet de navigation de gauche, sélectionnez **BrowseScreen1**.
 

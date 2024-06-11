@@ -1,7 +1,7 @@
 ---
 lab:
   title: "Labo 3\_: Comment créer une application pilotée par modèle"
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Labo 3 : Comment créer une application pilotée par modèle
@@ -10,13 +10,11 @@ lab:
 
 ## Scénario
 
-Bellows College est une organisation éducative disposant de plusieurs bâtiments sur le campus. Les visiteurs du campus sont actuellement enregistrés dans des journaux papier. Les informations ne sont pas saisies de manière cohérente et il n’y a aucun moyen de collecter ni d’analyser les données concernant les visites sur l’ensemble du campus.
+Bellows College est un établissement d’enseignement avec plusieurs campus et plusieurs cursus. De nombreux enseignants et administrateurs de Bellow College doivent assister à des événements et acheter des articles. Le suivi de ces dépenses a toujours été un défi en soi.
 
-L’administration du campus souhaite moderniser son système d’inscription des visiteurs où l’accès aux bâtiments est contrôlé par le personnel de sécurité et toutes les visites doivent être pré-enregistrées et enregistrées par leurs hôtes.
+L’administration des campus aimerait moderniser son système de notes de frais en fournissant aux employés un moyen numérique de soumettre leurs dépenses.
 
-Tout au long de ce cours, vous créerez des applications et effectuerez une automatisation pour permettre au personnel administratif et de sécurité du Bellows College de gérer et de contrôler l’accès aux bâtiments du campus.
-
-Dans ce labo, vous allez créer une application Power Apps pilotée par modèle pour permettre au personnel de bureau du campus de gérer les enregistrements de visites sur l’ensemble du campus.
+Tout au long de ce cours, vous allez créer des applications et effectuer une automatisation pour permettre aux employés de Bellows College de gérer les dépenses.
 
 ## Étapes de labo de haut niveau
 
@@ -88,11 +86,11 @@ L’en-tête est la zone supérieure droite du formulaire. Vous devrez peut-êtr
 
 1. Si la vue d’édition est ouverte dans un nouvel onglet ou une nouvelle fenêtre de navigateur, fermez cette vue. Sinon, sélectionnez **🡠 Retour** en haut à gauche de l’écran. Vous devriez normalement être revenu aux Formulaires de la table **Note de frais**.
 
-1. Utilisation des barres de navigation en haut à gauche (**Tables** > **Note de frais** > **Formulaires**). Sélectionnez **Note de frais** pour revenir à l’écran des propriétés de la table **Visite**.
+1. Utilisation des barres de navigation en haut à gauche (**Tables** > **Note de frais** > **Formulaires**). Sélectionnez **Note de frais** pour revenir à l’écran des propriétés de la table **Note de frais**.
 
-## Tâche n° 2 : Modifier la vue Visites actives
+## Tâche n° 2 : Modifier la vue Notes de frais actives
 
-Dans cette tâche, nous allons modifier la vue par défaut Notes de frais actives et créer une nouvelle vue pour les visites du jour.
+Dans cette tâche, nous allons modifier la vue par défaut Notes de frais actives et créer une vue pour les notes de frais dues aujourd’hui.
 
 1. Sous la section **Expériences des données**, sélectionnez **Vues** et ouvrez votre vue **Notes de frais actives**.
 
@@ -210,15 +208,15 @@ Pour rester simples et gagner du temps, nous n’aborderons pas toutes les colon
 
 1. Renseignez les champs comme suit :
 
-    - **Nom de la note** : Nouvelle note de test
+    - **Nom du rapport** : nouveau rapport de test
 
     - **Objet de la note** : sélectionner **Conférence**
 
     - **Date d’échéance de la note** : sélectionner la date d’aujourd’hui
 
-1. Cliquez sur **Enregistrer et fermer**. Ceci va créer la visite et vous devez normalement la voir dans la vue **Active Visits**.
+1. Cliquez sur **Enregistrer et fermer**. Cette opération crée un rapport de test que vous devriez voir dans la vue **Notes de frais actives**.
 
-1. Passez sur la vue **Notes de frais dues aujourd’hui** en utilisant la liste déroulante à côté de **Visites actives**. 
+1. Passez à la vue **Notes de frais dues aujourd’hui** en utilisant la liste déroulante à côté de **Notes de frais actives**. 
 
 1. Vous pouvez ajouter quelques autres enregistrements de test.
 

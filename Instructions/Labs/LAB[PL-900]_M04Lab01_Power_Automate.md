@@ -1,7 +1,7 @@
 ---
 lab:
   title: "Labo\_4\_: Création d’une solution automatisée"
-  module: 'Module 4: Get Started with Power Automate'
+  module: 'Module 4: Describe building automation with Microsoft Power Automate'
 ---
 
 # Labo 4 : Création d’une solution automatisée
@@ -66,7 +66,7 @@ Il s’agit d’une bonne pratique, qui vous permet, ainsi que d’autres édite
 
 ### Tâche n° 2 : Créer une étape pour obtenir une ligne de note de frais
 
-1. Sélectionnez **+ Nouvelle étape**. Cette étape récupère les informations du visiteur, y compris l’adresse e-mail.
+1. Sélectionnez **+ Nouvelle étape**. Cette étape récupère les informations de la note de frais, y compris l’adresse e-mail.
 
 1. Rechercher Dataverse
 
@@ -82,9 +82,9 @@ Il s’agit d’une bonne pratique, qui vous permet, ainsi que d’autres édite
 
 Il s’agit d’une bonne pratique, qui vous permet, ainsi que d’autres éditeurs de flux, de comprendre le but de l’étape sans devoir vous plonger dans les détails.
 
-### Tâche n°3 : Créer une étape pour envoyer un e-mail au visiteur
+### Tâche n°3 : créer une étape pour envoyer un e-mail afin de confirmer l’envoi d’une note de frais
 
-1. Sélectionnez **+ Nouvelle étape**. Il s’agit de l’étape qui permettra d’envoyer un e-mail au visiteur.
+1. Sélectionnez **+ Nouvelle étape**. Au cours de cette étape, un e-mail est envoyé à la personne qui a soumis une note de frais.
 
 1. Recherchez l’e-mail, sélectionnez l’action **Envoyer un e-mail (V2)** dans le connecteur **Office 365 Outlook**.
 
@@ -109,9 +109,9 @@ Le contenu dynamique doit être placé là où les champs sont nommés entre cro
 
 1. Mettez en surbrillance le texte **{First Name}** . Remplacez-le par le champ **Prénom** de l’étape **Obtenir le propriétaire**.
 
-1. Mettez en surbrillance le texte **{Report Total Amount}**. Remplacez-le par le champ **Montant total de la note** de l’étape **Lorsqu’une visite est ajoutée**.
+1. Mettez en surbrillance le texte **{Report Total Amount}**. Remplacez-le par le champ **Montant total de la note** de l’étape **Lorsqu’une note de frais est envoyée**.
 
-1. Mettez en surbrillance le texte **{Report Due Date}**. Remplacez-le par le champ **Date d’échéance de la note** de l’étape **Lorsqu’une visite est ajoutée**.
+1. Mettez en surbrillance le texte **{Report Due Date}**. Remplacez-le par le champ **Date d’échéance de la note** de l’étape **Lorsqu’une note de frais est envoyée**.
 
 1. Sélectionnez **Enregistrer**.
 
@@ -140,8 +140,6 @@ Laissez cet onglet de flux ouvert pour la tâche suivante. Votre flux doit resse
 1. Terminez l’**enregistrement Note de frais** comme suit :
 
     - **Nom de note :** Impression test
-
-    - **Montant total de la note :** $750,00
 
     - **Date d’échéance de la note :** Demain 
 
