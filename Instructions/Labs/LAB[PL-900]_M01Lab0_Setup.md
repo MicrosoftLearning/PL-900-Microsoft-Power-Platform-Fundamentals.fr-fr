@@ -16,7 +16,7 @@ L’administration des campus aimerait moderniser son système de notes de frais
 
 Tout au long de ce cours, vous allez créer des applications et effectuer une automatisation pour permettre aux employés de Bellows College de gérer les dépenses.
 
-Dans ce labo du module 1, vous allez acquérir une version d’évaluation de Power Platform et accéder au Centre d’administration Power Platform. Dans le Centre d’administration, vous allez créer un environnement **Exercices pratiques**, dans lequel vous effectuerez la majorité de votre travail de labo.
+Dans ce labo du module 1, vous allez acquérir une version d’évaluation de Power Platform et accéder au Centre d’administration Power Platform. Dans le Centre d’administration, vous allez créer un environnement **Exercices pratiques**, dans lequel vous effectuerez la majorité de votre travail de labo.
 
 
 ## Exercice n° 1 - Configuration
