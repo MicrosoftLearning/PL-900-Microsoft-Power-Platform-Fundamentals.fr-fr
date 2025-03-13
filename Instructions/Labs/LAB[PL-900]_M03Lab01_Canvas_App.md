@@ -39,7 +39,7 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
 ### Tâche n°1 : Créer l’application Notes de frais
 
-1. Accédez à https://make.powerapps.com.
+1. Accédez à `https://make.powerapps.com`.
 
 1. Vous devrez peut-être vous réauthentifier. Sélectionnez **Se connecter** et suivez les instructions si nécessaire.
 

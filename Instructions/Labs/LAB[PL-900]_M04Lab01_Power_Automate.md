@@ -34,7 +34,7 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 
 ### Tâche n°1 : Créer un flux
 
-1. Accédez à https://make.powerapps.com.
+1. Accédez à `https://make.powerapps.com`.
 
 1. Vous devrez peut-être vous réauthentifier. Sélectionnez **Se connecter** et suivez les instructions si nécessaire.
 
@@ -46,7 +46,7 @@ Les éléments suivants ont été identifiés comme des exigences que vous devez
 
 1. Sélectionnez **+ Nouveau flux**, puis sélectionnez **Flux cloud automatisé**.
 
-1. Entrez Notification de frais dans **Nom du flux**.
+1. Entrez `Expense Notification` pour **Nom du flux**.
 
 1. Sous **Choisir le déclencheur de votre flux**, recherchez Dataverse.
 
@@ -92,7 +92,7 @@ Il s’agit d’une bonne pratique, qui vous permet, ainsi que d’autres édite
 
 1. Sélectionnez le champ **À**, puis entrez votre adresse e-mail personnelle. (Il existe différentes façons de remplir dynamiquement une adresse e-mail, mais nous allons l’attribuer manuellement pour cet exercice.)  
 
-1. Dans le champ **Objet**, entrez Votre note de frais a été soumise
+1. Dans le champ **Objet**, saisissez `Your expense report was submitted`
 
 1. Entrez le texte suivant dans le **Corps du courriel**.
 
@@ -109,11 +109,11 @@ Le contenu dynamique doit être placé là où les champs sont nommés entre cro
 
 1. Mettez en surbrillance le texte **{First Name}** . Remplacez-le par le champ **Prénom** de l’étape **Obtenir le propriétaire**.
 
-1. Mettez en surbrillance le texte **{Report Total Amount}**. Remplacez-le par le champ **Montant total de la note** de l’étape **Lorsqu’une note de frais est envoyée**.
+1. Mettez en surbrillance le texte **{Report Total Amount}**. Remplacez-le par le champ **Montant total de la note** de l’étape **Lorsqu’une note de frais est ajoutée**.
 
-1. Mettez en surbrillance le texte **{Report Due Date}**. Remplacez-le par le champ **Date d’échéance de la note** de l’étape **Lorsqu’une note de frais est envoyée**.
+1. Mettez en surbrillance le texte **{Report Due Date}**. Remplacez-le par le champ **Date d’échéance de la note** de l’étape **Lorsqu’une note de frais est ajoutée**.
 
-1. Sélectionnez **Enregistrer**.
+1. Cliquez sur **Enregistrer**.
 
 Laissez cet onglet de flux ouvert pour la tâche suivante. Votre flux doit ressembler à ceci :
 
@@ -141,7 +141,9 @@ Laissez cet onglet de flux ouvert pour la tâche suivante. Votre flux doit resse
 
     - **Nom de note :** Impression test
 
-    - **Date d’échéance de la note :** Demain 
+    - **Objet de la note :** conférence
+
+    - **Date d’échéance de la note :** demain
 
 1. Cliquez sur le bouton **Enregistrer et fermer**.
 

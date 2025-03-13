@@ -46,7 +46,7 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer un tableau de
 
 1. Vous devez avoir un fichier visits.pbix stocké sur votre machine virtuelle, dans le dossier AllFiles sur le Bureau. Téléchargez [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) et enregistrez-le sur votre ordinateur, s’il n’y est pas déjà.
 
-1. Ouvrez un nouvel onglet, accédez à https://app.powerbi.com et connectez-vous si besoin.
+1. Ouvrez un nouvel onglet, accédez à `https://app.powerbi.com` et connectez-vous si besoin.
 
 1. Sélectionnez **Mon espace de travail** dans le volet de navigation de gauche.
 
@@ -56,7 +56,7 @@ Nous allons suivre les étapes ci-dessous pour concevoir et créer un tableau de
 
 1. Une fois le chargement des données terminé, sélectionnez le rapport **visits**.
 
-    >**Remarque :** Le Type est défini sur **Rapport**, ne sélectionnez pas le jeu de données.
+    >**Note :** le type est défini sur **Rapport**, ne sélectionnez pas le modèle sémantique.
 
 1. Sélectionnez **Modifier**.
 
@@ -68,7 +68,7 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
 1. Sélectionnez l’icône **Graphique en secteurs** dans le panneau **Visualisations** pour insérer un graphique.
 
-1. Développez **bc_Visit** dans le panneau **Champs**. Faites glisser le champ **Building** (Bâtiment) et déposez-le dans la zone **Légende**.
+1. Développez **bc_Visit** dans le panneau **Données**. Faites glisser le champ **Building** (Bâtiment) et déposez-le dans la zone **Légende**.
 
 1. Faites glisser le champ **Visit** et déposez-le dans la zone **Valeurs**.
 
@@ -76,7 +76,7 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
 1. Cliquez sur le rapport en dehors du graphique en secteurs pour le désélectionner, puis sélectionnez l’icône de graphique **Histogramme empilé** dans le panneau **Visualisations**.
 
-1. Développez **bc_Visit** dans le volet **Champs** s’il n’est pas déjà développé. Faites glisser le champ **Visit** et déposez-le dans la zone **Axe Y**.
+1. Développez **bc_Visit** dans le panneau **Données** s’il n’est pas déjà développé. Faites glisser le champ **Visit** et déposez-le dans la zone **Axe Y**.
 
 1. Faites glisser le champ **Start** (Début) et déposez-le dans la zone **Axe X**.
 
@@ -104,7 +104,7 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
 1. Sélectionnez **Nouveau tableau de bord** sur l’invite **Épingler au tableau de bord**.
 
-1. Entrez Gestion du campus comme **Nom de tableau de bord** et sélectionnez **Épingler un élément dynamique**.
+1. Entrez `Campus Management` pour **Nom du tableau de bord** et sélectionnez **Épingler un élément dynamique**.
 
 1. Une fenêtre contextuelle vous indique que le tableau de bord a été créé. Sélectionnez **Accéder au tableau de bord**.
 
@@ -114,7 +114,7 @@ Vous avez terminé la configuration du service Power BI que vous utiliserez pour
 
 1. Au sein de votre tableau de bord **Gestion du campus**, sélectionnez la barre **Poser une question sur vos données**.
 
-1. Entrez bâtiments par nombre de visites dans la zone Questions et réponses. Un graphique à barres s’affiche.
+1. Entrez `buildings by number of visits` dans la zone Questions et réponses. Un graphique à barres s’affiche.
 
 1. Sélectionnez **Épingler un élément visuel**.
 
