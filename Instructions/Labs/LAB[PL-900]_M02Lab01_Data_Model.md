@@ -22,8 +22,6 @@ Enfin, vous importerez des échantillons de données dans Microsoft Dataverse.
 
 Pour préparer vos environnements d’apprentissage, vous devez :
 
-- Vous référer au [document de modèle de données](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus Management.png) pour la description des métadonnées (tables et relations) Vous pouvez appuyer sur la touche Ctrl et la maintenir enfoncée tout en faisant un clic gauche sur le lien ou faire un clic droit sur le lien pour ouvrir le document de modèle de données dans une nouvelle fenêtre.
-
 - Créer une table Dépenses
 
 - Ajoutez des exemples de données. 
@@ -50,9 +48,9 @@ La table **Dépenses** contient des informations sur les dépenses individuelles
 
 1. Dans le volet de navigation de gauche, sélectionnez **Tables**.
 
-1. Sélectionnez **+ Nouvelle table**, puis choisissez **Définir les propriétés avancées**.
+1. Sélectionnez **+ Nouvelle table** et sélectionnez **Table (propriétés avancées)** dans le menu déroulant.
 
-1. Pour **Nom d’affichage**, entrez Dépenses
+1. Pour **Nom d’affichage**, entrez `Expense`
 
 1. Sélectionnez **Enregistrer**.
 
@@ -62,7 +60,7 @@ La table **Dépenses** contient des informations sur les dépenses individuelles
 
 1. Sélectionnez **+ Nouvelle colonne**.
 
-1. Entrez la date de la dépense pour **Nom d’affichage**.
+1. Entrez `Expense Date` comme **Nom d’affichage**.
 
 1. Sélectionnez **Date uniquement** pour **Type de données**.
 
@@ -80,13 +78,13 @@ La table **Dépenses** contient des informations sur les dépenses individuelles
 
 1. Sélectionnez **+ Nouvelle colonne**.
 
-1. Entrez Type de dépense pour **Nom d’affichage**.
+1. Entrez `Expense Type` comme **Nom d’affichage**.
 
 1. Sélectionnez **Choix** pour **Type de données**.
 
 1. Dans **Obligatoire**, sélectionnez **Facultatif**.
 
-1. Définissez **Synchroniser avec le choix global** sur **Oui (recommandé)**
+1. Définissez **Synchroniser avec le choix global** sur **Oui (recommandé)**.
 
 1. Dans le champ **Synchroniser ce choix avec**, sélectionnez **Type de dépense**.
 
@@ -98,25 +96,25 @@ La table **Dépenses** contient des informations sur les dépenses individuelles
 
 1. Sélectionnez **+ Nouvelle colonne**.
 
-1. Entrez Objet de la dépense pour **Nom d’affichage**.
+1. Entrez `Expense Purpose` comme **Nom d’affichage**.
 
 1. Sélectionnez **Choix** pour **Type de données**.
 
 1. Dans **Obligatoire**, sélectionnez **Facultatif**.
 
-1. Définissez **Synchroniser avec le choix global** sur **Oui (recommandé)**
+1. Définissez **Synchroniser avec le choix global** sur **Oui (recommandé)**.
 
 1. Dans le champ **Synchroniser ce choix avec**, sélectionnez **Objet de la dépense**.
 
-1. Définissez le champ **Par défaut** sur **Aucun**.
+1. Définissez le champ **Choix par défaut** sur **Aucun**.
 
-1. Sélectionnez **Enregistrer**.
+1. Cliquez sur **Enregistrer**.
 
 ### Créer une colonne Description de l’article
 
 1. Sélectionnez **+ Nouvelle colonne**.
 
-1. Entrez Description de l’article pour **Nom d’affichage**.
+1. Entrez `Item Description` comme **Nom d’affichage**.
 
 1. Sélectionnez **Plusieurs lignes de texte &gt; Texte brut** pour **Type de données**.
 
@@ -126,7 +124,7 @@ La table **Dépenses** contient des informations sur les dépenses individuelles
 
 1. Sélectionnez **+ Nouvelle colonne**.
 
-1. Entrez Montant de la dépense pour **Nom d’affichage**.
+1. Entrez `Expense Amount` comme **Nom d’affichage**.
 
 1. Sélectionnez **Monnaie locale** pour **Type de données**.
 
@@ -167,7 +165,7 @@ La table **Dépenses** contient des informations sur les dépenses individuelles
 
 1. Sélectionnez la **Flèche** à côté de **Modifier**. Dans le menu qui s’affiche, sélectionnez **Modifier dans un nouvel onglet**.
 
-1. Dans la colonne **Nom**, entrez **John Doe**.
+1. Dans la colonne **Nom**, entrez `John Doe`.
 
 1. Dans la colonne **Date de la dépense**, entrez **xxx**.
 
@@ -175,7 +173,7 @@ La table **Dépenses** contient des informations sur les dépenses individuelles
 
 1. Dans la colonne **Type de dépense**, sélectionnez **Voyage**.
 
-1. Dans la colonne **Montant de la dépense**, entrez **750.00**.
+1. Dans la colonne **Montant de la dépense**, entrez `750.00`.
 
 1. Dans **Description de l’article** entrez une courte description.
 

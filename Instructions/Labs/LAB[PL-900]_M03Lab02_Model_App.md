@@ -50,7 +50,7 @@ Les deux seront intégrés à l’application basée sur un modèle, pour une me
 
 **Objectif** : Au cours de cet exercice, vous apprendrez à personnaliser les vues et les formulaires des tables personnalisées qui seront utilisées dans l’application pilotée par modèle.
 
-### Tâche n°1 : Modifier le formulaire de notes de frais
+### Tâche n°1 : modifier le formulaire de notes de frais
 
 1. Si ce n’est pas déjà fait, connectez-vous à https://make.powerapps.com
 
@@ -58,7 +58,7 @@ Les deux seront intégrés à l’application basée sur un modèle, pour une me
 
 1. Dans le volet de navigation à gauche, sélectionnez **Tables** et ouvrez votre table **Notes de frais**.
 
-Si vous ne voyez pas la table Note de frais, vérifiez que vous êtes dans l’environnement approprié (étape 2).
+    >Si vous ne voyez pas la table Note de frais, vérifiez que vous êtes dans l’environnement approprié (étape 2).
 
 1. Sous la section **Expériences des données**, sélectionnez **Formulaires**, puis ouvrez le formulaire **Informations** avec le type de formulaire **Principal**. (**Important :** Veillez à sélectionner le formulaire de type **Principal**.)
 
@@ -78,9 +78,9 @@ Si vous ne voyez pas la table Note de frais, vérifiez que vous êtes dans l’e
 
 1. Glissez-déplacez la colonne **Raison du statut** dans l’en-tête du formulaire.
 
-L’en-tête est la zone supérieure droite du formulaire. Vous devrez peut-être réduire le panneau Propriétés sur le côté droit de l’écran pour voir le champ sur le formulaire.
+    >L’en-tête est la zone supérieure droite du formulaire. Vous devrez peut-être réduire le panneau Propriétés sur le côté droit de l’écran pour voir le champ sur le formulaire.
 
-1. Sélectionnez le champ **Propriétaire**. Dans le volet Propriétés, remplacez l’**Étiquette** par Demandeur
+1. Sélectionnez le champ **Propriétaire**. Dans le volet Propriétés, remplacez l’**Étiquette** par Demandeur.
 
 1. Sélectionnez le bouton **Enregistrer et publier** en haut à droite et attendez la fin de l’opération d’enregistrement et de publication.
 
@@ -88,7 +88,7 @@ L’en-tête est la zone supérieure droite du formulaire. Vous devrez peut-êtr
 
 1. Utilisation des barres de navigation en haut à gauche (**Tables** > **Note de frais** > **Formulaires**). Sélectionnez **Note de frais** pour revenir à l’écran des propriétés de la table **Note de frais**.
 
-## Tâche n° 2 : Modifier la vue Notes de frais actives
+## Tâche n°2 : modifier la vue Notes de frais actives
 
 Dans cette tâche, nous allons modifier la vue par défaut Notes de frais actives et créer une vue pour les notes de frais dues aujourd’hui.
 
@@ -100,19 +100,19 @@ Dans cette tâche, nous allons modifier la vue par défaut Notes de frais active
 
     - **Date d’échéance de la note**
 
-    - **Total de la note**
+    - **Montant total de la note**
 
 1. Sélectionnez le menu déroulant sur la colonne **Created On** (Créé le), puis sélectionnez **Supprimer**. Le champ **Created On** est maintenant supprimé de la vue.
 
 1. Redimensionnez la largeur de chaque colonne pour l’adapter aux données.
 
-1. Sous **Trier par...** sélectionnez X pour supprimer **Nom** et sélectionnez à la place **Montant total de la note**.
+1. Sous **Trier par...** sélectionnez X pour supprimer **Nom de la note** et sélectionnez à la place **Montant total de la note**.
 
 1. Sélectionnez **Montant total de la note** pour remplacer l’ordre de tri par **Du plus grand au plus petit**.
 
 1. Sélectionnez le bouton **Enregistrer et publier** en haut à droite et attendez la fin de l’opération de publication.
 
-### Tâche n°3 : Créer une vue pour les notes dues aujourd’hui
+### Tâche n°3 : créer une vue pour les notes dues aujourd’hui
 
 Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les notes dues aujourd’hui.
 
@@ -136,13 +136,13 @@ Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les no
 
 1. Sélectionnez le bouton **Enregistrer et publier** en haut à droite et attendez la fin de l’opération de publication.
 
-## Exercice 2 : créer une application pilotée par modèle
+## Exercice 2 : créer l’application pilotée par modèle
 
 **Objectif** : au cours de cet exercice, vous allez créer une application pilotée par modèle, personnaliser le plan du site et tester l’application.
 
 Pour rester simples et gagner du temps, nous n’aborderons pas toutes les colonnes Note de frais dans ce labo.
 
-### Tâche no 1 : Créer une application
+### Tâche n°1 : créer l’application
 
 1. Si ce n’est pas déjà fait, connectez-vous à https://make.powerapps.com
 
@@ -150,17 +150,17 @@ Pour rester simples et gagner du temps, nous n’aborderons pas toutes les colon
 
 1. Sélectionnez **+ Créer** dans le volet de navigation gauche.
 
-1. Créer l’application pilotée par modèle :
+1. Créez l’application pilotée par modèle :
 
     - Sélectionnez **Application vide** dans la section **Démarrer à partir de** de l’écran **Créer votre application**.
 
     - Sous **Application vide basée sur Dataverse**, sélectionnez **Créer**.
 
-    - Entrez Gestion des dépenses des employés comme **Nom** et sélectionnez **Créer**.
+    - Entrez `Employee Expense Management` comme **Nom**, puis sélectionnez **Créer**.
 
 1. Une fois votre nouvelle application pilotée par modèle chargée, sélectionnez le bouton **+ Ajouter une page**.
 
-1. Dans l’écran **Ajouter une page**, choisissez **Table Dataverse**, puis sélectionnez le bouton **Suivant**.
+1. Dans l’écran **Ajouter une page**, choisissez **Table Dataverse**.
 
 1. Sélectionnez les tables suivantes :
 
@@ -180,7 +180,7 @@ Pour rester simples et gagner du temps, nous n’aborderons pas toutes les colon
 
 1. Une fois l’opération **Enregistrer** terminée, sélectionnez le bouton **Publier** pour publier vos modifications. Attendez la fin de la publication.
 
-## Tâche 2 : Tester l’application
+## Tâche n°2 : tester l’application
 
 **Démarrer l’application**
 
@@ -192,7 +192,7 @@ Pour rester simples et gagner du temps, nous n’aborderons pas toutes les colon
 
 1. Sélectionnez **+ Nouveau** dans la barre de commandes.
 
-1. Entrez John comme **Prénom** et Doe comme **Nom**
+1. Entrez `John` pour **Prénom** et `Doe` pour **Nom**.
 
 1. Indiquez votre adresse e-mail personnelle dans **E-mail**. Ceci sera utilisé dans un prochain labo, où vous recevrez un e-mail.
 
@@ -208,11 +208,11 @@ Pour rester simples et gagner du temps, nous n’aborderons pas toutes les colon
 
 1. Renseignez les champs comme suit :
 
-    - **Nom du rapport** : nouveau rapport de test
+    - **Nom de la note** : `New Test Report`.
 
     - **Objet de la note** : sélectionner **Conférence**
 
-    - **Date d’échéance de la note** : sélectionner la date d’aujourd’hui
+    - **Date d’échéance de la note** : sélectionnez la date d’aujourd’hui.
 
 1. Cliquez sur **Enregistrer et fermer**. Cette opération crée un rapport de test que vous devriez voir dans la vue **Notes de frais actives**.
 
