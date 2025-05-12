@@ -45,25 +45,11 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
 1. Sélectionnez l’environnement **Dev One** en haut à droite, si ce n’est pas déjà fait.
 
-1. Sélectionnez **+ Créer** dans le volet de navigation gauche de l’écran. Sous la section **Démarrer à partir de**, sélectionnez **Dataverse**.
+1. Sélectionnez **Applications** dans le volet de navigation gauche de l’écran. Sélectionnez **+ Nouvelle application** puis **Démarrer avec un modèle d’application**.
 
-1. Sélectionnez votre connexion Dataverse.
+1. Sous **Applications mobiles centrées sur les données**, sélectionnez **À partir de Dataverse**.
 
-    >**Remarque** : Si une connexion Dataverse n’existe pas :
-
-    >   - Sélectionnez **+ Nouvelle connexion**.
-
-    >   - Localisez **Microsoft Dataverse**.
-
-    >   - Sélectionnez **Créer**
-
-    >   - **Connectez-vous** et sélectionnez **Autoriser l’accès**.
-
-1. Recherchez et sélectionnez la table **Notes de frais**.
-
-1. Cliquez sur le bouton **Connecter** en bas à droite.
-
-1. Une fois votre application créée, dans l’écran Bienvenue dans Power Apps Studio, sélectionnez **Ne plus afficher ce message**, puis sélectionnez **Ignorer**.
+1. Sélectionnez le tableau **Notes de frais** sur la page **Sélectionner les données Dataverse pour votre application**, puis sélectionnez **Créer l’application**.
 
 1. Dans le concepteur d’applications, sélectionnez le bouton **Afficher un aperçu de l’application** (icône Lecture) dans la barre de commandes. (Vous pouvez aussi prévisualiser l’application en appuyant sur F5.) Parcourez l’application pour constater qu’elle est prête à l’emploi.
 
@@ -77,29 +63,29 @@ Dans cette tâche, vous allez personnaliser le texte d’en-tête de chacun des 
 
 1. Vous êtes sur l’écran Parcourir. Sélectionnez l’étiquette **Notes de frais** à l’écran.
 
-1. À droite de l’écran, sous l’onglet Propriétés, remplacez la propriété du contrôle ** Texte** par Mes notes de frais
+1. À droite de l’écran, sous l’onglet Propriétés, remplacez la propriété du contrôle **Texte** par `My Expense Reports`
 
 1. Dans l’onglet **Propriétés**, modifiez la **Taille de la police** en **24**.
 
 1. Sélectionnez l’arrière-plan vide de l’écran pour afficher le texte mis à jour sur votre écran Parcourir.
 
-1. En utilisant l’**arborescence** dans le volet de navigation gauche, sélectionnez **DetailScreen1**.
+1. Dans la navigation de gauche, à l’aide de l’**arborescence**, sélectionnez **DetailScreen**.
 
 1. Sélectionnez l’étiquette **Notes de frais** à l’écran.
 
-1. À droite de l’écran, sous l’onglet **Propriétés**, remplacez la propriété du contrôle **Texte** par Détails de la note
+1. À droite de l’écran, sous l’onglet **Propriétés**, remplacez la propriété de contrôle **Texte** par `Report Details`.
 
 1. Cliquez sur l’arrière-plan vide de l’écran pour afficher le texte mis à jour sur votre écran Détails.
 
-1. En utilisant l’**arborescence** dans le volet de navigation gauche, sélectionnez **EditScreen1** (il peut être nécessaire de faire défiler vers le bas pour voir cette option dans l’arborescence).
+1. En utilisant l’**arborescence** dans le volet de navigation gauche, sélectionnez **EditScreen** (il peut être nécessaire de faire défiler vers le bas pour voir cette option dans l’arborescence).
 
 1. Sélectionnez l’étiquette **Notes de frais** à l’écran.
 
-1. À droite de l’écran, sous l’onglet **Propriétés**, remplacez le texte dans la propriété du contrôle **Texte** par Modifier les détails
+1. À droite de l’écran, sous l’onglet **Propriétés**, remplacez le texte dans la propriété du contrôle **Texte** par `Edit Details`
 
 1. Cliquez sur l’arrière-plan vide de l’écran pour afficher le texte mis à jour sur votre écran Modifier.
 
-1. En utilisant l’**arborescence** dans le volet de navigation gauche, sélectionnez **BrowseScreen1**.
+1. En utilisant l’**arborescence** dans le volet de navigation gauche, sélectionnez **BrowseScreen**.
 
 1. Dans la barre d’outils de commande, sélectionnez le bouton **Thème** puis, dans la liste qui s’affiche, sélectionnez la couleur de thème **Rouge**.
 
@@ -107,13 +93,13 @@ Dans cette tâche, vous allez personnaliser le texte d’en-tête de chacun des 
 
 Dans cette tâche, vous allez tester votre nouvelle application.
 
-1. Une fois votre application ouverte dans le Concepteur d’application, sélectionnez **Paramètres** (vous devrez peut-être sélectionner … pour faire apparaître l’icône Paramètres). Dans la section **Général**, remplacez le nom de votre application par Application Notes de frais, sélectionnez **X** pour fermer l’écran des paramètres, puis sélectionnez **Enregistrer**.
+1. Une fois votre application ouverte dans le Concepteur d’application, sélectionnez **Paramètres** (vous devrez peut-être sélectionner … pour faire apparaître l’icône Paramètres), dans la section **Général**, remplacez le nom de votre application par `Expense Report App`, sélectionnez le **X** pour fermer l’écran des paramètres, puis sélectionnez **Enregistrer**.
 
-1. Dans le volet de navigation de gauche, sélectionnez **BrowseScreen1**.
+1. Dans le volet de navigation de gauche, sélectionnez **BrowseScreen**.
 
 1. Dans le concepteur d’applications, sélectionnez le bouton **Afficher un aperçu de l’application** (icône Lecture) dans la barre de commandes. (Vous pouvez aussi prévisualiser l’application en appuyant sur F5.)
 
-1. Une fois l’application ouverte, dans le champ **Éléments de recherche**, entrez le texte Déplacement (notez la façon dont les éléments de la galerie sont filtrés en fonction de ce que vous tapez dans le champ de recherche).
+1. Une fois l’application ouverte, dans le champ **Éléments de recherche**, entrez le texte `Trip`(Notez la façon dont les éléments de la galerie sont filtrés en fonction de ce que vous tapez dans le champ de recherche.)
 
 1. Une fois que l’enregistrement **Déplacement pour la conférence Power Platform** apparaît, sélectionnez une ligne afin d’ouvrir l’écran Détails de cette Dépense.
  

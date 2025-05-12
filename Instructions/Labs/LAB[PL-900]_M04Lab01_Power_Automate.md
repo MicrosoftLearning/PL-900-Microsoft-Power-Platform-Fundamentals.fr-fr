@@ -78,7 +78,7 @@ Il s’agit d’une bonne pratique, qui vous permet, ainsi que d’autres édite
 
 1. Dans le champ **ID de ligne**, sélectionnez **Propriétaire (valeur)** dans la liste **Contenu dynamique**. Dans cette étape, vous recherchez le Propriétaire pour la ligne de note de frais créée afin de déclencher ce flux. 
 
-1. Dans l’action **Obtenir une ligne par ID**, sélectionnez les points de suspension ( **...** ), puis **Renommer**. Renommez cette action Obtenir le propriétaire.
+1. Dans l’action **Obtenir une ligne par ID**, sélectionnez les points de suspension ( **...** ), puis **Renommer**. Renommer cette action `Get the Owner`
 
 Il s’agit d’une bonne pratique, qui vous permet, ainsi que d’autres éditeurs de flux, de comprendre le but de l’étape sans devoir vous plonger dans les détails.
 
@@ -121,7 +121,7 @@ Laissez cet onglet de flux ouvert pour la tâche suivante. Votre flux doit resse
 
 ### Tâche 4 : Valider et tester le flux
 
-1. Ouvrez un nouvel onglet dans votre navigateur, puis accédez à https://make.powerapps.com
+1. Ouvrez un nouvel onglet dans votre navigateur et accédez à `https://make.powerapps.com`.
 
 1. Sélectionnez l’environnement **Dev One** en haut à droite, si ce n’est pas déjà fait.
 
@@ -139,7 +139,7 @@ Laissez cet onglet de flux ouvert pour la tâche suivante. Votre flux doit resse
 
 1. Terminez l’**enregistrement Note de frais** comme suit :
 
-    - **Nom de note :** Impression test
+    - **Nom de la note** : `Test Report`.
 
     - **Objet de la note :** conférence
 
