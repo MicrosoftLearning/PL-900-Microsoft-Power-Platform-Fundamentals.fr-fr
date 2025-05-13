@@ -20,7 +20,7 @@ Tout au long de ce cours, vous allez créer des applications et effectuer une au
 
 Dans le cadre de la création de l’application basée sur un modèle, vous effectuerez les opérations suivantes :
 
-- Créer une nouvelle application pilotée par modèle nommée Gestion des dépenses Bellows
+- Créer une nouvelle application pilotée par modèle nommée Gestion des dépenses des employés.
 
 - Modifier la navigation de l’application pour référencer les tables requises
 
@@ -64,7 +64,7 @@ Les deux seront intégrés à l’application basée sur un modèle, pour une me
 
     >**IMPORTANT :** Par défaut, tous les formulaires sont nommés Informations, donc vérifiez que le formulaire que vous sélectionnez est de type **Principal** et pas autre chose. Le formulaire comporte deux champs par défaut : Nom et Propriétaire.
 
-1. À droite de l’écran dans le volet **Propriétés**, sélectionnez le champ **Nom d’affichage**, puis remplacez par Informations de la note
+1. À droite de l’écran, dans le panneau **Propriétés**, sélectionnez le champ **Nom d’affichage**, puis remplacez-le par `Report Information`.
 
 1. Sélectionnez **Colonnes de la table** dans le volet de navigation gauche et ajoutez les champs suivants sous le champ **Owner** (Propriétaire) en faisant glisser les colonnes dans le formulaire ou en cliquant simplement sur les noms de colonne :
 
@@ -80,7 +80,7 @@ Les deux seront intégrés à l’application basée sur un modèle, pour une me
 
     >L’en-tête est la zone supérieure droite du formulaire. Vous devrez peut-être réduire le panneau Propriétés sur le côté droit de l’écran pour voir le champ sur le formulaire.
 
-1. Sélectionnez le champ **Propriétaire**. Dans le volet Propriétés, remplacez l’**Étiquette** par Demandeur.
+1. Sélectionnez le champ **Propriétaire**. Dans le panneau Propriétés, remplacez **Étiquette** par `Requestor`.
 
 1. Sélectionnez le bouton **Enregistrer et publier** en haut à droite et attendez la fin de l’opération d’enregistrement et de publication.
 
@@ -120,7 +120,7 @@ Nous allons maintenant cloner la vue afin de créer une nouvelle vue pour les no
 
 1. Sélectionnez **Enregistrer sous**.
 
-1. Remplacez le **Nom** par Notes de frais dues aujourd’hui, puis sélectionnez **Enregistrer**.
+1. Changez le **Nom** en `Expense Reports Due Today` et sélectionnez **Enregistrer**.
 
 1. Sélectionnez **Modifier les filtres** dans le panneau Propriétés.
 
@@ -148,15 +148,13 @@ Pour rester simples et gagner du temps, nous n’aborderons pas toutes les colon
 
 1. Sélectionnez l’environnement **Dev One** en haut à droite, si ce n’est pas déjà fait.
 
-1. Sélectionnez **+ Créer** dans le volet de navigation gauche.
+1. Cliquez sur **Solutions** dans le volet de navigation gauche.
 
-1. Créez l’application pilotée par modèle :
+1. Ouvrez la solution de **gestion des dépenses**.
 
-    - Sélectionnez **Application vide** dans la section **Démarrer à partir de** de l’écran **Créer votre application**.
+1. Sélectionnez **+ Nouveau**, puis sélectionnez **Application**, puis **Application pilotée par modèle**.
 
-    - Sous **Application vide basée sur Dataverse**, sélectionnez **Créer**.
-
-    - Entrez `Employee Expense Management` comme **Nom**, puis sélectionnez **Créer**.
+1. Entrez `Employee Expense Management` comme **Nom**, puis sélectionnez **Créer**.
 
 1. Une fois votre nouvelle application pilotée par modèle chargée, sélectionnez le bouton **+ Ajouter une page**.
 
@@ -174,7 +172,7 @@ Pour rester simples et gagner du temps, nous n’aborderons pas toutes les colon
 
 1. Dans le volet de navigation, sélectionnez **Nouveau groupe** sous l’indication Navigation. Vous devrez peut-être développer le menu à gauche.
 
-1. À droite de l’écran, dans la section **Options d’affichage**, remplacez la propriété **Titre** par Notes
+1. À droite de l’écran, dans la section **Options d’affichage**, changez la propriété **Titre** en `Reports`.
 
 1. Sélectionnez **Enregistrer** et attendez la fin de l’enregistrement.
 

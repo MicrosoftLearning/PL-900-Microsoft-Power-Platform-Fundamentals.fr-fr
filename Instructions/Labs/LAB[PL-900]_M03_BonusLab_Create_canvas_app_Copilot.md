@@ -34,58 +34,60 @@ Nous allons suivre le plan ci-dessous pour concevoir l’application canevas :
 
 ### Tâche \#1 : Créer la structure initiale
 
-1. Accédez à https://make.powerapps.com.
+1. Accédez à `https://make.powerapps.com`.
 
 2. Vous devrez peut-être vous réauthentifier. Sélectionnez **Se connecter** et suivez les instructions si nécessaire.
 
 3. Sélectionnez l’environnement **Dev One** en haut à droite, si ce n’est pas déjà fait.
 
-4. Dans la zone **Utilisez des mots de tous les jours pour décrire ce que votre application doit collecter, suivre, répertorier ou gérer...**, entrez le texte suivant : `Create an application that logs visits to a college campus`. 
+4. Sélectionnez **+ Créer** dans le volet de navigation gauche de l’écran. Dans la section **Créer vos applications**, sélectionnez **Démarrer avec Copilot**.
 
-5. Sélectionnez le bouton **Aller**.
+5. Dans la zone **Prise en main de Copilot**, entrez le texte suivant. `Create an application that logs visits to a college campus`. 
+
+6. Sélectionnez le bouton **Générer**.
 
 Copilot va commencer à créer une structure de tables pour servir de base à votre application. 
 
 > **IMPORTANT :** Lors de l’utilisation de l’IA générative, vous n’obtiendrez pas toujours exactement les mêmes résultats. Il est possible que votre table ne corresponde pas exactement à la table créée pour un autre étudiant. 
 
-6. Sur le côté droit, sélectionnez la structure de table dans la fenêtre Copilot, puis sélectionnez **Options de table**.
+7. Sur le côté droit, sélectionnez la structure de table dans la fenêtre Copilot, puis sélectionnez **Options de table**.
 
-7. Sélectionnez l’option **Une table**, puis sélectionnez **Appliquer**.
+8. Sélectionnez l’option **Une table**, puis sélectionnez **Appliquer**.
  
     ![Capture d’écran de la structure de table venant d’être créée](media/bonus-lab-tablestr.png)
 
 
 > Pour afficher la structure de la table, sélectionnez la table, puis cliquez sur le bouton **Afficher les données**. 
 
-8. Dans la zone **Que voulez-vous faire ensuite ?**, entrez le texte : Ajoute une colonne Heure d’entrée et une colonne Heure de sortie dans la table. Les deux doivent être des champs de date et d’heure. 
+9. Dans la zone **Que voulez-vous faire ensuite ?**, entrez le texte : Ajoute une colonne Heure d’entrée et une colonne Heure de sortie dans la table. Les deux doivent être des champs de date et d’heure. 
 
-9. Sélectionnez l’icône **OK** ou appuyez sur **Entrée**. 
+10. Sélectionnez l’icône **OK** ou appuyez sur **Entrée**. 
 
-10. Faites défiler jusqu’à l’extrémité de la table et vérifiez que les colonnes **Heure d’entrée** et **Heure de sortie** ont été créées. 
+11. Faites défiler jusqu’à l’extrémité de la table et vérifiez que les colonnes **Heure d’entrée** et **Heure de sortie** ont été créées. 
 
 Comme nous enregistrons les heures d’entrée et de sortie des visiteurs, nous n’avons plus besoin d’autres champs de date de visite. 
 
-11. Recherchez le champ **Date de visite** (ou un champ équivalent) puis, dans la zone **Que voulez-vous faire ensuite ?**, entrez le texte :Supprimer le champ Date de visite (ou le champ équivalent). 
+12. Recherchez le champ **Date de visite** (ou un champ équivalent) puis, dans la zone **Que voulez-vous faire ensuite ?**, entrez le texte :Supprimer le champ Date de visite (ou le champ équivalent). 
 
 >Si nécessaire, mettez à jour le nom du champ à supprimer du nom de la table concernée.
 
-12. Sélectionnez le bouton **Aller**. 
+13. Sélectionnez le bouton **Aller**. 
 
-13. Supprimez les autres champs de date qui peuvent être présents, autres que **Heure d’entrée** et **Heure de sortie**. 
+14. Supprimez les autres champs de date qui peuvent être présents, autres que **Heure d’entrée** et **Heure de sortie**. 
 
 Initialement, un champ comme **Objectif** a été ajouté et mis en forme avec un type de données texte. Nous allons demander à Copilot de le transformer en menu déroulant (Choix). 
 
-14. Dans la zone **Que voulez-vous faire ensuite ?**, entrez le texte suivant : Remplacer le champ Objet par un menu à choix multiple avec les options suivantes : Visite du campus, Salon de l’emploi, Rencontre avec un professeur, Conseils aux étudiants, Autre. 
+15. Dans la zone **Que voulez-vous faire ensuite ?**, entrez le texte suivant : Remplacer le champ Objet par un menu à choix multiple avec les options suivantes : Visite du campus, Salon de l’emploi, Rencontre avec un professeur, Conseils aux étudiants, Autre. 
 
-15. Sélectionnez le bouton **Aller**. 
+16. Sélectionnez le bouton **Aller**. 
 
-16. Comme nous voulons également capturer le numéro de bâtiment, dans la zone **Que voulez-vous faire ensuite ?**, entrez : Ajoutez une colonne Bâtiment. 
+17. Comme nous voulons également capturer le numéro de bâtiment, dans la zone **Que voulez-vous faire ensuite ?**, entrez : Ajoutez une colonne Bâtiment. 
 
-17. Sélectionnez le bouton **Aller**. 
+18. Sélectionnez le bouton **Aller**. 
 
-18. Une fois que vous êtes satisfait de votre table, sélectionnez le bouton **Enregistrer et ouvrir l’application**. 
+19. Une fois que vous êtes satisfait de votre table, sélectionnez le bouton **Enregistrer et ouvrir l’application**. 
 
-19. Si nécessaire, sur l’écran **Terminé ?**, sélectionnez **Ne plus me demander**, puis sélectionnez le bouton **Enregistrer et ouvrir l’application**. 
+20. Si nécessaire, sur l’écran **Terminé ?**, sélectionnez **Ne plus me demander**, puis sélectionnez le bouton **Enregistrer et ouvrir l’application**. 
 
 ![Capture d’écran de l’application qui vient d’être créée](media/bonus-lab-copilot-02.png)
 
