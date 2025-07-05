@@ -1,4 +1,4 @@
-# PL-900 : Power Platform - Notions fondamentales
+# PL-900 : Présentation de Microsoft Power Platform
 
 - **[Télécharger le dernier manuel du participant et le contenu de tous les fichiers](https://learningdownloadcenter.microsoft.com/)**
 - **Êtes-vous un MCT ?** - Consultez notre [Guide de l’utilisateur GitHub pour MCT](https://microsoftlearning.github.io/MCT-User-Guide/)
