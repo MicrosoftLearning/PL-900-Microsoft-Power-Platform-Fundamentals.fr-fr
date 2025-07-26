@@ -61,10 +61,10 @@ L’application des dernières mises à jour du navigateur empêche les problèm
 ## Exercice 2 : Télécharger des images
 
 1. Ouvrez une fenêtre de navigateur dans votre locataire, puis entrez https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/tree/master/Allfiles.
-1. Vous verrez les images dans la capture d’écran.
+2. Vous verrez les images dans la capture d’écran.
 
-    ![fichiers image.](media/images.png)
+![fichiers image.](media/images.png)
 
-1. Ouvrez chaque image séparément et téléchargez en sélectionnant l’icône **Télécharger**.
+3. Ouvrez chaque image séparément et téléchargez en sélectionnant l’icône **Télécharger**.
 
-    ![Bouton de téléchargement de l’image.](media/download-image.png)
+![Bouton de téléchargement de l’image.](media/download-image.png)
