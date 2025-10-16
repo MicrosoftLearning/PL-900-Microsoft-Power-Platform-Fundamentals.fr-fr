@@ -38,12 +38,17 @@ La durée de cet exercice est estimée entre **30 et 45** minutes.
 
 > **Remarque :** Dans le labo précédent, nous avons créé une solution de gestion des événements et nous l’avons définie comme solution préférée dans cet environnement. Pour cette raison, nous n’avons pas besoin d’accéder directement à la solution pour créer notre modèle de données. Les éléments que nous créons seront automatiquement ajoutés à la solution.
 
+> **Remarque :** si vous rencontrez un message d’erreur **Besoin d’attention** sur la table lors de la création d’une colonne de choix avec Copilot, vous pouvez créer la colonne manuellement en suivant les étapes ci-dessous :
+1. Sélectionnez **Options d’affichage**, puis sélectionnez **Afficher les données**. La structure de la table devient visible.
+1. Cliquez sur **Nouvelle colonne** pour ajouter une nouvelle colonne.
+
+
 ## Tâche 1 : Créer un modèle de données
 
 Contoso stocke actuellement les informations de contact des donateurs dans leur instance Dataverse. Il souhaite utiliser Dataverse pour suivre les subventions qu’il demande et les dons qu’il reçoit. Vous devez créer les tables nécessaires pour prendre en charge les besoins futurs de l’application de Contoso.
 
 1.  Si nécessaire, ouvrez un navigateur web et accédez au portail de création [Power Apps](https://make.powerapps.com/), puis connectez-vous à l’aide de vos informations d’identification de compte Microsoft.
-1.  Dans l’écran d’accueil de Power Pages, à l’aide de la navigation sur la gauche, sélectionnez **Tables**.
+1.  Dans l’écran d’accueil de Power Apps, à l’aide de la navigation sur la gauche, sélectionnez **Tables**.
 1.  Sous **Tables**, sélectionnez **Prise en main de Copilot**.
 1.  Dans l’écran **Décrivez les tables que vous souhaitez que Copilot génère**, entrez : « *Crée une table pour la gestion des événements. La table doit indiquer le nom de l’événement, les données d’événement, l’emplacement, le nombre maximal de participants et les détails de l’événement. »*
 1.  En regard du bouton **Générer**, sélectionnez **Paramètres de la table** et configurez-les comme suit :
