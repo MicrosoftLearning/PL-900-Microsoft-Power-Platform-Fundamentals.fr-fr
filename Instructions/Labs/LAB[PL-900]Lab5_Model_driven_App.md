@@ -232,3 +232,6 @@ Tout d’abord, nous allons ajouter quelques contacts.
     ![Capture d’écran du formulaire d’inscription de session terminé.  ](media/Session-registration-form.png)
 
 1.  Sélectionnez le bouton **Enregistrer et fermer**.
+
+
+

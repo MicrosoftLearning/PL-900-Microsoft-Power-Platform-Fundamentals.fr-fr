@@ -319,3 +319,6 @@ Une fois votre site créé, vous devrez l’examiner attentivement afin de vous 
     - la disposition et la navigation.
     - Éléments de personnalisation tels que les couleurs, les polices et les logos.
 1. Une fois que vous avez terminé le test, fermez l’onglet du navigateur pour revenir au site.
+
+
+

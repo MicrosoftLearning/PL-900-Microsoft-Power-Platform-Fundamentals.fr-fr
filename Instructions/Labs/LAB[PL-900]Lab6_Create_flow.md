@@ -320,3 +320,5 @@ Il s’agit d’une bonne pratique, qui vous permet, ainsi que d’autres édite
 Après un court instant, vous devriez voir un e-mail dans votre boîte de réception.
 
 > **Remarque :** Cet e-mail peut se retrouver dans votre dossier Courrier indésirable.
+
+
