@@ -26,6 +26,9 @@ Avant de commencer cet exercice, vous devez avoir effectué le labo suivant :
 > **Important** : ce labo utilise l’IA pour générer les composants. Étant donné que les résultats de l’IA peuvent varier, il est important de noter que vos résultats peuvent être différents (mais similaires) de ce qui est défini dans le labo. Les concepts de base décrits dans le labo seront les mêmes, peu importe ce qui a été créé ou ce qu’il a été nommé. Si les tables et colonnes ne correspondent pas exactement, vous devrez peut-être ajuster ce qui a été créé pour vous.
 
 La durée de cet exercice est estimée entre **60 et 75** minutes.
+> **Remarque :** si vous rencontrez un message d’erreur **Besoin d’attention** sur la table lors de la création d’une colonne de choix avec Copilot, vous pouvez créer la colonne manuellement en suivant les étapes ci-dessous :
+1. Sélectionnez **Options d’affichage**, puis sélectionnez **Afficher les données**. La structure de la table devient visible.
+1. Cliquez sur **Nouvelle colonne** pour ajouter une nouvelle colonne.
 
 ## Tâche 1 : Connectez-vous à Power Apps et explorez l’interface
 
@@ -133,7 +136,7 @@ Alors que vous développez l’application, l’un de vos responsables vous cont
 1.  Cliquez avec le bouton droit sur **SidebarContainer** et renommez-le **EquipContainer1**.
 1.  Une fois le conteneur **EquipContainer1** sélectionné, cliquez sur le bouton **Ouvrir le menu d’insertion**.
 1.  Dans la fenêtre **Recherche**, entrez **Galerie**, puis sélectionnez **Galerie verticale**.
-1.  Lorsqu’il vous est demandé de fournir une source de données dans le champ **Recherche** qui s’affiche, entrez **Équipements** et sélectionnez la table **Équipements**.
+1.  Lorsque vous êtes invité à fournir une source de données dans le champ **Recherche** qui s’affiche, entrez **Équipement** et sélectionnez la table **Équipement**.
 1. Dans l’**arborescence** située à gauche de l’écran, sélectionnez le contrôle **Gallery1** que vous venez d’ajouter.
 1. Faites un clic droit sur le nom de la galerie, choisissez **Renommer**, et renommez-le en `Equipment List`.
 1. Passez sur la galerie **Liste des équipements**. Dans la barre d’outils qui apparaît au-dessus de la galerie, sélectionnez **Disposition**.
@@ -200,7 +203,7 @@ Alors que vous développez l’application, l’un de vos responsables vous cont
 
     ![Capture d’écran des propriétés de l’icône de recherche](media/cb3305731a09bca0bbf166d55d9822a4.png)
 
-1. À l’aide de l’**arborescence** à gauche, sélectionnez **EquipSearchContainer**.
+
 
     Enfin, nous allons configurer la galerie **Liste des équipements** pour remplir ses données en fonction du texte entré dans le champ de contrôle de recherche.
 
@@ -223,7 +226,7 @@ Lorsqu’un utilisateur sélectionne un enregistrement dans la liste Équipement
 1.  Faites un clic droit et **renommez** le conteneur en `RecordDetails`.
 1.  Dans le conteneur **RecordDetails**, sélectionnez le bouton **Insérer**.
 1.  Dans le menu **Insertion**, sélectionnez **Modifier le formulaire**.
-1.  Dans l’écran de sélection de la source de données, sélectionnez **Equipments**. *(Cela peut prendre jusqu’à 30 secondes pour que les données s’affichent).*
+1.  Dans l’écran de sélection de la source de données, sélectionnez **Équipement**. *(Cela peut prendre jusqu’à 30 secondes pour que les données s’affichent).*
 1.  Faites un clic droit sur le formulaire que vous venez d’ajouter et **renommez-le** en `EquipmentForm`.
 1.  Dans le volet **Propriétés**, sélectionnez l’onglet **Avancé** et définissez la propriété **Élément** sur : `'Equipment List'.Selected` *(Le formulaire sera alors rempli avec l’enregistrement actuellement sélectionné.)*
 1. Sélectionnez l’onglet **Affichage** et configurez le formulaire comme suit :
@@ -332,3 +335,7 @@ Après examen, nous avons jugé inutile de créer d’utilisateurs dans cette ap
 1.  Dans Power Apps Studio, sélectionnez le bouton **Enregistrer**.
 1.  Cliquez sur le bouton **Publier**.
 1.  Choisissez **Publier cette version**.
+
+
+
+
