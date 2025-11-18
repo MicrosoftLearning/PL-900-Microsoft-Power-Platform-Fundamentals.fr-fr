@@ -208,7 +208,7 @@ Alors que vous développez l’application, l’un de vos responsables vous cont
     Enfin, nous allons configurer la galerie **Liste des équipements** pour remplir ses données en fonction du texte entré dans le champ de contrôle de recherche.
 
 1.  Sélectionnez la galerie **Liste des équipements** que nous avons créée précédemment.
-1.  Dans la propriété **Éléments**, entrez la formule suivante : `Search([@'Equipments'], EquipSearchInput.Text, 'Equipment Name',Category)`
+1.  Dans la propriété **Éléments**, entrez la formule suivante : `Search([@'Equipment'], EquipSearchInput.Text, 'Equipment Name',Category)`
 
     ![Capture d’écran de la formule PowerFx d’éléments.](media/powerfx-formula.png)
 
@@ -261,7 +261,7 @@ Lorsqu’un utilisateur sélectionne un enregistrement dans la liste Équipement
     3.  **Largeur minimale :** 150
     4.  **Hauteur :** 40
        
-1. Sélectionnez le conteneur **SecondRecord1** et sélectionnez le bouton **Insérer**.
+1. Sélectionnez le conteneur **SelectedRecord1**, puis cliquez sur le bouton **Insérer**.
 1. Dans le champ **Recherche**, entrez **Enregistrer**, puis sélectionnez l’icône **Enregistrer**.
 1. Configurez le bouton **Enregistrer** comme suit :
 
@@ -335,6 +335,8 @@ Après examen, nous avons jugé inutile de créer d’utilisateurs dans cette ap
 1.  Dans Power Apps Studio, sélectionnez le bouton **Enregistrer**.
 1.  Cliquez sur le bouton **Publier**.
 1.  Choisissez **Publier cette version**.
+
+
 
 
 
